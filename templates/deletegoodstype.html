@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block stutitle %}删除商品类型{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+ <form action="{{ url_for('deletegoodstype') }}" method="post" style="position:absolute;left:50%;top:50%;transform:translate(-50%,100%)">
+     {{ form.csrf_token }}
+            {{ form.goodsid.label }}<br>
+            {{ form.goodsid }}<br>
+            {% if form.goodsid.errors %}
+                {% for message in form.goodsid.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+    {{ form.submit(class='btn btn-primary') }}
+ </form>
+</div>
+{% endblock %}

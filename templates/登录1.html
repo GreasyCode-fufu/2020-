@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员登录界面</title>
+    <link href="../static/css/登录1.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../static/img/苹果.svg" type="image/svg+xml">
+{#    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css1/loginStyle.css') }}">#}
+{#	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css1/font-awesome/css/font-awesome.min.css') }}">#}
+</head>
+<body>
+    <div class="background-img">
+        <ul class="slides">
+            <li><img src="../static/img/mmexport1606716901800.png"></li>
+            <li><img src="../static/img/mmexport1606716904007.png"></li>
+            <li><img src="../static/img/mmexport1606716906267.png"></li>
+            <li><img src="../static/img/mmexport1606716908381.png"></li>
+        </ul>
+        <div class="btn1" id="prev"> 
+            <
+        </div>
+        <div class="btn2" id="next">
+            >
+        </div>
+    </div>
+
+    <div class="login">
+    <form id="login-box" method="post" >
+     {{ form.csrf_token }}
+        <p>管理员登录</p>
+        <div class="text">
+{#            <input type="text" placeholder="用户名">#}
+            {{ form.username }}
+                {% if form.username.errors %}
+                    {% for message in form.username.errors %}
+                    <small class="error">{{ message }}</small><br>
+                    {% endfor %}
+                {% endif %}
+{#            <input type="password" placeholder="密码">#}
+                 {{ form.password }}
+               {% if form.password.errors %}
+                    {% for message in form.password.errors %}
+                    <small class="error">{{ message }}</small>
+                    {% endfor %}
+              {% endif %}
+
+            <div class="yanzheng">
+                <input class="yanzheng-text" type="text">
+                <div class="yanzheng-img" id="yanzheng">
+                    <ul class="yanzheng-ul">
+                        <li><img src="../static/img/code.jpg"></li>
+                        <li><img src="../static/img/code (1).jpg"></li>
+                        <li><img src="../static/img/code (2).jpg"></li>
+                        <li><img src="../static/img/code (3).jpg"></li>
+                        <li><img src="../static/img/code (4).jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            {{ form.submit}}
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>
+<script>
+    var prev=document.getElementById('prev');
+    var next=document.getElementById('next');
+    var yanzheng=document.getElementById('yanzheng');
+    var lis=document.querySelectorAll('.slides>li');
+    var lis0=document.querySelectorAll('.yanzheng-ul>li');
+    var index=0;
+    var index0=0;
+    /*测试js链接成功
+    console.log("abc");
+    */
+    //点击按钮切换背景
+    next.onclick=nextFun;
+    function nextFun(){
+        lis[index].style.opacity=0;
+        index++;
+        if(index==4){
+            index=0;
+        }
+        lis[index].style.opacity=1;
+    }
+    prev.onclick=function(){
+        lis[index].style.opacity=0;
+        index--;
+        if(index==-1){
+            index=3;
+        }
+        lis[index].style.opacity=1;
+    }
+    yanzheng.onclick=function(){
+        lis0[index0].style.opacity=0;
+        index0++;
+        if(index0==5){
+            index0=0;
+        }
+        lis0[index0].style.opacity=1;
+    }
+    //定时器，五秒轮播
+    var timer=setInterval(nextFun,8000);
+</script>

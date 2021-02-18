@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sony</title>
+    <link href="../static/css/购买马丽花.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header></header>
+    <div class="main" id="main"><!--主体-->
+        <div class="container"><!--轮播-->
+            <div class="wrap" style="left: -600px;">
+                <img src="../static/img/正面.png" alt="">
+                <img src="../static/img/镜头面.png" alt="">
+                <img src="../static/img/finder.png" alt="">
+                <img src="../static/img/侧面.png" alt="">
+                <img src="../static/img/三防高速卡套装.png" alt="">
+                <img src="../static/img/无线蓝牙手柄套装.png" alt="">
+                <img src="../static/img/功能.png" alt="">
+            </div>
+            <a href="javascript:;" class="arrow arrow_left">&lt;</a>
+            <a href="javascript:;" class="arrow arrow_right">&gt;</a>
+        </div>
+        <div class="demo"><!--主体右边商品详情-->
+            <div>
+                <h6>荐    最高可享12期免息，可免569.93元手续费，低至633.25元/期</h6>
+                <p><strong>DSC-RX100M7 黑卡®数码相机（24-200mm蔡司镜头 实时眼部对焦 4K HDR 视频拍摄 RX100 VII）</strong></p>
+                <p>商品描述：蔡司Vario-Sonnar T* 24-200mm*7 F2.8-F4.5镜头/约 2010 万有效像素 1英寸Exmor RSTM CMOS 
+                堆栈式传感器/约0.02秒*4高速对焦和约20张/秒*2高速连拍/新增单次连拍模式/新增“实时追踪对焦”/新增麦克风接口</p>
+                <h3 id="value">价格:&nbsp;&nbsp;RMB&nbsp;7,599.00</h3>
+            </div>
+            <div class="information">
+                <div class="btn">规格:&nbsp;&nbsp;&nbsp;
+                    <button id="btn3" type="button" onclick="myFunction3()">单机身</button>
+                    <button id="btn1" type="button" onclick="myFunction1()">三防高速卡套装</button>
+                    <button id="btn2" type="button" onclick="myFunction2()">无线蓝牙手柄套装</button>
+                </div>
+                <div>颜色:&nbsp;&nbsp;
+                    <button id="color" type="btnColor" onclick="myFunction4()">黑色</button>
+                </div>
+                <div class="cameraNum">数量:&nbsp;&nbsp;
+                    <a id="sub" href="javascript:void(0);">-</a>
+                    <input type="text" value="1" id="cameraNum">
+                    <a id="add" href="javascript:void(0);">+</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="wish">
+                    <div class="buy" id="buy">
+                        <p type="button" onclick="myFunction5()">购&nbsp;&nbsp;&nbsp;&nbsp;买</p>
+                    </div>
+                    <div class="addwish">
+                        <img id="myimage" onclick="changeImage()" src="../static/img/xin.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>精品大图</h2>
+    <div class="bigFace"></div>
+    
+    
+
+    
+   
+{#    <script type="text/javascript" src="./javascript/购买马丽花.js"> </script>#}
+<script>
+        //    轮播
+       var wrap = document.querySelector(".wrap");
+        var next = document.querySelector(".arrow_right");
+        var prev = document.querySelector(".arrow_left");
+        next.onclick = function () {
+            next_pic();
+        }
+        prev.onclick = function () {
+            prev_pic();
+        }
+
+        function next_pic () {
+            var newLeft = parseInt(wrap.style.left)-600;
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft = parseInt(wrap.style.left)+600;
+            wrap.style.left = newLeft + "px";
+        }
+        function next_pic () {
+            var newLeft;
+            if(wrap.style.left === "-3600px"){
+                newLeft = -1200;
+            }else{
+                newLeft = parseInt(wrap.style.left)-600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft;
+            if(wrap.style.left === "0px"){
+                newLeft = -2400;
+            }else{
+                newLeft = parseInt(wrap.style.left)+600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        // 不同规格不同价格实现同时选中
+        function myFunction1(){
+            var x=document.getElementById("value");
+            x.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;7,799.00";
+            btn1.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn3.style.boxShadow="0 0 2px 2px #ffffff";
+            btn2.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction2(){
+            var y=document.getElementById("value");
+            y.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;8,849.00";
+            btn2.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn3.style.boxShadow="0 0 2px 2px #ffffff";
+            btn1.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction3(){
+            var z=document.getElementById("value");
+            z.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;7,599.00";
+            btn3.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn1.style.boxShadow="0 0 2px 2px #ffffff";
+            btn2.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction4(){
+            color.style.boxShadow="0 0 2px 2px #bbbbbb";
+        }
+
+        //点亮心
+        function changeImage(){
+            element=document.getElementById('myimage')
+            if(element.src.match("myimage"))
+            {
+                element.src="./img/xin.jpg";
+            }
+            else{
+                element.src="./img/红心.jpg";
+            }
+
+        }
+        //购买
+
+</script>
+</body>
+</html>

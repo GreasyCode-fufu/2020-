@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--大框架-->
+    <link href="../static/css/big_framework.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/navigation_framework.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/header_framework.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/navigation_hidden.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/main_framework.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/footer_framework.css" rel="stylesheet" type="text/css">
+    <!--小框架-->
+    <!--小框架-->
+    <link href="../static/css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/header.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/footer.css" rel="stylesheet" type="text/css">
+    <!--小框架-->
+</head>
+<body onscroll="myFunction()">
+    <div class="navigation" id="navigation">
+        <div class="navigation_left">
+            <p>UNBUG</p>
+            <ul>
+                <li id="li1" onclick="oneli()"><a href="#">Home</a></li>
+                <li id="li2" onclick="twoli()"><a href="#">HomePod&nbsp;mini</a></li>
+                <li id="li3" onclick="threeli()"><a href="#">Dssing</a></li>
+                <li id="li4" onclick="fourli()"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="navigation_middle">
+            <a href="#"><img src="../static/img/weixin.png"></a>
+            <a href="#"><img src="../static/img/qq.png"></a>
+            <a href="#"><img src="../static/img/in.png"></a>
+            <a href="#"><img src="../static/img/zhifubao.png"></a>
+            <a href="#"><img src="../static/img/lianshu.png"></a>
+        </div>
+        <div class="navigation_right" id="navigation_r">
+            <a href="#"><img src="../static/img/daizi.png"></a>
+            <div id="navigation_right"></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header_left"></div>
+        <div class="header_right">
+            <div class="header_right_buy">
+                <div class="header_right_buy_button">
+                    <a href={{ url_for("gouMai") }}>Add to Cart</a>
+                </div>
+                <div class="header_right_buy_car" id="buy_car">
+                    +
+                </div>
+            </div>
+            <div class="header_right_text">
+                <p>【新品预订】HUAWEI FreeLace Pro<br>&nbsp;&nbsp;无线耳机 双重主动降噪 24小时长续航</p>
+                <p>AirPods Pro 具备主动降噪功能，可根据你耳部的几何结构和耳塞的佩戴贴合度持续进行调节，
+                    以阻隔外界噪音，让你听得更专注。这，在入耳式耳机中堪称独树一帜。
+                </p>               
+            </div>
+        </div>
+    </div>
+    <!--默认隐藏部分-->
+    <div class="navigation_hidden" id="navigation_hidden1">
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/1.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro1</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/2.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro2</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/3.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro3</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/4.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro4</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/5.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro5</p>
+            </div>
+        </div>
+    </div>
+    <div class="navigation_hidden" id="navigation_hidden2">
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/6.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro6</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/7.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro7</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/8.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro8</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/9.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro9</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/10.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro10</p>
+            </div>
+        </div>
+    </div>
+    <div class="navigation_hidden" id="navigation_hidden3">
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/11.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro11</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/12.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro12</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/13.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro13</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/14.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro14</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/15.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro15</p>
+            </div>
+        </div>
+    </div>
+    <div class="navigation_hidden" id="navigation_hidden4">
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/16.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro16</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/17.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro17</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/18.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro18</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/19.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro19</p>
+            </div>
+        </div>
+        <div class="navigation_hidden_div">
+            <div class="navigation_hidden_img">
+                <img src="../static/img/20.png">
+            </div>
+            <div class="navigation_hidden_text">
+                <p>AirPods Pro20</p>
+            </div>
+        </div>
+    </div>
+    <!--默认隐藏部分-->
+    <div class="main">
+        <div class="main_top">
+            <p>NEW PRODUCTS</p>
+            <p>Discover new engravion options for AirPods.</p>
+            <p>Mix emoli,text,and numbers.</p>
+        </div>
+        <div class="main_middle">
+            <ul>
+                <li id="li5">Latest</li>
+                <li id="li6">Hottest</li>
+                <li id="li7">Buy the most</li>
+            </ul>
+        </div>
+        <div class="main_last">
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 21</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 22</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 23</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 24</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 25</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 26</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div name="div1">
+                <div class="main_last_img" id="main_last_img1"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 27</p>
+                        <div>
+                            <div id="button1"></div>
+                            <div id="button2"></div>
+                            <div id="button3"></div>
+                            <div id="button4"></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img" id="main_last_img2"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 28</p>
+                        <div>
+                            <div id="button5"></div>
+                            <div id="button6"></div>
+                            <div id="button7"></div>
+                            <div id="button8"></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="div1">
+                <div class="main_last_img" id="main_last_img3"></div>
+                <div class="main_last_text">
+                    <div class="main_last_top">
+                        <p>AirPods Pro 29</p>
+                        <div>
+                            <div id="button9"></div>
+                            <div id="button10"></div>
+                            <div id="button11"></div>
+                            <div id="button12"></div>
+                        </div>
+                    </div>
+                    <div class="main_last_last">
+                        <p>$123.00</p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="main_footer">
+            <div class="main_footer_in" id="main_footer_in1"></div>
+            <div class="main_footer_in" id="main_footer_in2"></div>
+            <div class="main_footer_in" id="main_footer_in3"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_top">
+            <p>
+                上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。
+                最高可享 24 期免息分期，到 Apple Store 零售店和在线商店购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。
+                实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。
+                有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。
+                Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。
+                可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="#">此处。</a>
+            </p>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <ul>
+                    <li>选购及了解</li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">HomePod</a></li>
+                    <li><a href="#">iPod touch</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">App Store 充值卡</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>服务</li>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">iCloud</a></li>
+                    <li><a href="#">Apple Pay</a></li>
+                    <li><a href="#">App Store</a></li>
+                </ul>
+                <ul>
+                    <li>账户</li>
+                    <li><a href="#">管理你的Apple ID</a></li>
+                    <li><a href="#">Apple Store账户</a></li>
+                    <li><a href="#">iCloud.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Apple Store商店</li>
+                    <li><a href="#">查找零售店</a></li>
+                    <li><a href="#">在线选购</a></li>
+                    <li><a href="#">Genius Bar天才吧</a></li>
+                    <li><a href="#">Tody at Apple</a></li>
+                    <li><a href="#">Apple夏令营</a></li>
+                    <li><a href="#">Apple Store App</a></li>
+                    <li><a href="#">翻新和优惠</a></li>
+                    <li><a href="#">分期付款</a></li>
+                    <li><a href="#">Apple Trade In换购计划</a></li>
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">选购帮助</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>商务应用</li>
+                    <li><a href="#">Apple与商务</a></li>
+                    <li><a href="#">商务选购</a></li>
+                </ul>
+                <ul>
+                    <li>教育应用</li>
+                    <li><a href="#">Apple与教育</a></li>
+                    <li><a href="#">高校师生选购</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Apple价值观</li>
+                    <li><a href="#">辅助功能</a></li>
+                    <li><a href="#">环境责任</a></li>
+                    <li><a href="#">隐私</a></li>
+                    <li><a href="#">供应商责任</a></li>
+                </ul>
+                <ul>
+                    <li>关于Apple</li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Apple管理层</a></li>
+                    <li><a href="#">工作机会</a></li>
+                    <li><a href="#">创造就业</a></li>
+                    <li><a href="#">活动</a></li>
+                    <li><a href="#">联系Apple</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            <p>更多选购方式：<a href="#">查找你附近的Apple Store零售店</a>及<a href="#">更多门店</a>，或者致电400-666-8800。</p>
+            <div>
+                <p>Copyright © 2020 Apple Inc. 保留所有权利。</p>
+                <div><a href="#">隐私政策</a></div>
+                <div><a href="#">使用条款</a></div>
+                <div><a href="#">销售政策</a></div>
+                <div><a href="#">法律信息</a></div>
+                <div><a href="#">网站地图</a></div>
+            </div>
+            <p>京ICP备10214630 营业执照 无线电发射设备销售备案编号11201910351200</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var navigation=document.getElementById('navigation');
+var navigation_hidden1=document.getElementById('navigation_hidden1');
+var navigation_hidden2=document.getElementById('navigation_hidden2');
+var navigation_hidden3=document.getElementById('navigation_hidden3');
+var navigation_hidden4=document.getElementById('navigation_hidden4');
+var li1=document.getElementById('li1');
+var li2=document.getElementById('li2');
+var li3=document.getElementById('li3');
+var li4=document.getElementById('li4');
+
+function myFunction(){
+    var a=document.documentElement.scrollTop;
+    console.log(a);
+    if(a!=0){
+        navigation.style.height="0rem";
+        navigation_hidden1.style.height="0rem";
+        navigation_hidden2.style.height="0rem";
+        navigation_hidden3.style.height="0rem";
+        navigation_hidden4.style.height="0rem";
+    }else{
+        navigation.style.height="4rem";
+    }
+}
+
+function oneli(){  
+    if(navigation_hidden1.clientHeight!=0){
+        navigation_hidden1.style.height="0rem";
+    }else{
+        navigation_hidden1.style.height="8rem";
+        navigation_hidden2.style.height="0rem";
+        navigation_hidden3.style.height="0rem";
+        navigation_hidden4.style.height="0rem";
+    }
+}
+function twoli(){  
+    if(navigation_hidden2.clientHeight!=0){
+        navigation_hidden2.style.height="0rem";
+    }else{
+        navigation_hidden2.style.height="8rem";
+        navigation_hidden1.style.height="0rem";
+        navigation_hidden3.style.height="0rem";
+        navigation_hidden4.style.height="0rem";
+    }
+}
+function threeli(){  
+    if(navigation_hidden3.clientHeight!=0){
+        navigation_hidden3.style.height="0rem";
+    }else{
+        navigation_hidden3.style.height="8rem";
+        navigation_hidden1.style.height="0rem";
+        navigation_hidden2.style.height="0rem";
+        navigation_hidden4.style.height="0rem";
+    }
+}
+function fourli(){  
+    if(navigation_hidden4.clientHeight!=0){
+        navigation_hidden4.style.height="0rem";
+    }else{
+        navigation_hidden4.style.height="8rem";
+        navigation_hidden1.style.height="0rem";
+        navigation_hidden2.style.height="0rem";
+        navigation_hidden3.style.height="0rem";
+    }
+}
+var button1=document.getElementById('button1');
+var button2=document.getElementById('button2');
+var button3=document.getElementById('button3');
+var button4=document.getElementById('button4');
+var img1=document.getElementById('main_last_img1');
+var img2=document.getElementById('main_last_img2');
+var img3=document.getElementById('main_last_img3');
+var li5=document.getElementById('li5');
+var li6=document.getElementById('li6');
+var li7=document.getElementById('li7');
+var odiv=document.getElementsByName('div1');
+var main_footer_in1=document.getElementById('main_footer_in1');
+var main_footer_in2=document.getElementById('main_footer_in2');
+var main_footer_in3=document.getElementById('main_footer_in3');
+
+li5.onclick=function() {
+    for(let i=0;i<odiv.length;i++){
+        let ScaleNum = '0px';
+        odiv[i].style.transform = `translateX(${ScaleNum})`;
+        this.style.color="#ca203d";
+        li6.style.color="#111111";
+        li7.style.color="#111111";
+        main_footer_in1.style.backgroundColor="#ca203d";
+        main_footer_in2.style.backgroundColor="#aaaaaa";
+        main_footer_in3.style.backgroundColor="#aaaaaa";
+        main_footer_in1.style.width="18px";
+        main_footer_in2.style.width="6px";
+        main_footer_in3.style.width="6px";
+    }
+}
+li6.onclick=function() {
+    for(let i=0;i<odiv.length;i++){
+        let ScaleNum = '-1002px';
+        odiv[i].style.transform = `translateX(${ScaleNum})`;
+        this.style.color="#ca203d";
+        li5.style.color="#111111";
+        li7.style.color="#111111";
+        main_footer_in2.style.backgroundColor="#ca203d";
+        main_footer_in1.style.backgroundColor="#aaaaaa";
+        main_footer_in3.style.backgroundColor="#aaaaaa";
+        main_footer_in1.style.width="6px";
+        main_footer_in2.style.width="18px";
+        main_footer_in3.style.width="6px";
+    }
+}
+li7.onclick=function() {
+    for(let i=0;i<odiv.length;i++){
+        let ScaleNum = '-2004px';
+        odiv[i].style.transform = `translateX(${ScaleNum})`;
+        this.style.color="#ca203d";
+        li5.style.color="#111111";
+        li6.style.color="#111111";
+        main_footer_in3.style.backgroundColor="#ca203d";
+        main_footer_in1.style.backgroundColor="#aaaaaa";
+        main_footer_in2.style.backgroundColor="#aaaaaa";
+        main_footer_in1.style.width="6px";
+        main_footer_in2.style.width="6px";
+        main_footer_in3.style.width="18px";
+    }
+}
+button1.onclick=function() {
+    img1.style.backgroundImage="url(../static/img/27.png)";
+    console.log(img1.style.backgroundImage);
+}
+button2.onclick=function() {
+    img1.style.backgroundImage="url(../static/img/28.png)";
+    console.log(img1.style.backgroundImage);
+}
+button3.onclick=function() {
+    img1.style.backgroundImage="url(../static/img/29.png)";
+    console.log(img1.style.backgroundImage);
+}
+button4.onclick=function() {
+    img1.style.backgroundImage="url(../static/img/30.png)";
+    console.log(img1.style.backgroundImage);
+}
+button5.onclick=function() {
+    img2.style.backgroundImage="url(../static/img/31.png)";
+    console.log(img1.style.backgroundImage);
+}
+button6.onclick=function() {
+    img2.style.backgroundImage="url(../static/img/32.png)";
+    console.log(img1.style.backgroundImage);
+}
+button7.onclick=function() {
+    img2.style.backgroundImage="url(../static/img/33.png)";
+    console.log(img1.style.backgroundImage);
+}
+button8.onclick=function() {
+    img2.style.backgroundImage="url(../static/img/34.png)";
+    console.log(img1.style.backgroundImage);
+}
+button9.onclick=function() {
+    img3.style.backgroundImage="url(../static/img/35.png)";
+    console.log(img1.style.backgroundImage);
+}
+button10.onclick=function() {
+    img3.style.backgroundImage="url(../static/img/36.png)";
+    console.log(img1.style.backgroundImage);
+}
+button11.onclick=function() {
+    img3.style.backgroundImage="url(../static/img/37.png)";
+    console.log(img1.style.backgroundImage);
+}
+button12.onclick=function() {
+    img3.style.backgroundImage="url(../static/img/38.png)";
+    console.log(img1.style.backgroundImage);
+}
+var navigation_right=document.getElementById('navigation_right');
+var buy_car=document.getElementById('buy_car');
+var navigation_r=document.getElementById('navigation_r');
+
+
+buy_car.onclick=function(){
+    navigation_right.style.display="block"; 
+}
+navigation_r.onclick=function(){
+    navigation_right.style.display="none";  
+}
+</script>

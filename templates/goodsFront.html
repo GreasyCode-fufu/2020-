@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/商品前端1.css') }}">
+
+</head>
+<body>
+    <div class="body_head">
+        <div id="btn"></div>
+        <div id="obtn"></div>
+        <div class="logo"><p>UNBUG</p></div>
+        <a href={{ url_for("sunfuxianglogin")}} id="exit"></a>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li id="li1"><a href="#">Phone</a></li>
+            <li id="li2"><a href="#">Notebook</a></li>
+            <li id="li3"><a href="#">Plate</a></li>
+            <li id="li4"><a href="#">Watch</a></li>
+            <li id="li5"><a href={{ url_for("shangPinQianDuan") }}>Headphones</a></li>
+        </ul>
+    </div>
+    <ul id="ul1"></ul>
+    <ul id="banner">
+        <div class="btn1" id="prev"> 
+            <
+        </div>
+        <div class="btn2" id="next">
+            >
+        </div>
+    </ul>
+    <div class="body_main">
+        <div class="big_img">
+            <a href={{ url_for("caoshiqi") }}><img src="../static/img/6.jpg"></a>
+        </div>
+        <div class="sma_img">
+            <div class="sma_img1">
+                <div>
+            <a href={{ url_for("zhangtongfei") }}><img src="../static/img/7.jpg"></a>
+                </div>
+                <div>
+                    <a href={{ url_for("zhanghaoni") }}><img src="../static/img/9.jpg"></a>
+                </div>
+
+            </div>
+            <div class="sma_img2">
+                <div>
+                    <a href={{ url_for("malihua") }}><img src="../static/img/8.jpg"></a>
+                </div>
+                <div>
+                    <a href={{ url_for("limengdan") }}><img src="../static/img/10.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_feet">
+        <div class="last_img">
+            <div class="last_text">
+                <h1>Apple12&nbsp;Pro</h1>
+                <p>超感知徕卡三摄，全时段高清</p>
+                <p>AI摄影，美好不留瑕疵</p>
+                <div class="button1">了解更多&nbsp;&nbsp;&nbsp;></div>
+                <div class="button2"><a href={{ url_for("dengchang") }} >购买&nbsp;￥&nbsp;8499起&nbsp;&nbsp;&nbsp;></a></div>
+            </div>
+        </div>
+        <div class="last_img">
+            <div class="last_text">
+                <h1>UNBUG&nbsp;P40&nbsp;Pro+</h1>
+                <p>超感知徕卡五摄，全时段高清</p>
+                <p>超远距双目变焦系统，10倍光学变焦</p>
+                <p>6.58英寸漫溢屏，经典陶瓷机身</p>
+                <div class="button1">了解更多&nbsp;&nbsp;&nbsp;></div>
+                <div class="button2"><a href={{ url_for("dengchang") }} >购买&nbsp;￥&nbsp;7988起&nbsp;&nbsp;&nbsp;></a></div>
+            </div>
+        </div>
+        <div class="last_img">
+            <div class="last_text">
+                <h1>UNBUG&nbsp;Nova&nbsp;7&nbsp;Pro&nbsp;5G</h1>
+                <p>前置3200万追焦双摄，智能眼部追焦</p>
+                <p>后置6400万高清四摄，50倍潜望式变焦</p>
+                <p>麒麟985芯片,支持SA及NSA网络</p>
+                <div class="button1">了解更多&nbsp;&nbsp;&nbsp;></div>
+                <div class="button2"><a href={{ url_for("zhangshijie") }} >购买&nbsp;￥&nbsp;3699起&nbsp;&nbsp;&nbsp;></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="qR_code"  id="down">
+        <div class="up" id="up"><img src="../static/img/up.png"></div>
+        <div class="qR_code_img"><img src="../static/img/qrcode.png"></div>
+        <div class="gywm">
+            <p>关于</p>
+            <p>我们</p>
+        </div>
+    </div>
+</body>
+{# <script type="text/javascript" src="../static/javascript/商品前端11.js">#}
+
+<script>
+    var btn=document.getElementById("btn");
+    var obtn=document.getElementById("obtn");
+    btn.onclick=sidebar;
+    obtn.onclick=osidebar;
+
+function sidebar(){
+    var sidebar=document.getElementById("sidebar");
+    sidebar.style.minWidth="13rem";
+    sidebar.style.minHeight="20rem";
+    btn.style.zIndex=1;
+    btn.style.opacity=0;
+    obtn.style.zIndex=2;
+    obtn.style.opacity=1;
+}
+function osidebar(){
+    var sidebar=document.getElementById("sidebar");
+    sidebar.style.minWidth="0rem";
+    sidebar.style.minHeight="0rem";
+    btn.style.zIndex=2;
+    btn.style.opacity=1;
+    obtn.style.zIndex=1;
+    obtn.style.opacity=0;
+}
+
+
+
+
+</script>
+<script>
+ window.onload=function(){
+
+    var next=document.getElementById("next");
+    var prev=document.getElementById("prev");
+    let timer=setInterval(get_next,5000);
+    let sz=new Array();
+    var cur_ul=document.getElementById("banner");
+    next.onclick=get_next;
+    prev.onclick=get_prev;
+
+    for(let i=1;i<=5;i++){
+
+        var cur_li=document.createElement("li");
+        var cur_img=document.createElement("img");
+
+        cur_img.src="../static/img/"+i+".jpg";
+        cur_img.style.width="500px";
+        cur_img.style.height="250px";
+        cur_li.appendChild(cur_img);
+        cur_ul.appendChild(cur_li);
+        console.log(cur_img);
+        sz.push(cur_li);
+        sz[sz.length-1].style.left="0px";
+    }
+
+    let len=sz.length-1;
+    sz[len-2].style.left="0px";
+    sz[len-1].style.zIndex=5;
+    sz[len-1].style.left="250px";
+    sz[len-1].style.transform="scale(1.5)";
+    sz[len].style.left="500px";
+
+    function get_next(){
+        let give_up=sz[len];
+        sz.pop();
+        sz.unshift(give_up);
+        for(let i=0;i<sz.length;i++){
+            sz[i].style.zIndex=i;
+            sz[i].style.transform="scale(1)";
+        }
+
+        sz[len-2].style.left="0px";
+        sz[len-1].style.zIndex=5;
+        sz[len-1].style.left="250px";
+        sz[len-1].style.transform="scale(1.5)";
+        sz[len].style.left="500px";
+
+    }
+    function get_prev(){
+        let give_up=sz[0];
+        sz.shift();
+        sz.push(give_up);
+        for(let i=0;i<sz.length;i++){
+            sz[i].style.zIndex=i;
+            sz[i].style.transform="scale(1)";
+        }
+
+        sz[len-2].style.left="0px";
+        sz[len-1].style.zIndex=5;
+        sz[len-1].style.left="250px";
+        sz[len-1].style.transform="scale(1.5)";
+        sz[len].style.left="500px";
+
+    }
+}
+
+</script>
+
+</html>

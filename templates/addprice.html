@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block stutitle %}添加价格{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+ <form action="{{ url_for('addprice') }}" method="post" style="position:absolute;left:50%;top:50%;transform:translate(-50%,20%)">
+    {{ form.csrf_token }}
+            {{ form.goodsid.label }}<br>
+            {{ form.goodsid }}<br>
+            {% if form.goodsid.errors %}
+                {% for message in form.goodsid.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodstype.label }}<br>
+            {{ form.goodstype}}<br>
+            {% if form.goodstype.errors %}
+                {% for message in form.goodstype.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodscolor.label }}<br>
+            {{ form.goodscolor }}<br>
+            {% if form.goodscolor.errors %}
+                {% for message in form.goodscolor.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodsprice.label }}<br>
+            {{ form.goodsprice}}<br>
+            {% if form.goodsremarks.errors %}
+                {% for message in form.goodsprice.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodsremarks.label }}<br>
+            {{ form.goodsremarks}}<br>
+            {% if form.goodsremarks.errors %}
+                {% for message in form.goodsremarks.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+        {{ form.submit(class='btn btn-primary') }}
+<p>(注意: 此处添加商品信息需为商品库存中已存在的商品!)</p>
+ </form>
+</div>
+{% endblock %}

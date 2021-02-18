@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block stutitle %}查询价格{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+ <form action="{{ url_for('showpriceByType') }}" method="post" style="position:absolute;left:50%;top:50%;transform:translate(-50%,100%)">
+     {{ form.csrf_token }}
+            {{ form.goodstype.label }}<br>
+            {{ form.goodstype }}<br>
+            {% if form.goodstype.errors %}
+                {% for message in form.goodstype.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+    {{ form.submit(class='btn btn-primary') }}
+ </form>
+</div>
+{% endblock %}

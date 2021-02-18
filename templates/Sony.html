@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sony</title>
+    <link rel="shortcut icon" href="Images/titleLog.ico" />
+    <!-- <link href="../.css/马丽花.css" rel="stylesheet" type="text/css"> -->
+    <style>
+        * {
+    margin:0;
+    padding:0;
+}
+.big{
+    font-size: 3rem;
+    margin:1.5rem 0 0 2rem;
+    text-align: center;
+}
+
+.buy{
+    margin: 1rem 0 0 0;
+    border: 1px solid rgb(230, 22,48);
+    background-color:rgb(230,11,48);
+    color:#fff;
+    height: 2rem;
+    width: 50%;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    flex: 1 1 auto;
+    float: left;
+    text-align: center;
+
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+button{
+    background-color:#eee;
+    border:none;
+    height:2.8rem;
+    width:20%;
+}
+.brief{
+    margin: 2rem 0 0 0;
+    display: flex;
+}
+.brief div:nth-child(1){
+    background:url(../static/img/size.jpg)no-repeat;
+}
+.brief div:nth-child(2){
+    background:url(../static/img/元件.jpg)no-repeat;
+}
+.brief div:nth-child(3){
+    background:url(../static/img/传感器.jpg)no-repeat;
+}
+
+.container {
+    position: absolute;
+    width: 47%;
+    height: 25rem;
+    margin:6rem auto 0 2rem;
+    box-shadow: 0 0 0.5rem #ca203d;
+    overflow: hidden;
+}
+.container .wrap {
+    position: absolute;
+    width: 262.5rem;
+    height: 25rem;
+    z-index: 1;
+}
+.container .wrap img {
+    float: left;
+    width: 37.5rem;
+    height: 25rem;
+}
+.container .arrow {
+    color:#111;
+    display: none;
+    position: absolute;
+    top: 35%;
+    padding:0px 1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    z-index: 2;
+    
+}
+.container .arrow_left {
+    left: 1rem;
+}
+.container .arrow_right {
+    right: 1rem;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.demo{
+    width: 47%;
+    height: 100%;
+    margin:7rem 0 auto auto;
+    overflow: hidden;
+}
+h2{
+    text-align: center;
+    margin:2rem 0 1.5rem 0;
+}
+h3{
+    color:rgb(230, 11, 48);
+    margin:0.5rem 0 0 0;
+}
+h6{
+    color:red;
+    margin:0 0 0.5rem 0;
+}
+
+.information{
+    margin:0.5rem 0 0 0;
+}
+.information div{
+    flex-direction: row;
+    margin:0 0 1rem 0;
+}
+.information div button{
+    
+    margin:0 1rem 0 0;
+
+}
+input{
+    width: 3.5rem;
+    height: 1.5rem;
+    margin: 0 0 0 0.2rem;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+#myimage{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.p{
+    height:15rem;
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    margin: 2rem 0 0 3rem;
+}
+.p:hover{
+    transform: scale(1,1.1);
+}
+
+
+    
+strong{
+    font-size:1.1rem;
+}
+.wish{
+    display:flex;
+    height:2.5rem;
+    width: 30rem;
+    text-align: center;
+}
+.wish div{
+    margin: 0 0 0 1rem;
+}
+.wish div p{
+    height: 2rem;
+    width:10rem;
+    text-align: center;
+}
+.wish div:nth-child(2){
+    margin:0 0 0 1rem;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    margin: 0 0 0 0.2rem;
+    cursor: default;
+}
+#btnCart,
+#btnBuy{
+    line-height: 2rem;
+    text-align: center;
+}
+
+#value1,
+#value2{
+    display:none;
+}
+/* 购物加减 */
+.cameraNum{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+#box{
+    height: 1.5rem;
+    margin:0rem 0 0.5rem 0.5rem;
+    width: 15rem;
+
+}
+#sub,
+#add{
+    cursor: pointer;
+    background:#eeeeee;
+    border: 1px solid rgb(148, 0, 0);
+    display: inline-block;
+    float: left;
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    text-align: center;
+
+}
+#txt{
+    border: 1px solid rgb(148, 0, 0);
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    
+}
+/* 概述 */
+.gaiShu{
+    margin: 1rem 0 0 0;
+    display: flex;
+
+}
+.p1{
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 100%;
+    margin: 0 0 0 3rem;
+}
+.p2{
+    font-size: 0.8rem;
+    height: 5rem;
+    width: 100%;
+    margin: 0 0 0 3rem;
+}
+.gaiShuXiao{
+    margin: 0.8rem 0 0 0;
+    display: flex;
+}
+
+/* 购买 */
+.pay_background{
+    display: none;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+}
+.pay{
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#ffffff;
+    height:550px;
+    width:600px;
+    z-index:999;
+}
+.shut_down{
+    position: absolute;
+    top:0.75rem;
+    left:0.75rem;
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../static/img/wrong.png") no-repeat center;
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.information1{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top:3rem;
+    height:400px;
+    align-items: center;
+}
+
+.address{
+    height: 10rem;
+    width: 28rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem;	
+}
+.address h3{
+    background: #fff;
+    left: 50%;
+    padding: 0 3rem;
+    position: absolute;
+    top: -1.5rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.address p{
+    margin: .5rem 0 1rem 2rem;
+}
+.product{
+    background: #eee;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: stretch;
+    height: 16rem;
+    width: 28rem;
+    margin: 1rem auto;
+    position: relative;
+    padding: 1rem;	
+}
+.logo{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    height:1.5rem;
+}
+.logo0{
+    background:url(./static/img/U.png)no-repeat;
+    width:1.5rem;
+}
+.logo2 img{
+    height:6rem;
+    width:8rem;
+    margin:0.5rem 1rem 0 0.5rem;
+}
+.comm .comm_text{
+    height:9rem;
+    width:20rem;
+    flex:1 1 auto;
+    margin-top: 0.3rem;
+    line-height: 2rem;
+}
+.comm .comm_text select{
+    background-color: #c9c9c9;
+    font-size: 1rem;
+}
+.comm_text span{
+    color: #c40101;
+    cursor: pointer;
+}
+.buy-information{
+    margin:1rem 1rem 0 1rem;
+    height:8rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.buy-information .comm_text p:nth-child(4){
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+#quantity{
+    border: 1px solid rgb(148, 0, 0);
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.buy_money{
+    position: absolute;
+    left:1rem;
+    line-height:2.7rem;
+    text-align: left;
+}
+.buy_money p{
+    font-size: 1.2rem;
+    left: 1rem;
+    
+}
+#totalPrice{
+    font-size: 1.5rem;
+    color: #CA203D;
+}
+.buy_com{
+    cursor: pointer;
+    position: absolute;
+    top: 0.2rem;
+    right:0;
+    height:2.6rem;
+    width:8.5rem;
+    background-image: linear-gradient(to right,#ca203d,#830202);
+    border-radius: 1.5rem;
+    font-size:17px;
+    text-align: center;
+    line-height:2.55rem;
+    color:#ffffff;
+    margin: 2.5rem 0 0 0;
+}
+.tijiao{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;   
+    right:4.8rem;
+    bottom:1.2rem;
+    height:-1rem;
+    width:25.2rem;
+    margin:2rem 0 0 0 ;
+}
+.tijiao p{
+    margin: 2.5rem 0 0 0;
+}
+
+
+
+/* 大图 */
+.bigFace{
+    background:url('../static/img/大面.jpg')no-repeat;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    height:36rem;
+    width: 100%;
+}
+.daTu{
+    cursor: default;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    height: 13rem;
+    width: 100%;
+    font-size: 3rem;
+    background:url(../static/img/大图.jpg)no-repeat;
+    margin: 1rem 0 3rem 0;
+}
+.daTu1{
+    cursor: default;
+    color:#fff;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    height: 13rem;
+    width: 100%;
+    font-size: 3rem;
+    background:url(../static/img/大图精品.jpg)no-repeat;
+    margin: 1rem 0 3rem 0;
+}
+.daTu2{
+    height: 25rem;
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    font-size: 3rem;
+    background:url(../static/img/画质.png)no-repeat;
+    margin: 1rem 0 3rem 0;
+}
+.daTu4{
+    cursor: default;
+    color: #fff;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
+    height: 25rem;
+    width: 100%;
+    font-size: 3rem;
+    background:url(../static/img/操控.jpg)no-repeat;
+    margin: 1rem 0 3rem 0;
+}
+
+.biJiao{
+    height: 80rem;
+    width: 100%;
+    background: url(../static/img/比较.jpg)no-repeat center;
+}
+/* 返回顶部 */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 99;
+    border: 1px #eee;
+    outline: none;
+    background-color: #eee;
+    cursor: pointer;
+    padding: 1rem;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 2rem;
+    font-size: 2rem;
+  }
+
+
+  /* 导航栏*/
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color:#333333;
+}
+.div1{
+    z-index: 4;
+    position: fixed;
+    height:2rem;
+    background-color: #333333;
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.div11{
+    margin-left:1.5rem;
+    line-height:2rem;
+    color:#dddddd;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.div12{
+    margin-right:1.5rem;
+}
+.div12 ul li{
+    margin-left:1rem;
+    float: left;
+    list-style: none;
+    line-height: 2rem;
+    font-size:0.75rem;
+    text-align: center;
+}
+.div12 ul li:hover{
+    background-color: #ffffff;
+}
+.div12 ul li:hover a{
+    color:rgb(148, 0, 0);
+}
+.div12 ul li a{
+    margin-right:0.25rem;
+    text-decoration: none;
+    color:#dddddd;
+}
+.div12 ul li a img{
+    margin-left: 0.25rem;
+    height:0.75em;
+    width:0.75rem;
+}
+.div1 .div12 ul li:hover .div121{
+    display:block;
+}
+.div1 .div12 ul li .div121{
+    height:5rem;
+    background-color: #ffffff;
+    display: none;
+}
+.div1 .div12 ul li .div121 a{
+    display: block;
+    color:#666666;
+    line-height: 2.5rem;
+    font-size:0.75rem;
+}
+.div1 .div12 ul li .div121 a:hover{
+    color:rgb(148, 0, 0);
+}
+.div4{
+    z-index: 3;
+    position:fixed;
+    top:2rem;
+    height:3rem;
+    border-bottom:1px solid #dddddd;
+    width:100%;
+    transition: height 0.5s;
+    overflow:hidden;
+    background-color: #ffffff;
+}
+.div4 .div41{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:3rem;
+    width:30rem;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.div4 .div41>div{
+    height:3rem;
+    transition: all 0.5s;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+.div4 .div41>div>a{
+    line-height:2.75rem;
+    color:#aaaaaa;
+    text-decoration: none;
+}
+.div4 .div41>div>.div411{
+    height:2px;
+    width:100%;
+    background-color: red;
+    transition: all 0.5s;
+}
+.div4 .div41>div>.div412,
+.div4 .div41>div>.div413,
+.div4 .div41>div>.div414{
+    height:2px;
+    width:0;
+    background-color: red;
+    transition: all 0.5s;
+}
+.div4 .div41 div a:hover{
+    color:red;
+}
+
+/* 备案号footer */
+.footer{
+    position: relative;;
+    bottom:0;
+    left:0;
+    width:100%;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.footer .footer_top{
+    width:100%;
+    border-bottom: 1px solid #999999;
+    transform: scale(0.8);
+}
+.footer .footer_bottom{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80%;
+}
+.footer .footer_bottom>div{
+    width:100%;
+}
+.footer .footer_last{
+    display: flex;
+    flex-flow:column nowrap;
+    height:80px;
+    width:100%;
+    transform: scale(0.8);
+}
+.footer .footer_top p{
+    margin:1rem 0 1rem 0;
+    font-size: 0.5rem;
+    color:#999999;
+    line-height:0.75rem;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer .footer_top a{
+    text-decoration: none;
+}
+.footer .footer_bottom>div ul{
+    margin-top:1rem;
+}
+.footer .footer_bottom>div ul li{
+    line-height:22px;
+    font-size:0.5rem;
+    transform: scale(0.8);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    font-weight: 600;
+    color:#666666;
+}
+.footer .footer_bottom>div ul li a{
+    color:#999999;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer .footer_bottom>div ul li a:hover{
+    text-decoration:underline;
+    color:#666666;
+}
+.footer .footer_last p{
+    margin:6px 0 6px 0;
+    font-size: 0.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#999999;
+}
+.footer .footer_last>div{
+    border-top:1px solid #999999;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 0.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#666666;
+}
+.footer .footer_last>div>div{
+    width:4.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    border-right:1px solid #666666;
+}
+.footer .footer_last>div>div a{
+    text-decoration: none;
+    color:#666666;
+}
+.footer .footer_last>div>div a:hover{
+    text-decoration:underline;
+}
+.footer .footer_last p a{
+    color:#1975ff;
+    text-decoration: none;
+}
+
+
+/* 主要概述详细参数 */
+.divv{
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: row nowrap;;
+    width: 90%;
+    margin: 0 0 0 2rem;
+}
+.divv p:nth-child(2){
+    margin:0.5rem 0 0 1.5rem;
+    color:#888;
+    font-size: 1.6rem;
+}
+.divv p:nth-child(1){
+    background-color: #111;
+    height: 3.2rem;
+    width: 1rem;
+}
+.LCD,
+.viewFin,
+.sensor{
+    height: 6rem;
+    width: 90%;
+    border-bottom:1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;	
+}
+.viewFin div{
+    margin: 0 0 0 13.9rem;
+}
+.sensor div{
+    margin: 0 0 0 11.8rem;
+}
+.cameraFun div{
+    margin: 0 0 0 13rem;
+}
+.battery p:nth-child(2),
+.battery p:nth-child(3){
+    margin: 1rem 0 0 14.8rem;
+}
+.battery p:first-child{
+    margin: 1rem 0 0 0;
+}
+.scene p:nth-child(2),
+.scene p:nth-child(3){
+    margin: 1rem 0 0 14.8rem;
+}
+.LCD div{
+    margin:0 0 0 14rem;
+}
+.qiTa div{
+    margin: 0 0 0 10.3rem;
+}
+.qiTa>p,
+.LCD>p,
+.cameraFun>p,
+.viewFin>p,
+.sensor>p,
+.battery p:nth-child(1),
+.scene p:nth-child(1){
+    color: #999;
+    font-size: 1.2rem;
+}
+.qiTa div:nth-child(3),
+.LCD div:nth-child(3),
+.cameraFun div:nth-child(3),
+.viewFin div:nth-child(3),
+.sensor div:nth-child(3),
+.battery p:nth-child(3),
+.scene p:nth-child(3){
+    color:#999;
+}
+
+.battery,
+.scene{
+    height: 4rem;
+    width: 90%;
+    border-bottom:1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;	
+}
+.cameraFun{
+    height: 12rem;
+    width: 90%;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;
+}
+.cameraFun div:nth-child(3) p:nth-child(3){
+    margin:2rem 0 0 0;
+}
+.cameraFun div:nth-child(2) p:nth-child(2){
+    margin:3.4rem 0 0 0;
+}
+.qiTa{
+    height: 6rem;
+    width: 90%;
+    border-bottom:1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;
+}
+.viewFin div:nth-child(3) p:nth-child(2),
+.viewFin div:nth-child(2) p:nth-child(2),
+.sensor div:nth-child(3) p:nth-child(2),
+.sensor div:nth-child(2) p:nth-child(2),
+.qiTa div:nth-child(3) p:nth-child(2),
+.qiTa div:nth-child(2) p:nth-child(2),
+.LCD div:nth-child(3) p:nth-child(2),
+.LCD div:nth-child(2) p:nth-child(2){
+    margin: 2rem 0 0 0;
+}
+.divv,
+.sensor,
+.scene,
+.viewFin,
+.LCD,
+.qiTa,
+.battery,
+.cameraFun{
+    margin: 1rem 0 0 3rem;
+}
+
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="div1" id="div1">
+        <div class="div11">UNBUG</div>
+        <div class="div12">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li>
+                    <a href="#">客户服务<img src="../static/img/1.png"></a>
+                    <div class="div121">
+                        <a href="#">服务中心</a>
+                        <a href="#">联系客服</a>
+                    </div>
+                </li>
+                <li><a href="#">网站导航<img src="../static/img/1.png"></a></li>
+                <li><a href="#">手机版<img src="../static/img/1.png"></a></li>
+                <li><a href={{ url_for("sonyGouWuCe")}}>购物车<img src="../static/img/1.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div4" id="div4">
+        <div class="div41">
+            <div id="spxq">
+                <a href="#h2">精品大图</a>
+                <div class="div411" id="div411"></div>
+            </div>
+            <div id="ggcs">
+                <a href="#big">规格参数</a>
+                <div class="div412" id="div412"></div>
+            </div>
+            <div id="bzysh">
+                <a href="#a3">包装与售后</a>
+                <div class="div413" id="div413"></div>
+            </div>
+            <div id="yhpj">
+                <a href="#a4">用户评价</a>
+                <div class="div414" id="div414"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main"><!--主体-->
+        <div class="container"><!--轮播-->
+            <div class="wrap" style="left: -600px;">
+                <img src="../static/img/正面.png" alt="">
+                <img src="../static/img/镜头面.png" alt="">
+                <img src="../static/img/finder.png" alt="">
+                <img src="../static/img/侧面.png" alt="">
+                <img src="../static/img/三防高速卡套装.png" alt="">
+                <img src="../static/img/无线蓝牙手柄套装.png" alt="">
+                <img src="../static/img/功能.png" alt="">
+            </div>
+            <a href="javascript:;" class="arrow arrow_left">&lt;</a>
+            <a href="javascript:;" class="arrow arrow_right">&gt;</a>
+        </div>
+        <div class="demo"><!--主体右边商品详情-->
+            <div>
+                <h6>荐    最高可享12期免息，可免569.93元手续费，低至633.25元/期</h6>
+                <p><strong>DSC-RX100M7 黑卡®数码相机（24-200mm蔡司镜头 实时眼部对焦 4K HDR 视频拍摄 RX100 VII）</strong></p>
+                <p>商品描述：蔡司Vario-Sonnar T* 24-200mm*7 F2.8-F4.5镜头/约 2010 万有效像素 1英寸Exmor RSTM CMOS 
+                堆栈式传感器/约0.02秒*4高速对焦和约20张/秒*2高速连拍/新增单次连拍模式/新增“实时追踪对焦”/新增麦克风接口</p>
+                <h3 id="value">价格:&nbsp;&nbsp;RMB&nbsp;7,599.00</h3>
+            </div>
+            <div class="information">
+                <div class="btn">规格:&nbsp;&nbsp;&nbsp;
+                    <button id="btn3" type="button" onclick="myFunction3()">单机身</button>
+                    <button id="btn1" type="button" onclick="myFunction1()">三防高速卡套装</button>
+                    <button id="btn2" type="button" onclick="myFunction2()">无线蓝牙手柄套装</button>
+                </div>
+                <div>颜色:&nbsp;&nbsp;
+                    <button id="color" type="btnColor" onclick="myFunction4()">黑色</button>
+                </div>
+                <div class="cameraNum">数量:&nbsp;&nbsp;
+                    <ul id='box'>
+                        <li type="button" id=sub>-</li>
+                        <li><input type='text' id='txt' value='1'></li>
+                        <li type="button" id="add">+</li>
+                    </ul>
+                </div>
+                <div class="wish">
+                    <div class="buy" id="buy">
+                        <p type="button" id="btnBuy" onclick="myFunction5()">&nbsp; &nbsp; &nbsp;购 买</p>
+                    </div>
+                    <div class="buy" id="cart">
+                        <p type="button" id="btnCart" onclick="myFunction6()">&nbsp; &nbsp;加 购 物 车</p>
+                    </div>
+                    <div class="addwish" id="addwish">
+                        <img id="myimage" onclick="changeImage()" src="../static/img/xin.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="h2">精品大图</h2>
+    <div class="daTu">快速精准的自动对焦</div>
+    <div class="daTu1">宽广的变焦范围和高速对焦</div>
+    <div class="daTu4">专业便捷的操作</div>
+    <div class="daTu2"></div>
+    <div class="bigFace"></div>
+    <!-- 概述 -->
+    <div class="big" id="big">紧凑机身，宽广的变焦范围</div>
+    <div class="brief" id="div">
+        <div class="p"></div>
+        <div class="p"></div>
+        <div class="p"></div>
+    </div>
+    <div class="gaiShu">
+        <p class="p1"><strong>紧凑机身 宽广变焦范围</strong></p>
+        <p class="p1"><strong>高分辨率光学元件</strong></p>
+        <p class="p1"><strong>新的高速影像传感器</strong></p>
+    </div>
+    <div class="gaiShuXiao">
+        <p class="p2">蔡司 Vario-Sonnar T* 24-200mm*7 F2.8-4.5变焦镜头涵盖相当于两个标准变焦镜头（24-70mm和70-200mm）的宽广变焦范围。</p>
+        <p class="p2">这款相机的镜头元件包括四枚AA（高级非球面）镜片和两枚ED（超低色散）玻璃镜片。它们协同工作，使相机在全焦段，从中心到边缘具备出色的高画质。</p>
+        <p class="p2">新开发的约2010万有效像素1英寸Exmor RS™ CMOS堆栈式影像传感器，内置DRAM芯片，配合新一代BIONZ X影像处理器提升了速度和影像质量。</p>
+    </div>
+    <!-- 主要概述 -->
+    <div class="divv">
+		<p></p>
+		<p>主要概述</p>
+	</div>
+	<div class="sensor">
+		<p>影像传感器</p>
+		<div>
+			<p>传感器类型和尺寸</p>
+			<p>有效像素</p>
+		</div>
+		<div>
+			<p>1.0 英寸 (13.2mm x 8.8mm) Exmor RS CMOS 影像传感器, 尺寸比例 3:2</p>
+			<p>约 2010 万有效像素</p>
+		</div>
+	</div>
+	<div class="scene">
+		<p>镜头&nbsp;&nbsp;</p>
+		<p>镜头类型 &nbsp;</p>
+		<p>蔡司 Vario-Sonnar T* 镜头/15片12组（8片非球面镜片/其中含AA镜片</p>
+	</div>
+	<div class="viewFin">
+		<p>取景器  </p>
+		<div>
+			<p>取景器类型  &nbsp;</p>
+			<p>取景器总像素</p>
+		</div>
+		<div>
+			<p>一推弹出式 OLED 电子取景器</p>
+			<p>约236万像素</p>
+		</div>
+	</div>
+	<div class="cameraFun">
+		<p>相机功能</p>
+		<div>
+			<p>防抖方式  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<p>快门速度  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</div>
+		<div>
+			<p>[静态影像]光学防抖</p>
+			<p>[动态影像]光学防抖(智能增强/增强/标准/关)</p>
+			<p>手动曝光（B 门，30 秒-1/2000秒）</p>
+			<p>程序自动（30 秒 - 1/2000 秒/光圈优先（30 秒 - 1/2000 秒）</p>
+			<p>智能自动（4 秒 - 1/2000 秒）快门优先（30 秒 - 1/2000 秒）</p>
+		</div>
+	</div>
+	<div class="LCD">
+		<p>液晶屏</p>
+		<div>
+			<p>液晶屏类型 &nbsp;</p>
+			<p>液晶屏亮度 &nbsp;</p>
+		</div>
+		<div>
+			<p>3.0”Xtra Fine 180度可翻折液晶屏（约92万像素）</p>
+			<p>手动（5档）/晴朗天气</p>
+		</div>
+	</div>
+	<div class="battery">
+		<p>电源&nbsp;&nbsp;</p>
+		<p>电池 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+		<p>NP-X1（附带）</p>
+	</div>
+	<div class="qiTa">
+		<p>其他 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+		<div>
+			<p>外形尺寸（WxHxD）</p>
+			<p>重量</p>
+		</div>
+		<div>
+			<p>101.6x58.1x42.8 mm</p>
+			<p>约302g(含电池与存储卡) /约275g(仅主机)</p>
+		</div>
+	</div>		
+
+    
+    <div class="biJiao" id="biJiao"></div>
+    <!-- footer 备案号-->
+    <div class="footer">
+        <div class="footer_top">
+            <p>
+                上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。
+                最高可享 24 期免息分期，到 Unbug 商城购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。
+                实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。
+                有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Unbug 商城对此不做任何承诺和保证。
+                Unbug 商城的折抵换购服务为 Unbug 商城与 Unbug 商城折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。
+                可能需要遵守 Unbug 商城或 Unbug 商城折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Unbug 商城的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="#">此处。</a>
+            </p>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <ul>
+                    <li>选购及了解</li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">HomePod</a></li>
+                    <li><a href="#">iPod touch</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">Store 充值卡</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>服务</li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">iCloud</a></li>
+                    <li><a href="#">Pay</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+                <ul>
+                    <li>账户</li>
+                    <li><a href="#">管理你的ID</a></li>
+                    <li><a href="#">账户</a></li>
+                    <li><a href="#">iCloud.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>商店</li>
+                    <li><a href="#">查找零售店</a></li>
+                    <li><a href="#">在线选购</a></li>
+                    <li><a href="#">Genius Bar天才吧</a></li>
+                    <li><a href="#">Tody at Unbug</a></li>
+                    <li><a href="#">Unbug夏令营</a></li>
+                    <li><a href="#">Unbug Store App</a></li>
+                    <li><a href="#">翻新和优惠</a></li>
+                    <li><a href="#">分期付款</a></li>
+                    <li><a href="#">换购计划</a></li>
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">选购帮助</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>商务应用</li>
+                    <li><a href="#">商务</a></li>
+                    <li><a href="#">商务选购</a></li>
+                </ul>
+                <ul>
+                    <li>教育应用</li>
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">高校师生选购</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Unbug价值观</li>
+                    <li><a href="#">辅助功能</a></li>
+                    <li><a href="#">环境责任</a></li>
+                    <li><a href="#">隐私</a></li>
+                    <li><a href="#">供应商责任</a></li>
+                </ul>
+                <ul>
+                    <li>关于我们</li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">管理层</a></li>
+                    <li><a href="#">工作机会</a></li>
+                    <li><a href="#">创造就业</a></li>
+                    <li><a href="#">活动</a></li>
+                    <li><a href="#">联系</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            <p>更多选购方式：<a href="#">查找你附近的零售店</a>及<a href="#">更多门店</a>，或者致电400-666-8800。</p>
+            <div>
+                <p>Copyright © 2020 Unbug Inc. 保留所有权利。</p>
+                <div><a href="#">隐私政策</a></div>
+                <div><a href="#">使用条款</a></div>
+                <div><a href="#">销售政策</a></div>
+                <div><a href="#">法律信息</a></div>
+                <div><a href="#">网站地图</a></div>
+            </div>
+            <p>京ICP备10214630 营业执照 无线电发射设备销售备案编号11201910351200</p>
+        </div>
+    </div>
+    
+    <!-- 购买 -->
+    <div class="pay_background" id="pay">
+        <div class="pay">   
+            <div class="shut_down" id="shut_down"></div>    
+            <div class="information1">
+                <div class="address">
+                    <h3>收货地址</h3>
+                    <p>姓&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;名&nbsp; &nbsp; &nbsp; &nbsp;：李华</p>
+                    <p>联系电话：18312345678</p>
+                    <p>详细地址：河南省新乡市牧野区东干街道河南师范大学</p>
+                    <p>邮政编码：453000</p>
+                </div>
+                <div class="product">
+                    <div class="logo">
+                        <div class="logo0"></div>
+                        <div class="logo1">订单信息</div>
+                    </div>
+                    <div class="buy-information">
+                        <div class="logo2"><img src="../sattic/img/正面.png"></div>
+                        <div class="comm_text">
+                            <p>商品名称：DSC-RX100M7</p>
+                            <p>款式选择：
+                                <select>
+                                    <option >单机身</option>
+                                    <option>三防高速卡套装</option>
+                                    <option>无线蓝牙手柄套装</option>
+                                </select>
+                            </p>
+                            <p>颜色选择：
+                                <select>
+                                    <option>黑色</option>
+                                </select>
+                            </p>
+                            <p>数量：
+                                <ul id='box1'>
+                                    <li type="button" onclick="numDec()" id=sub>-</li>
+                                    <li><input type='text' id='quantity' value='1'></li>
+                                    <li type="button" id="add" onclick="numAdd()">+</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tijiao">
+                        <div class="buy_money">
+                            <p>合计￥:
+                                <span id="totalPrice">7599</span>
+                                <input type="hidden" value="7599" id="price" />
+                            </p>
+                        </div>
+                        <div class="buy_com">提交订单</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ 
+
+<!-- 返回顶部 -->
+<button onclick="topFunction()" id="myBtn" title="返回顶部">⌆</button>
+
+   
+    <!-- <script type="text/javascript" src="../js/马丽花.js"></script> -->
+    <script>
+            //    轮播
+       var wrap = document.querySelector(".wrap");
+        var next = document.querySelector(".arrow_right");
+        var prev = document.querySelector(".arrow_left");
+        next.onclick = function () {
+            next_pic();
+        }
+        prev.onclick = function () {
+            prev_pic();
+        }
+        
+        function next_pic () {
+            var newLeft = parseInt(wrap.style.left)-600;
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft = parseInt(wrap.style.left)+600;
+            wrap.style.left = newLeft + "px";
+        }
+        function next_pic () {
+            var newLeft;
+            if(wrap.style.left === "-3600px"){
+                newLeft = -1200;
+            }else{
+                newLeft = parseInt(wrap.style.left)-600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft;
+            if(wrap.style.left === "0px"){
+                newLeft = -2400;
+            }else{
+                newLeft = parseInt(wrap.style.left)+600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        // 不同规格不同价格实现同时选中
+        function myFunction1(){
+            x=document.getElementById("value");
+            x.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;7,799.00";
+            btn1.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn3.style.boxShadow="0 0 2px 2px #ffffff";
+            btn2.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction2(){
+            y=document.getElementById("value");
+            y.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;8,849.00";
+            btn2.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn3.style.boxShadow="0 0 2px 2px #ffffff";
+            btn1.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction3(){
+            z=document.getElementById("value");
+            z.innerHTML="价格&nbsp;&nbsp;RMB&nbsp;7,599.00";
+            btn3.style.boxShadow="0 0 2px 2px #bbbbbb";
+            btn1.style.boxShadow="0 0 2px 2px #ffffff";
+            btn2.style.boxShadow="0 0 2px 2px #ffffff";
+        }
+        function myFunction4(){
+            color.style.boxShadow="0 0 2px 2px #bbbbbb";
+        }
+        
+        //点亮心
+        function changeImage(){
+            element=document.getElementById('myimage')
+            if(element.src.match("myimage"))
+            {
+                element.src="../static/img/xin.jpg";
+            }
+            else{
+                element.src="../static/img/红心.jpg";
+            }
+            alert('宝贝已收藏');
+        }
+        //数量加减
+        var oSub=document.getElementById('sub');
+        var oTxt=document.getElementById('txt');
+        var oAdd=document.getElementById('add');
+
+        oAdd.onclick=function(){
+            oTxt.value++;
+        }
+        oSub.onclick=function(){
+            if(oTxt.value>0){
+                oTxt.value--;
+            }else{
+                oTxt.value=0;
+            }
+        }
+        //购买
+        var shut_down=document.getElementById("shut_down");
+        var pay=document.getElementById("pay");
+        var buy=document.getElementById("buy");
+
+        shut_down.onclick=function shut(){
+            pay.style.display="none";
+        }
+
+        buy.onclick=function open(){
+            pay.style.display="block";
+        }
+
+        // 返回顶部
+        window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {console.log(121);
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            
+        // 点击按钮，返回顶部
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        // 加购物车
+            document.getElementById("btnCart").addEventListener("click", function(){
+                alert("宝贝已加入购物车");
+            });
+
+       
+        
+       
+
+
+            // 订单数量增减
+            // 商品数量+1
+            function numAdd(){
+                var quantity = document.getElementById("quantity").value;
+                var num_add = parseInt(quantity)+1;
+                var price=document.getElementById("price").value;
+                if(quantity==""){
+                    num_add = 1;
+                }
+                if(num_add>2){
+                    document.getElementById("quantity").value=num_add-1;
+                    alert("此商品限购2件");
+                }else{
+                    document.getElementById("quantity").value=num_add;
+                    var Num=price*num_add;
+                    document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+                }
+            }
+            // 商品数量-1
+            function numDec(){
+                var quantity = document.getElementById("quantity").value;
+                var price=document.getElementById("price").value;
+                var num_dec = parseInt(quantity)-1;
+                if(num_dec>0){
+                    document.getElementById("quantity").value=num_dec;
+                    var Num=price*num_dec;
+                     document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+                }
+            }
+
+
+
+         
+    </script>
+</body>
+</html>

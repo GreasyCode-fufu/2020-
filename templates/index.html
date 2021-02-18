@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- <link href="../.css/index.css" rel="stylesheet" type="text/css"> -->
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+html,body{
+    margin:0;
+    height:100%;
+}
+.box-bd .carousel-list li{
+    float:left;
+}
+.home-goods-list {
+    background: #f5f5f5;
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .home-goods-list .home-star-goods {
+    position: relative;
+  }
+  .home-goods-list .home-star-goods .box-hd {
+    position: relative;
+  }
+  .home-goods-list .home-star-goods .box-hd .title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200px;
+    line-height: 58px;
+    color: #333;
+  }
+  .home-goods-list .home-star-goods .box-hd .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /*弹性布局*/
+  .home-goods-list .home-star-goods .box-hd .more{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .home-goods-list .home-star-goods .xm-plain-box .box-hd {
+    position: relative;
+    height: 58px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .home-goods-list .home-star-goods .xm-plain-box .box-hd .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .home-goods-list .home-star-goods .more-link {
+      font-size: 16px;
+      line-height: 58px;
+      color: #424242;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+    }
+    .home-goods-list .home-star-goods .more-link .iconfont {
+      width: 12px;
+      height: 12px;
+      padding: 4px;
+      margin-left: 8px;
+      border-radius: 16px;
+      font-size: 12px;
+      line-height: 12px;
+      background: #ff6700;
+      color: #fff;
+      vertical-align: 1px; 
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+    }
+    .home-goods-list .home-star-goods .more-link:hover {
+      color: #ff6700;
+    }
+    .home-goods-list .home-star-goods .more-link:hover .iconfont {
+      background: #f0f0f0;
+    }
+    .home-goods-list .home-star-goods .xm-controls-middle .control {
+      margin-left: 5px;
+    }
+  
+  /*图片*/
+  .box-bd{
+      width: 100%;
+      height:368px;
+      /* border: 1px solid red; */
+  }
+  .home-goods-list .home-star-goods .box-bd {
+    position: relative;
+    width: 1226px;
+  }
+  .home-goods-list .home-star-goods ul {
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: -14px;
+    float: left;
+    /*网格布局*/
+    display: grid;
+    grid-template-columns: repeat(5,234px);
+    grid-template-rows: repeat(1,300px);
+    grid-column-gap: 14px;
+  }
+  .xm-carousel-col-5-list li {
+    float: left;
+    width: 234px;
+  }
+  .home-goods-list .home-star-goods ul li {
+    height: 300px;
+    padding-top: 39px;
+    text-align: center;
+    list-style-type: none;
+    background: #fff;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    position: relative;
+    list-style: none;
+    margin-bottom: 14px;
+    overflow: hidden;
+    margin-left: 14px;
+    cursor: pointer; /*手*/
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .home-goods-list .home-star-goods ul li:hover {
+    z-index: 2;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+  }
+  
+  .home-goods-list .home-star-goods ul li img:nth-last-child(2) {
+    display: inline-block;
+    display: inline;
+    height: 16px;
+    margin-top: -16px;
+    vertical-align: middle;
+  }
+  .home-goods-list .home-star-goods ul .thumb {
+    display: block;
+    width: 160px;
+    margin: 0 auto 22px;
+  }
+  .home-goods-list .home-star-goods ul .thumb img {
+    width: 160px;
+    height: 160px;
+  }
+  .home-goods-list .home-star-goods ul .title {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .home-goods-list .home-star-goods ul .title,
+  .home-goods-list .home-star-goods ul .title a {
+    color: #212121;
+  }
+  .home-goods-list .home-star-goods ul .desc {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b0b0b0;
+  }
+  .home-goods-list .home-star-goods ul li:hover .btn {
+      bottom: 0;
+    }
+  
+  .home-goods-list .home-star-goods ul .btn {
+    width: 100%;
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    -webkit-transition: bottom 0.6s;
+    transition: bottom 0.6s;
+  }
+  .home-goods-list .home-star-goods ul .btn{
+      background: #ff6700;
+      color: #fff;
+  }
+  .btn {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+      width: 158px;
+      height: 38px;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #b0b0b0;
+      font-size: 14px;
+      line-height: 38px;
+      text-align: center;
+      color: #b0b0b0;
+      cursor: pointer;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+  }
+  
+  .home-goods-list .home-star-goods ul .flag {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /*最后一块*/
+  
+  .purchasi-process {
+    background: #f5f5f5;
+    text-align: center;
+    padding-bottom: 105px;
+  }
+  .purchasi-process h2 {
+    font-size: 35px;
+    line-height: 1;
+    position: relative;
+    top: 25px;
+    margin: 8px;
+    padding: 0;
+    color: #424242;
+  }  
+  
+  .purchasi-process p {
+    font-size: 14px;
+    position: relative;
+      top: 30px;
+  }
+  .purchasi-process .container {
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  
+  .purchasi-process .step {
+    background: url(//c1.mifile.cn/f/i/16/qiye2016/step.jpg) 50% 0 no-repeat;
+    width: 758px;
+    height: 104px;
+    margin: 56px auto 20px;
+  }
+  
+  .container:after {
+    clear: both;
+  }
+  .container:before, .container:after {
+    content: " ";
+    display: table;
+  }
+  
+  .purchasi-process a {
+    display: inline-block;
+    /* display: inline; */
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: blod;
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .qiye-site-footer {
+    padding: 57px 0;
+  }
+  
+  /* .container0{
+    width: 1226px;
+    margin-right: auto;
+    margin-left:auto ;
+  } */
+  
+  .bac {
+    width: 100%;
+  }
+  
+  .qiye-site-footer ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .qiye-site-footer ul li:first-child {
+    border-left: 0;
+  }
+  
+  .qiye-site-footer ul li {
+    list-style: none;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    /* border-left: 1px solid #e0e0e0; */
+    height: 41px;
+    line-height: 41px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .qiye-site-footer ul li a {
+    color: #616161;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    display: block;
+    height: 41px;
+    line-height: 41px;
+  }
+  
+  .qiye-site-footer ul li a .iconfont {
+      background-position: 0px 0px;
+  }
+  .qiye-site-footer ul li a .iconfont {
+      margin-right: 6px;
+      font-size: 24px;
+      line-height: 24px;
+      vertical-align: -14px;
+      width: 41px;
+      height: 41px;
+      display: inline-block;
+  }
+  
+  .footer-links i.iconfont {
+    top: -8px;
+    position: relative;
+  }
+  
+  .layout.caigou {
+    background: #fff;
+    height: 258px;
+  }
+  
+  
+  .footer_lay {
+      /* text-align: center; */
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  }
+  
+  .site-info .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(//s01.mifile.cn/i/logo-footer.png?v2) no-repeat 50% 50%;
+  }
+  .ir {
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+  }
+  
+  .site-info .info-text {
+    padding-left: 67px;
+    color: #b0b0b0;
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.all {
+    width: 1000px;
+    margin: auto;
+}
+
+.b-top {
+    display: flex;
+    flex-direction: row;
+    background: #ffe0cb;
+    height: 30px;
+    line-height: 30px;
+}
+
+.b-info {
+    flex: 1;
+    text-align: center;
+}
+
+.b-length {
+    flex: 2;
+}
+
+.b-ele {
+    background-color: #fcfcfc;;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    line-height: 70px;
+    padding: 10px 0;
+    border: 1px solid silver;
+    margin: 1.5rem 0.2rem;
+}
+
+.b-ele div {
+    text-align: center;
+}
+
+.chooseEle {
+    background: pink;
+}
+
+.b-button {
+    color: rgb(10, 10, 10);
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: silver;
+    border: none;
+}
+
+.b-count-button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: blue;
+    background: #f0f0f0;
+}
+
+.b-count-input {
+    border: none;
+    height: 20px;
+    width: 25px;
+    outline: none;
+    text-align: center;
+}
+
+img {
+    width: 4rem;
+    height: 40 rem;
+}
+
+.b-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-display div {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.left {
+    text-align: center;
+}
+
+.right button {
+    width: 100%;
+    height: 100%;
+    background: red;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+/* header */
+header{
+  background-color:#f0f0f0;
+  width: 100%;
+  height: 3rem;
+  justify-content:center;
+  border: 1px solid #1b1d1f;
+  margin:0 0 1rem 0;
+  
+}
+ul{
+  display:flex;
+  float:center;
+  list-style: none;
+  text-align: center;
+}
+ul li{
+  display: inline;
+  justify-content: center;
+  margin:0 2rem 0 2rem;
+}
+a:link{
+color:#000;
+}
+a:hover{
+  color:#f1b32d;
+}
+a:active{
+  color:#f1b32d;
+}
+    </style>
+</head>
+<body>
+    <header>
+       <div>
+          <ul>
+            <li><a>新品 ▪ 礼品卡</a></li>
+            <li><a>手机 ▪ 平板</a></li>
+            <li><a>笔记本</a></li>
+            <li><a>家电</a></li>
+            <li><a>智能 ▪ 路由器</a></li>
+            <li><a>耳机 ▪ 音箱</a></li>
+            <li><a>生活 ▪ 儿童</a></li>
+            <li><a>配件 ▪ 车品</a></li>
+           </ul>
+      </div>
+    </header>
+    <div class="all" id="all">
+    <div class="b-top">
+        <div class="b-info">
+            <input type="checkbox" class="checkAll"/>全选
+        </div>
+        <div class="b-info b-length">商品名称</div>
+        <div class="b-info">图片</div>
+        <div class="b-info">单价</div>
+        <div class="b-info b-length">数量</div>
+        <div class="b-info">小计</div>
+        <div class="b-info">操作</div>
+    </div>
+    <div class="b-list"></div>
+    <div class="b-display">
+        <div class="left">
+            <input type="checkbox" class="reverseCheck"/>反选
+        </div>
+        <div class="center">
+            总价:<span class="allPrice">0￥</span>
+        </div>
+        <div class="right">
+            <button>去结算></button>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="bac">
+        <div class="home-goods-list" id="goods">
+            <div class="layout">
+                <div class="home-star-goods " id="1">
+                    <div class="xm-plain-box">
+                        <div class="box-hd">
+                            <h2 class="title">相关推荐</h2>
+                        </div>
+                        <div class="box-bd list">
+                            <ul class="carousel-list xm-carousel-col-5-list">
+                                <li draggable="true">
+                                    <img src="../static/img/小米pro.jpg" style="height:200px;width:200px;" alt="">
+                                    <h3>￥29999</h3>
+                                    <p class="desc">小米10 Pro全网通版</p>
+                                    <a href="#" class="btn btn-paimary">登陆企业账户开始采购</a>
+                                </li>
+                                <li draggable="true">
+                                    <img src="../static/img/11.jpg" style="height:200px;width:200px;" alt="">
+                                    <h3>￥3999</h3>
+                                    <p class="desc">HONOR 全网通版</p>
+                                    <a href="#" class="btn btn-paimary">登陆企业账户开始采购</a>
+                                </li>
+                                <li draggable="true">
+                                    <img src="../static/img/REdmi K30 5G.jpg" style="height:200px;width:200px;" alt="">
+                                    <h3>￥2299</h3>
+                                    <p class="desc">RedMI K30 5G</p>
+                                    <a href="#" class="btn btn-paimary">登陆企业账户开始采购</a>
+                                </li>
+                                <li draggable="true">
+                                    <img src="../static/img/小米小爱音箱Play版.jpg" style="height:200px;width:200px;" alt="">
+                                    <h3>￥1999</h3>
+                                    <p class="desc">小米小爱音箱Play版</Datag></p>
+                                    <a href="#" class="btn btn-paimary">登陆企业账户开始采购</a>
+                                </li>
+                                <li draggable="true">
+                                    <img src="../static/img/12.5小米笔记本Air.jpg" style="height:200px;width:200px;" alt="">
+                                    <h3>￥1799</h3>
+                                    <p class="desc">12.5小米笔记本Air</p>
+                                    <a href="#" class="btn btn-paimary">登陆企业账户开始采购</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchasi-process">
+                    <div class="layout caigou">
+                        <h2>采购流程</h2>
+                        <p>采购仅需4步，2个工作日内完成审核，到账后5个工作日内发货</p>
+                        <div class="step"></div>
+                    </div>
+                    <a href="//www.mi.com/a/h/14020.html" target="_blank">Unbug企业会员管理规则，请点击>>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+           // 购物车
+   var cart = [
+    {
+        "id": "101321XNMNSDJYE6871DAS21",
+        "name": "手表",
+        "src": "../static/img/手表.jpg",
+        "price": "9999",
+        "totle": "9999",
+        "num": 1
+    },
+    {
+        "id": "101321XNMNSDJYE6871DAS21",
+        "name": "DSC-RX100M7",
+        "src": "../static/img/镜头面.png",
+        "price": "7599",
+        "totle": "7599",
+        "num": 1
+    },
+    {
+        "id": "101321XNMNSDJYE6871DAS21",
+        "name": "MDR-Z1R",
+        "src": "../static/img/耳机.png",
+        "price": "12999",
+        "totle": "12999",
+        "num": 1
+    },
+    {
+        "id": "101321XNMNSDJYE6871DAS21",
+        "name": "小米多看电纸书",
+        "src": "../static/img/小米多看电纸书.jpg",
+        "price": "599",
+        "totle": "599",
+        "num": 1
+    }
+    ];
+    var bTop = document.getElementsByClassName("b-top")[0];
+    var bList = document.getElementsByClassName("b-list")[0];
+    //动态创建页面
+    for (var i = 0; i < cart.length; i++) {
+    var bEle = document.createElement("div");
+    bEle.className = "b-ele";
+    bList.appendChild(bEle);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info";
+    var bInput = document.createElement("input");
+    bInput.type = "checkbox";
+    bInput.className = "check"
+    bNode.appendChild(bInput);
+    bEle.appendChild(bNode);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info b-length";
+    bNode.innerHTML = cart[i].name;
+    bEle.appendChild(bNode);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info";
+    bNode.style.lineHeight = "80px"
+    var bImg = document.createElement("img");
+    bImg.src = cart[i].src;
+    bNode.appendChild(bImg);
+    bEle.appendChild(bNode);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info b-price";
+    bNode.innerHTML = cart[i]["price"] + "￥";
+    bEle.appendChild(bNode);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info b-length";
+    var bCountButtonSub = document.createElement("button");
+    bCountButtonSub.className = "b-count-button buttonSub";
+    bCountButtonSub.innerHTML = "-";
+    var bCountInput = document.createElement("input");
+    bCountInput.type = "text";
+    bCountInput.className = "b-count-input";
+    bCountInput.value = cart[i].num;
+    var bCountButtonAdd = document.createElement("button");
+    bCountButtonAdd.className = "b-count-button buttonAdd";
+    bCountButtonAdd.innerHTML = "+";
+    bNode.appendChild(bCountButtonSub);
+    bNode.appendChild(bCountInput);
+    bNode.appendChild(bCountButtonAdd);
+    bEle.appendChild(bNode)
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info b-total";
+    bNode.innerHTML = cart[i].totle + "￥";
+    bEle.appendChild(bNode);
+    
+    var bNode = document.createElement("div");
+    bNode.className = "b-info";
+    var bCountButton = document.createElement("button");
+    bCountButton.className = "b-button eleDelete";
+    bCountButton.innerHTML = "删除";
+    bNode.appendChild(bCountButton)
+    bEle.appendChild(bNode)
+    }
+    ;
+    //全选
+    var checkAll = document.getElementsByClassName("checkAll")[0];
+    var check = document.getElementsByClassName("check");
+    var bEle = document.getElementsByClassName("b-ele");
+    var allPrice = document.getElementsByClassName("allPrice")[0];
+    checkAll.onclick = function () {
+    for (var i = 0; i < check.length; i++) {
+        reverseCheck.checked = false
+        if (checkAll.checked == true) {
+            check[i].checked = true;
+            bEle[i].className = "b-ele chooseEle";
+        } else {
+            bEle[i].className = "b-ele";
+            check[i].checked = false;
+        }
+    }
+    };
+    //反选
+    var reverseCheck = document.getElementsByClassName("reverseCheck")[0];
+    reverseCheck.onclick = function () {
+    //输入数量
+    for (var i = 0; i < check.length; i++) {
+        check[i].checked = !check[i].checked;
+        if (check[i].checked == false) {
+            bEle[i].className = "b-ele";
+            checkAll.checked = false;
+        } else {
+            bEle[i].className = "b-ele chooseEle";
+        }
+    }
+    };
+    //单选
+    for (var i = 0; i < bEle.length; i++) {
+    check[i].checkValue = i;
+    check[i].onclick = function () {
+        console.log(this.checked)
+        if (this.checked == true) {
+            console.log(this.className)
+            bEle[this.checkValue].className = "b-ele chooseEle";
+        } else {
+            checkAll.checked = false;
+            bEle[this.checkValue].className = "b-ele"
+        }
+    }
+    }
+    window.onload = function (ev) {
+    //
+    
+    var buttonSub = document.getElementsByClassName("buttonSub");
+    var buttonAdd = document.getElementsByClassName("buttonAdd");
+    var bCountInput = document.getElementsByClassName("b-count-input");
+    var bEle = document.getElementsByClassName("b-ele");
+    var bTotal = document.getElementsByClassName("b-total");
+    var bPrice = document.getElementsByClassName("b-price");
+    var eleDelete = document.getElementsByClassName("eleDelete");
+    var allPrice = document.getElementsByClassName("allPrice")[0];
+    //数量进行加减
+    allPrice.innerHTML = cacAllPrice(bTotal)+"￥";
+    for (var i = 0; i < bEle.length; i++) {
+        buttonSub[i].countNum = i;
+        buttonSub[i].onclick = function () {
+            if (bCountInput[this.countNum].value == 1) {
+                alert("该宝贝不能减少了噢!")
+            } else {
+                var value = --bCountInput[this.countNum].value;
+                bTotal[this.countNum].innerHTML = cacTotal(this.countNum, bPrice, value) + "￥";
+                allPrice.innerHTML = cacAllPrice(bTotal)+"￥"
+            }
+        };
+        buttonAdd[i].countNum = i;
+        buttonAdd[i].onclick = function () {
+            var value = ++bCountInput[this.countNum].value;
+            bTotal[this.countNum].innerHTML = cacTotal(this.countNum, bPrice, value) + "￥";
+            allPrice.innerHTML = cacAllPrice(bTotal)+"￥"
+        }
+    }
+    //对文本框的操作
+    for (var i = 0; i < bEle.length; i++) {
+        bCountInput[i].countNum = i;
+        bCountInput[i].onkeydown = function (e) {
+            if ((e.keyCode >= 48 && e.keyCode <= 57) || e.keyCode == 8) {
+            } else {
+                return false
+            }
+        };
+        bCountInput[i].onblur = function () {
+            if (this.value == "") {
+                this.value = 1;
+                bTotal[this.countNum].innerHTML = cacTotal(this.countNum, bPrice, this.value) + "￥";
+            }
+        };
+        bCountInput[i].onkeyup = function () {
+            if (this.value == "") {
+                bTotal[this.countNum].innerHTML = "0￥";
+            } else if (this.value == 0) {
+                this.value = 1;
+                bTotal[this.countNum].innerHTML = cacTotal(this.countNum, bPrice, this.value) + "￥"
+            } else {
+                bTotal[this.countNum].innerHTML = cacTotal(this.countNum, bPrice, this.value) + "￥";
+            }
+            allPrice.innerHTML = cacAllPrice(bTotal)+"￥"
+        }
+    }
+    //删除元素
+    console.log(bEle.length);
+    for (var i = 0; i < bEle.length; i++) {
+        eleDelete[i].value = i;
+        eleDelete[i].onclick = function () {
+            bList.removeChild(bEle[this.value]);
+            for(var k = 0;k<bEle.length;k++){
+                //重新给所有对象的value/countNum索引值
+                eleDelete[k].value = k;
+                buttonSub[k].countNum=k;
+                bCountInput[k].countNum=k;
+                buttonAdd[k].countNum=k;
+            }
+            allPrice.innerHTML = cacAllPrice(bTotal)+"￥"
+        }
+    }
+    }
+    
+    //计算小计
+    function cacTotal(index, priceObj, value) {
+    return parseFloat(priceObj[index].innerHTML) * parseInt(value);
+    }
+    //计算总价
+    function cacAllPrice(bTotal) {
+    var totalPrice=0;
+    for(var i=0;i<bTotal.length;i++){
+        totalPrice += parseFloat(bTotal[i].innerHTML)
+    }
+    return totalPrice;
+    }
+    
+    // 
+    
+    </script>
+  
+</script>
+</body>
+</html>

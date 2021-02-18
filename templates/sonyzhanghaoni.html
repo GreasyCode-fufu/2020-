@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Sony</title> 
+    <style>
+        a:link {color:rgb(248, 244, 244);}      
+        a:hover {color:#cecece;}  
+        a:active {color:#cecece;} 
+        * {
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.big{
+    font-size: 3rem;
+    margin: 1.5rem 0 0 2rem;
+    text-align:center;
+} 
+/* .bigFace{
+    background:url(../img/banner.jpg)no-repeat;
+    height:32rem;
+    width: 100%;
+} */
+.buy{
+    margin: 1rem 0 0 0;
+    border: 1px solid #5fd1d1;
+    background-image: linear-gradient(to bottom,#9eb8ff,#19a3da);
+    color:#fff;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    flex: 1 1 auto;
+    float: left;
+    text-align: center;
+}
+button{
+    background-color:rgba(239, 245, 242, 0.2);
+    border:none;
+    height:2.5rem;
+    width:5.2rem;
+}
+.container {
+    position: absolute;
+    width: 47%;
+    height: 25rem;
+    margin:30px auto 0 30px;
+    box-shadow: 0 0 5px rgb(1, 12, 1);
+    overflow: hidden;
+}
+.container .wrap {
+    position: absolute;
+    width: 4200px;
+    height: 400px;
+    z-index: 1;
+}
+.container .wrap img {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+.container .arrow {
+    color:#111;
+    display: none;
+    position: absolute;
+    top: 35%;
+    padding:0px 14px;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 2;
+    
+}
+.container .arrow_left {
+    left: 10px;
+}
+.container .arrow_right {
+    right: 10px;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.demo{
+    width: 47%;
+    height: 100%;
+    margin:50px 0 auto auto;
+    overflow: hidden;
+}
+.demo p:nth-child(2){
+    font-family:宋体;
+} 
+header{
+    background-attachment: fixed;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    border: 1px solid #a7d7f3;
+}
+h2{
+    text-align: center;
+    margin:0 0 1.5rem 0;
+}
+h3{
+    color:rgb(70, 67, 231);
+    margin:0.5rem 0 0 0;
+}
+
+.information{
+    
+    margin:0.5rem 0 0 0;
+}
+.information div{
+    margin:0 0 1rem 0;
+}
+.information div button{
+    margin:0 1rem 0 0;
+
+}
+input{
+    width: 3.5rem;
+    height: 1.5rem;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+#myimage{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+    
+strong{
+    font-size:1.8rem;
+}
+.wish{
+    display:flex;
+    height:2.5rem;
+    width: 15rem;
+}
+.wish div:nth-child(2){
+    margin:0 0 0 1rem;
+}
+#value1,
+#value2{
+    display:none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+/* 数量加减 */
+#box{
+    height: 2.15rem;
+    margin:0rem 0 0.5rem 0.5rem;
+    width: 9.4rem;
+}
+#sub,
+#add{
+    cursor: pointer;
+    background:#eeeeee;
+    border:1px solid rgb(96, 185, 244);
+    display: inline-block;
+    /* float:left; */
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    text-align: center;
+}
+#txt{
+    border: 1px solid rgb(96, 185, 244);
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    
+}
+/* //xinmokuai */
+div.imgs {
+    margin: 3rem 1rem 0 1rem;
+    border: 1px solid #ccc;
+    float: left;
+    width: 280px;
+}
+
+div.imgs:hover {
+    border: 1px solid #777;
+}
+
+div.imgs img {
+    width: 100%;
+    height: 10rem;
+    margin:2.5rem 0 0 0;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.tutu{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f7f2f2;
+    height: 25rem;
+    width: 100%;
+}
+.weitu{
+    position: absolute;
+    top: 58rem;
+}
+.pay_background{
+    display: none;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+}
+.pay{
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#ffffff;
+    height:550px;
+    width:600px;
+    z-index:999;
+}
+.shut_down{
+    position: absolute;
+    top:0.75rem;
+    left:0.75rem;
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../static/image/2.png") no-repeat center;
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.information1{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top:3rem;
+    height:400px;
+    align-items: center;
+}
+
+.address{
+    height: 10rem;
+    width: 28rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem;	
+}
+.address h3{
+    background: #fff;
+    left: 50%;
+    padding: 0 3rem;
+    position: absolute;
+    top: -1.5rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.address p{
+    margin: .5rem 0 1rem 2rem;
+}
+.product{
+    background: #eee;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: stretch;
+    height: 16rem;
+    width: 28rem;
+    margin: 1rem auto;
+    position: relative;
+    padding: 1rem;	
+}
+.logo{
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    height:1.5rem;
+}
+.logo0{
+    background:url(../static/image/1.png)no-repeat;
+    width:1.5rem;
+}
+.logo2 img{
+    height:6rem;
+    width:8rem;
+    margin:0.5rem 1rem 0 0.5rem;
+}
+.comm .comm_text{
+    height:9rem;
+    width:20rem;
+    flex:1 1 auto;
+    margin-top: 0.3rem;
+    line-height: 2rem;
+}
+.comm .comm_text select{
+    background-color: #c9c9c9;
+    font-size: 1rem;
+}
+.comm_text span{
+    color: #c40101;
+    cursor: pointer;
+}
+.buy-information{
+    margin:1rem 1rem 0 1rem;
+    height:8rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.buy-information .comm_text p:nth-child(4){
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+#quantity{
+    border: 1px solid rgb(148, 0, 0);
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.buy_money{
+    position: absolute;
+    left:1rem;
+    line-height:2.7rem;
+    text-align: left;
+}
+.buy_money p{
+    font-size: 1.2rem;
+    left: 1rem;
+    
+}
+#totalPrice{
+    font-size: 1.5rem;
+    color: #CA203D;
+}
+.buy_com{
+    cursor: pointer;
+    position: absolute;
+    top: 0.2rem;
+    right:0;
+    height:2.6rem;
+    width:8.5rem;
+    background-image: linear-gradient(to right,#ca203d,#830202);
+    border-radius: 1.5rem;
+    font-size:17px;
+    text-align: center;
+    line-height:2.55rem;
+    color:#ffffff;
+    margin: 2.5rem 0 0 0;
+}
+.tijiao{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;   
+    right:4.8rem;
+    bottom:1.2rem;
+    height:-1rem;
+    width:25.2rem;
+    margin:2rem 0 0 0 ;
+}
+.tijiao p{
+    margin: 2.5rem 0 0 0;
+}
+.cameraNum{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+#box1{
+    height: 2.15rem;
+    margin:0rem 0 0.5rem 0.5rem;
+    width: 9.4rem;
+
+}
+#sub,
+#add{
+    cursor: pointer;
+    background:#eeeeee;
+    border: 1px solid rgb(148, 0, 0);
+    display: inline-block;
+    /* float: left; */
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    text-align: center;
+
+}
+#txt{
+    border: 1px solid rgb(148, 0, 0);
+    font-size: 1rem;
+    float: left;
+    height: 2rem;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    
+}
+.divv{
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: row nowrap;;
+    width: 90%;
+    margin: 0 0 0 2rem;
+}
+.divv p:nth-child(2){
+    margin:0.5rem 0 0 1.5rem;
+    color:#888;
+    font-size: 1.6rem;
+}
+.divv p:nth-child(1){
+    background-color: #111;
+    height: 3.2rem;
+    width: 1rem;
+}
+.LCD,
+.viewFin,
+.sensor{
+    height: 3rem;
+    width: 90%;
+    border-bottom:1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;	
+}
+.viewFin div{
+    margin: 0 0 0 13.9rem;
+}
+.sensor div{
+    margin: 0 0 0 11.8rem;
+}
+.cameraFun div{
+    margin: 0 0 0 13rem;
+}
+.battery p:nth-child(2),
+.battery p:nth-child(3){
+    margin: 1rem 0 0 14.8rem;
+}
+.battery p:first-child{
+    margin: 1rem 0 0 0;
+}
+.scene p:nth-child(2),
+.scene p:nth-child(3){
+    margin: 1rem 0 0 14.8rem;
+}
+.LCD div{
+    margin:0 0 0 14rem;
+}
+.qiTa div{
+    margin: 0 0 0 10.3rem;
+}
+.qiTa>p,
+.LCD>p,
+.cameraFun>p,
+.viewFin>p,
+.sensor>p,
+.battery p:nth-child(1),
+.scene p:nth-child(1){
+    color: #999;
+    font-size: 1.2rem;
+}
+.qiTa div:nth-child(3),
+.LCD div:nth-child(3),
+.cameraFun div:nth-child(3),
+.viewFin div:nth-child(3),
+.sensor div:nth-child(3),
+.battery p:nth-child(3),
+.scene p:nth-child(3){
+    color:#999;
+}
+
+.battery,
+.scene{
+    height: 3rem;
+    width: 90%;
+    border-bottom:1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;	
+}
+.cameraFun{
+    height: 3rem;
+    width: 90%;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 0 2rem;
+}
+.cameraFun div:nth-child(3) p:nth-child(3){
+    margin:2rem 0 0 0;
+}
+.cameraFun div:nth-child(2) p:nth-child(2){
+    margin:3.4rem 0 0 0;
+}
+.viewFin div:nth-child(3) p:nth-child(2),
+.viewFin div:nth-child(2) p:nth-child(2),
+.sensor div:nth-child(3) p:nth-child(2),
+.sensor div:nth-child(2) p:nth-child(2),
+.qiTa div:nth-child(3) p:nth-child(2),
+.qiTa div:nth-child(2) p:nth-child(2),
+.LCD div:nth-child(3) p:nth-child(2),
+.LCD div:nth-child(2) p:nth-child(2){
+    margin: 2rem 0 0 0;
+}
+.divv,
+.sensor,
+.scene,
+.viewFin,
+.LCD,
+.qiTa,
+.battery,
+.cameraFun{
+    margin: 1rem 0 0 3rem;
+}
+.guige{
+    position: absolute;
+    width: 100%;
+    top:78rem;
+    align-content: stretch;
+}
+    </style>       
+    <!-- <link href="../.css/sony.css" rel="stylesheet" type="text/css"> -->
+</head>
+<body>
+    <header>   
+        <ul>
+            <li><a href="#weitu">详图</a></li>
+            <li><a href="#tutu">详细信息</a></li>
+            <li><a href="#guige">主要规格</a></li>
+            <li><a href={{ url_for("xx") }}>查看更多</a></li>
+        </ul>
+    </header>
+    <div class="main" id="main"><!--主体-->
+        <div class="container"><!--轮播-->
+            <div class="wrap" style="left: -600px;">
+                <img src="../static/image/耳机主面.png" alt="">
+                <img src="../static/image/耳机正面.png" alt="">
+                <img src="../static/image/耳机正侧面.png" alt="">
+                <img src="../static/image/耳机侧面.png" alt="">
+                <img src="../static/image/耳机主面.png" alt="">
+                <img src="../static/image/耳机正面.png" alt="">
+                <img src="../static/image/耳机正侧面.png" alt="">
+            </div>
+            <a href="javascript:;" class="arrow arrow_left"><</a>
+            <a href="javascript:;" class="arrow arrow_right">></a>
+        </div>
+        <div class="demo"><!--主体右边商品详情-->    
+            <div>
+                <p><strong>MDR-Z1R 高解析度立体声耳机</strong></p>
+                <p>&nbsp;&nbsp;70mm大孔径HD驱动单元（声波变宽和平坦，体验到更自然的声音） / 镁质球顶振膜（实现120kHz高频率范围的声音再现。） / 斐波那契隔栅（驱动单元开孔均衡，硬度高，高频平稳） / 人体工程学皮革耳垫（触感柔和，佩戴舒适。） / 皮革头箍（耐用柔软，佩戴舒适） / 听感：声音清澈，音质辽远，自然静谧，声场开阔精准，高频延展，自然，空气感十足。 / 适合音乐类型，大编制，古典，流行，民谣，摇滚。</p>
+                <h3 id="value">价格&nbsp;&nbsp;RMB&nbsp;12999.00</h3>
+            </div>
+            <div class="information">
+                <div>规格&nbsp;&nbsp;
+                    <button id="btn3" type="button" onclick="myFunction3()">MDR-Z1R</button>
+                </div>    
+                <div>颜色&nbsp;&nbsp;
+                    <button>黑色</button>
+                </div> 
+                
+                <div class="cameraNum">数量:&nbsp;&nbsp;
+                    <ul id='box'>
+                        <li type="button" id=sub>-</li>
+                        <li><input type='text' id='txt' value='0'></li>
+                        <li type="button" id="add">+</li>
+                    </ul>
+                </div> 
+                <div class="wish">
+                    <div class="buy" id="buy">
+                        <p>购买</p>
+                    </div>
+                    <div class="addwish">
+                        <img id="myimage" onclick="changeImage()" src="../static/image/xin.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- goumai -->
+    <div class="pay_background" id="pay">
+      <div class="pay">   
+          <div class="shut_down" id="shut_down"></div>    
+          <div class="information1">
+              <div class="address">
+                  <h3>收货地址</h3>
+                  <p>姓&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;名&nbsp; &nbsp; &nbsp; &nbsp;：李华</p>
+                  <p>联系电话：18312345678</p>
+                  <p>详细地址：河南省新乡市牧野区东干街道河南师范大学</p>
+                  <p>邮政编码：453000</p>
+              </div>
+              <div class="product">
+                  <div class="logo">
+                      <div class="logo0"></div>
+                      <div class="logo1">订单信息</div>
+                  </div>
+                  <div class="buy-information">
+                      <div class="logo2"><img src="../static/image/耳机正面.png"></div>
+                      <div class="comm_text">
+                          <p>商品名称：MDR-Z1R</p>
+                          <p>颜色选择：
+                              <select>
+                                  <option>黑色</option>
+                              </select>
+                          </p>
+                          <p>数量：
+                              <ul id='box1'>
+                                  <li type="button" onclick="numDec()" id=sub>-</li>
+                                  <li><input type='text' id='quantity' value='1'></li>
+                                  <li type="button" id="add" onclick="numAdd()">+</li>
+                              </ul>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="tijiao">
+                      <div class="buy_money">
+                          <p>合计￥:
+                              <span id="totalPrice">12999</span>
+                              <input type="hidden" value="12999" id="price" />
+                          </p>
+                      </div>
+                      <div class="buy_com">提交订单</div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+    <div class="tutu" id="tutu">
+        <div class="responsive">
+        <div class="imgs">
+          <a target="_blank" href="../static/image/a.jpg">
+            <img src="../static/image/a.jpg" alt="图片文本描述" width="300" height="200">
+          </a>
+          <div class="desc">除了立体声连接线，Z1R 还配备了平衡连接线。通过平衡连接，可以体验低失真的立体音效</div>
+        </div>
+      </div>
+     
+      <div class="responsive">  
+        <div class="imgs">
+          <a target="_blank" href="../static/image/b.jpg">
+            <img src="../static/image/b.jpg" alt="图片文本描述" width="300" height="200">
+          </a>
+          <div class="desc">内衬垫采用了厚实的慢回弹聚氨酯泡沫，将对头部的压力均匀分散，提升了佩戴舒适感</div>
+        </div>
+      </div>
+       
+      <div class="responsive">
+        <div class="imgs">
+          <a target="_blank" href="../static/image/c.jpg">
+            <img src="../static/image/c.jpg" alt="图片文本描述" width="300" height="200">
+          </a>
+          <div class="desc">在不造成破损的前提下将薄至 30μm（微米）的镁片冲压成球顶形状</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="imgs">
+          <a target="_blank" href="../static/image/d.jpg">
+            <img src="../static/image/d.jpg" alt="图片文本描述" width="300" height="200">
+          </a>
+          <div class="desc">为了长期维持佩戴性，索尼注重牢固性及耐久性，对各部分材料及装饰精挑细选</div>
+        </div>
+    </div>
+    <div class="weitu" id="weitu">
+        <a href={{ url_for("xx") }}>
+        <img src="../static/image/banner.jpg" alt="HTML 教程" width="1265" height="300"></a>
+    </div>
+    <!-- zhuyaoguige -->
+    <div class="guige" id="guige">
+    <div class="divv">
+      <p></p>
+      <p>主要概述</p>
+    </div>
+    <div class="scene">
+      <p></p>
+      <p>驱动单元 &nbsp; &nbsp;</p>
+      <p>70 mm，圆顶型</p>
+    </div>
+    <div class="viewFin">
+      <p></p>
+      <div>
+        <p>功率处理容量  &nbsp;</p>
+      </div>
+      <div>
+        <p>2500 mW（IEC*1）</p>
+      </div>
+    </div>
+    <div class="LCD">
+      <p></p>
+      <div>
+        <p>频率响应&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</p>
+      </div>
+      <div>
+        <p>   4 Hz - 120000 Hz</p>
+      </div>
+    </div>
+    <div class="battery">
+      <p>&nbsp;&nbsp;</p>
+      <p>质量 &nbsp; &nbsp; &nbsp; &nbsp; </p>
+      <p>	约 385 g（不包括连接线）</p>
+    </div>
+  </div>
+  <script>
+    var wrap = document.querySelector(".wrap");
+        var next = document.querySelector(".arrow_right");
+        var prev = document.querySelector(".arrow_left");
+        next.onclick = function () {
+            next_pic();
+        }
+        prev.onclick = function () {
+            prev_pic();
+        }
+        
+        function next_pic () {
+            var newLeft = parseInt(wrap.style.left)-600;
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft = parseInt(wrap.style.left)+600;
+            wrap.style.left = newLeft + "px";
+        }
+        function next_pic () {
+            var newLeft;
+            if(wrap.style.left === "-3600px"){
+                newLeft = -1200;
+            }else{
+                newLeft = parseInt(wrap.style.left)-600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft;
+            if(wrap.style.left === "0px"){
+                newLeft = -2400;
+            }else{
+                newLeft = parseInt(wrap.style.left)+600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        //心愿的心
+        function changeImage(){
+            element=document.getElementById('myimage')
+            if(element.src.match("红心"))
+            {
+                element.src="../static/image/xin.jpg";
+            }
+            else{
+                element.src="../static/image/红心.jpg";
+            }
+            alert('已收藏')
+        }
+    //    数量加减
+        var oSub=document.getElementById('sub');
+        var oTxt=document.getElementById('txt');
+        var oAdd=document.getElementById('add');
+
+        oAdd.onclick=function(){
+            oTxt.value++;
+        }
+        oSub.onclick=function(){
+            if(oTxt.value>0){
+                oTxt.value--;
+            }else{
+                oTxt.value=0;
+            }
+        }
+// 订单数量增减
+            // 商品数量+1
+            function numAdd(){
+                var quantity = document.getElementById("quantity").value;
+                var num_add = parseInt(quantity)+1;
+                var price=document.getElementById("price").value;
+                if(quantity==""){
+                    num_add = 1;
+                }
+                if(num_add>2){
+                    document.getElementById("quantity").value=num_add-1;
+                    alert("此商品限购2件");
+                }else{
+                    document.getElementById("quantity").value=num_add;
+                    var Num=price*num_add;
+                    document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+                }
+            }
+            // 商品数量-1
+            function numDec(){
+                var quantity = document.getElementById("quantity").value;
+                var price=document.getElementById("price").value;
+                var num_dec = parseInt(quantity)-1;
+                if(num_dec>0){
+                    document.getElementById("quantity").value=num_dec;
+                    var Num=price*num_dec;
+                     document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+                }
+            }
+            var shut_down=document.getElementById("shut_down");
+            var pay=document.getElementById("pay");
+            var buy=document.getElementById("buy");
+    
+            shut_down.onclick=function shut(){
+                pay.style.display="none";
+            }
+    
+            buy.onclick=function open(){
+                pay.style.display="block";
+            } 
+  </script>
+      </body>
+      </html>  

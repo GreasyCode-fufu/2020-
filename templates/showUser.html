@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block stutitle%}查看用户{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+    <table id="simple-table" class="table  table-bordered table-hover">
+        <thead>
+        <tr>
+            <th class="center">
+                <label class="pos-rel">
+                    <input type="checkbox" class="ace" />
+                    <span class="lbl"></span>
+                </label>
+            </th>
+            <th>用户名</th>
+            <th>密码</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in userinfos %}
+            <tr>
+                <td class="center">
+                    <label class="pos-rel">
+                        <input type="checkbox" class="ace" />
+                        <span class="lbl"></span>
+                    </label>
+                </td>
+                <td>
+                    {{ user[0] }}
+                </td>
+                <td>
+                    {{ user[1] }}
+                </td>
+{#                <td>#}
+{#                    {{ goods[2] }}#}
+{#                </td>#}
+            </tr>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

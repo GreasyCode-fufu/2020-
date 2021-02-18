@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录界面</title>
+	<!-- <meta http-equiv="Content-Type" content="text/html" charset="utf-8"> -->
+	<meta name="author" content="sunfuxing">
+	<meta name="generator" content="sublime-Text3">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css1/loginStyle.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css1/font-awesome/css/font-awesome.min.css') }}">
+</head>
+<body>
+	<form id="login-box" method="post"> {# action = "/" #}
+        {{ form.csrf_token }}
+		<h1>管理员登录</h1>
+		<div class="form">
+			<div class="item">
+				<i class="fa fa-user-o" aria-hidden="true"></i>
+{#				<input type="text" placeholder="用户名" name="id">#}
+                {{ form.username }}
+                {% if form.username.errors %}
+                    {% for message in form.username.errors %}
+                    <small class="error">{{ message }}</small><br>
+                    {% endfor %}
+                {% endif %}
+			</div>
+			<div class="item">
+				<i class="fa fa-key" aria-hidden="true"></i>
+{#				<input type="password" placeholder="密码" name="password">#}
+                {{ form.password }}
+               {% if form.password.errors %}
+                    {% for message in form.password.errors %}
+                    <small class="error">{{ message }}</small>
+                    {% endfor %}
+              {% endif %}
+			</div>
+		</div>
+{#		<button type="submit">登录</button>#}
+        {{ form.submit(class_= 'submit', style = "margin-top: 30px; width: 180px; height: 50px;font-size: 25px;
+                font-weight: 700;
+                color: #fff;
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+                background-size: 400%;
+                z-index: 1;
+                border: 0;
+                border-radius: 255px;")}}
+	</form>
+</body>
+</html>

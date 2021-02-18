@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block stutitle %}{% block font %}{% endblock %}{% endblock %}
+{% block stumain %}
+<div>
+    <form class="dropzone well dz-clickable" id="dropzone">
+        <div class="dz-default dz-message">
+            <span>
+                <span class="bigger-150 bolder">
+                    <i class="ace-icon fa fa-caret-right red"></i>{% block fonts %}{% endblock %}
+                </span>
+                <i class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i>
+            </span>
+        </div>
+    </form>
+</div>
+{% endblock %}

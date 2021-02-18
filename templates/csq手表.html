@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUAWEI WATCH</title>
+
+    <link href="../static/css/csq购买手表.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/csq导航栏.css" rel="stylesheet"  type="text/css"/>
+    <link href="../static/css/csq隐藏导航栏.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/csq下单界面.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/csq商品推荐.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/csq轮播图.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/csq备案号.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/侧边栏.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        
+        <div class="container" id="container">
+            <header>
+                <div class="topbar">
+                    <div class="layout">
+                        <div class="lay-left">
+                            <div class="un">UNBUG</div>
+                            <ul>
+                                <li>
+                                    <a href={{ url_for("shangPinQianDuan") }} target="_blank">商城首页</a>
+                                </li>
+                                <li><a href="
+                                    https://www.huawei.com/cn/?ic_medium=direct&ic_source=surlent" target="#">
+                                    华为官网</a>
+                                </li>
+                                <li><a href="#">智能手机</a></li>
+                                <li><a href="#">蓝牙耳机</a></li>
+                                <li><a href="#">运动手表</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="lay-right">
+                            <ul>
+                                <li class="d"> <a href="#">登录</a></li>
+                                <li class="d"> <a href="#">注册</a></li>
+                                <a>
+                                    <div class="cart">
+                                        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                                        <i class="iconfont">&#xe601;</i>&nbsp;购物车&nbsp;(0)
+                                        <div class="cart-menu">
+                                            <div class="cart-content">
+                                                <div id="loader_a" class="loader">
+                                                </div>
+                                                <div id="loader_b" class="cartHide">
+                                                        购物车中还没有商品，赶紧选购吧！
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="div1" id="div1">
+            <div class="left">
+                <div class="left-top">
+                    <div id="banner">
+            
+                        <div id="content">
+                            <ul id="ul">
+                                <li><img src="../static/img/手表 (1).jpg" ></li>
+                                <li><img src="../static/img/手表 (2).jpg" ></li>
+                                <li><img src="../static/img/手表 (3).jpg" ></li>
+                                <li><img src="../static/img/手表 (4).jpg" ></li>
+                                <li><img src="../static/img/手表 (5).jpg" ></li>
+                            </ul>
+                        </div>
+                        <div class="dot" id="dot">
+                            <ul id="dotul">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>                       
+                        <div id="btn">
+                            <div class="btn1" id="left"> 
+                                <
+                            </div>
+                            <div class="btn2" id="right">
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-bottom">
+                        <div class="one">
+                            <p><a href="#canshu">产品参数</a> </p>
+                        </div>
+                        <div class="two">
+                            <p><a href="#xiangqing"> 产品详情</a></p>
+                        </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div class="right">
+                    <p>新款</p>
+                    <h2>购买HUAWEI WATCH GT2 Pro 保时捷设计款智能手表</h2>
+                    <p> 全钛金属设计 蓝宝石表面 陶瓷背壳 蓝牙通话 专业户外运动</p>
+                    <div class="right-top">
+                        <h4>选择颜色</h4>
+                        <div  class="color" id="color">
+                            <div class="color1">钛金灰</div>
+                        </div>
+                        <div class="select">
+                            <h3>选择款式</h3>
+                            <!-- <a>哪款适合你?</a> -->
+                            <div class="watch" id="watch">
+                                <div class="watch-left">
+                                    <p>HUAWEI WATCH GT2 Pro</p>
+                                </div>
+                                <div class="watch-right">
+                                    <p>RMB 9999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy" id="buy">
+                            <p>购 买</p>
+                        </div>
+                        <div class="but" id="but">
+                           
+                        <input type="image" src="../static/img/购物车.jpg" >
+                       
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="div2_5" id="div2_5">
+            <div class="div41">
+               
+                <div id="ggcs">
+                    <a href="#div3">规格参数</a>
+                    <div class="div412" id="div412"></div>
+                </div>
+                <div id="spxq">
+                    <a href="#xiangqing">商品详情</a>
+                    <div class="div411" id="div411"></div>
+                </div>
+                <div id="bzysh">
+                    <a href="#baozhuang">包装与售后</a>
+                    <div class="div413" id="div413"></div>
+                </div>
+                <div id="yhpj">
+                    <a href="#tuijian">商品推荐</a>
+                    <div class="div414" id="div414"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="div3" id="div3">
+        <div class="canshu" id="canshu">
+            <p>规格参数</p>
+        </div>
+        <div class="cs">
+                <ul>
+                    <li>品牌 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                        华为 HUAWEI</li>
+                    <li>型号  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                        HUAWEI WATCH GT2 保时捷设计款</li>
+                    <li>上市时间  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                         &nbsp; &nbsp;&nbsp;
+                        2020年11月</li>
+                    <li>材质 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                        钛金属表体+蓝宝石玻璃表镜</li>
+                    <li>CPU  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                        麒麟A1</li>
+                    <li>屏幕尺寸  &nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        1.39英寸</li>
+                    <li>电池容量 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        455 mAh</li>
+                </ul>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="xiangqing" id="xiangqing">
+            <p>商品详情</p>
+        </div>
+        <div class="mp4">
+            <embed src="../static/img/手表.mp4" >
+        </div>
+        <div class="xq1">
+          <img src="../static/img/watch1.jpg" width="100%">
+          <img src="../static/img/watch2.jpg" width="100%">
+          <img src="../static/img/watch3.jpg" width="100%">
+          <img src="../static/img/watch5.jpg" width="100%">
+          <img src="../static/img/watch4.jpg" width="100%">
+          <img src="../static/img/watch6.jpg" width="100%">
+        </div>
+        <div class="div6">
+            <div class="baozhuang" id="baozhuang">
+                包装与售后
+            </div>
+            <p>包装详情</p>
+            <ul>
+                <li>手表（钛金属款附赠氟橡胶表带）×1</li>
+                <li>充电底座×1</li>
+                <li>充电线×1</li>
+                <li>安全信息×1</li>
+                <li>保修卡×1</li>
+            </ul>
+           <p> 售后服务</p>
+            <ul>
+                <li>本产品全国联保，享受三包服务，保修期：1年</li>
+                <li>如因质量问题或性能故障，凭华为客户服务中心出具的质量检测证明，享受7日内退货，15日内换货，15日以上在保修期内可享受免费维修等三包服务</li>
+                <li>华为消费者服务热线：950800</li>
+                <li>华为官方服务软件：服务App</li>
+                <li>华为消费者业务官网-服务与支持：https://consumer.huawei.com/cn/support/</li>
+            </ul>
+        
+            <div class="bac" id="tuijian"> 
+                    <div class="home-goods-list" id="goods">
+                        <div class="layout">
+                            <div class="home-star-goods " id="1">
+                                <div class="xm-plain-box">
+                                    <div class="box-hd">
+                                        <h2 class="title">商品推荐</h2>
+                                    </div>
+                                    <div class="box-bd list">
+                                        <ul class="carousel-list xm-carousel-col-5-list">
+                                           
+                                            <li>
+                                                <img src="../static/img/三星galaxy note20.jpg" alt="">
+                                                <h3>三星 Galaxy Note20</h3>
+                                                <!-- <p class="desc"></p> -->
+                                                <a href="#" class="btn btn-paimary">登录账户开始选购</a>
+                                            </li>
+                                            <li>
+                                                <img src="../static/img/电视.jpg" alt="">
+                                                <h3>华为 智慧屏x1系列</h3>
+                                                <!-- <p class="desc"></p> -->
+                                                <a href="#" class="btn btn-paimary">登录账户开始选购</a>
+                                            </li>
+                                            <li>
+                                                <img src="../static/img/相机.png" alt="">
+                                                <h3>Sony DSC-RX100M7</h3>
+                                                <!-- <p class="desc">小米多看电纸书</p> -->
+                                                <a href="#" class="btn btn-paimary">登录账户开始选购</a>
+                                            </li>
+                                            <li>
+                                                <img src="../static/img/耳机.png" lt="">
+                                                <h3>Sony MDR-Z1R</h3>
+                                                <!-- <p class="desc">小米小背包</p> -->
+                                                <a href="#" class="btn btn-paimary">登录账户开始选购</a>
+                                            </li>
+                                            <li>
+                                                <img src="../static/img/iphone11.jpg" alt="">
+                                                <h3>iphone 11 Pro Max</h3>
+                                                <!-- <p class="desc"></p> -->
+                                                <a href="#" class="btn btn-paimary">登录账户开始选购</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="purchasi-process">
+                                <div class="layout caigou">
+                                    <h2>采购流程</h2>
+                                    <p>采购仅需4步，2个工作日内完成审核，到账后5个工作日内发货</p>
+                                    <div class="step"></div>
+                                </div>
+                                <a href="//www.mi.com/a/h/14020.html" target="_blank">Unbug企业会员管理规则，请点击></a>
+                            </div>
+                            <div class="footer">
+                                <div class="footer_top" >
+                                    <h2>购买须知</h2>
+                                    <p>
+                                        上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。
+                                        最高可享 24 期免息分期，到 Unbug 商城购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。
+                                        实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。
+                                        有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Unbug 商城对此不做任何承诺和保证。
+                                        Unbug 商城的折抵换购服务为 Unbug 商城与 Unbug 商城折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。
+                                        可能需要遵守 Unbug 商城或 Unbug 商城折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Unbug 商城的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="#">此处。</a>
+                                    </p>
+                                </div>
+                                <div class="footer_bottom">
+                                    <div>
+                                        <ul>
+                                            <li>选购及了解</li>
+                                            <li><a href="#">Mac</a></li>
+                                            <li><a href="#">iPad</a></li>
+                                            <li><a href="#">iPhone</a></li>
+                                            <li><a href="#">Watch</a></li>
+                                            <li><a href="#">Music</a></li>
+                                            <li><a href="#">AirPods</a></li>
+                                            <li><a href="#">HomePod</a></li>
+                                            <li><a href="#">iPod touch</a></li>
+                                            <li><a href="#">配件</a></li>
+                                            <li><a href="#">Store 充值卡</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>服务</li>
+                                            <li><a href="#">Music</a></li>
+                                            <li><a href="#">iCloud</a></li>
+                                            <li><a href="#">Pay</a></li>
+                                            <li><a href="#">Store</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li>账户</li>
+                                            <li><a href="#">管理你的ID</a></li>
+                                            <li><a href="#">账户</a></li>
+                                            <li><a href="#">iCloud.com</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>商店</li>
+                                            <li><a href="#">查找零售店</a></li>
+                                            <li><a href="#">在线选购</a></li>
+                                            <li><a href="#">Genius Bar天才吧</a></li>
+                                            <li><a href="#">Tody at Unbug</a></li>
+                                            <li><a href="#">Unbug夏令营</a></li>
+                                            <li><a href="#">Unbug Store App</a></li>
+                                            <li><a href="#">翻新和优惠</a></li>
+                                            <li><a href="#">分期付款</a></li>
+                                            <li><a href="#">换购计划</a></li>
+                                            <li><a href="#">订单状态</a></li>
+                                            <li><a href="#">选购帮助</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>商务应用</li>
+                                            <li><a href="#">商务</a></li>
+                                            <li><a href="#">商务选购</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li>教育应用</li>
+                                            <li><a href="#">教育</a></li>
+                                            <li><a href="#">高校师生选购</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>Unbug价值观</li>
+                                            <li><a href="#">辅助功能</a></li>
+                                            <li><a href="#">环境责任</a></li>
+                                            <li><a href="#">隐私</a></li>
+                                            <li><a href="#">供应商责任</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li>关于我们</li>
+                                            <li><a href="#">Newsroom</a></li>
+                                            <li><a href="#">管理层</a></li>
+                                            <li><a href="#">工作机会</a></li>
+                                            <li><a href="#">创造就业</a></li>
+                                            <li><a href="#">活动</a></li>
+                                            <li><a href="#">联系</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer_last">
+                                    <p>更多选购方式：<a href="#">查找你附近的零售店</a>及<a href="#">更多门店</a>，或者致电400-666-8800。</p>
+                                    <div>
+                                        <p>Copyright © 2020 Unbug Inc. 保留所有权利。</p>
+                                        <div><a href="#">隐私政策</a></div>
+                                        <div><a href="#">使用条款</a></div>
+                                        <div><a href="#">销售政策</a></div>
+                                        <div><a href="#">法律信息</a></div>
+                                        <div><a href="#">网站地图</a></div>
+                                    </div>
+                                    <div class="beian">
+                                        <p>京ICP备10214630 营业执照 无线电发射设备销售备案编号11201910351200</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </div>
+       
+    </div>
+    <!-- 购买下单界面 -->
+    <div class="div5" id="pay">
+        <div class="pay">   
+            <div class="shut_down" id="shut_down"></div>
+            <div class="information">
+                <div class="address">
+                    <form action="">
+                        <fieldset>
+        
+                        <legend>收货地址</legend>
+                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名<span class="required">*</span> :</p>
+                        <input type="text" name="firstname" value="李华">
+                        <br>
+                         <p>联系电话<span class="required">*</span> :</p>
+                        <input type="text" name="phone" value="18312345678">
+                        <br>
+                         <p>详细地址<span class="required">*</span> :</p>
+                        <input type="text" name="address" value="河南省新乡市牧野区东干道街道河南师范大学">
+                        <br>
+                         <p>邮政编码<span class="required">*</span> :</p>
+                        <input type="text" name="number" value="000000">
+                        <br>
+                        </fieldset>
+                    </form>
+    
+                </div>
+                <div class="commodity">
+                    <div class="logo">
+                        <div class="logo0"></div>
+                        <div class="logo1">订单信息</div>
+                    </div>
+                    <div class="comm">
+                        <div class="comm_img">
+                            <img src="../static/img/手表 (1).jpg">
+                        </div>
+                        <div class="comm_text">
+                            <p>商品名称：HUAWEI WATCH GT2 Pro
+                            </p>
+                            <p>款式选择：
+                                <select>
+                                    <option >保时捷设计款</option>
+                                </select>
+                            </p>
+                            <p>颜色选择：
+                                <select>
+                                    <option>钛金灰</option>
+                                </select>
+                            </p>
+                            <p>数量：
+                                <span onclick="numDec()">-</span> 
+                                <input type="text" id="quantity" value="1"/> 
+                                <span onclick="numAdd()">+</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tijiao">
+                    <div class="buy_money">
+                        <p>合计￥:
+                            <span id="totalPrice">9999</span>
+                            <input type="hidden" value="9999" id="price" />
+                        </p>
+                    </div>
+                    <div class="buy_com">提交订单</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cbl">
+        <div class="cbl1">
+            <a href="#container">
+                <img src="../static/img/置顶.jpg">
+                <p>置顶</p>
+            </a>
+        </div>
+        <div class="cbl2">
+            <a href="#">
+                <img src="../static/img/客服.jpg">
+                <p>在线客服</p>
+            </a>
+        </div>
+        <div class="cbl3">
+            <a href="#">
+                <img src="../static/img/购物车1.jpg">
+                <p>购物车</p>
+            </a>
+        </div>
+        <div class="cbl4">
+            <a href="#">
+                <img src="../static/img/主页.jpg">
+                <p>商城主页</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+{#<script type="text/javascript" src="javascript/csq购买.js"></script>#}
+<script>
+    var shut_down=document.getElementById("shut_down");
+var pay=document.getElementById("pay");
+var buy=document.getElementById("buy");
+
+shut_down.onclick=function shut(){
+    pay.style.display="none";
+}
+
+buy.onclick=function open(){
+    pay.style.display="block";
+}
+// 购物车弹出框
+ document.getElementById("but").addEventListener("click", function(){
+                    alert("加入购物车成功！");
+                });
+</script>
+{#<script type="text/javascript" src="javascript/csq轮播图.js"></script>#}
+<script>
+    var animationSpeed = 1; //一次切换的图片的个数
+var minSpeed       = 500; //每次left增加或减少的数
+var stopTime       = 3000; //要个多少秒切换下一张图片
+var prev           = document.getElementById("left");
+var next           = document.getElementById("right");
+var banner         = document.getElementById("banner");
+var content        = document.getElementById("content");
+var imgul          = document.getElementById("ul");
+var imgli          = document.getElementById("ul").getElementsByTagName("li");
+var liwidth        = document.getElementById("ul").getElementsByTagName("li")[0].offsetWidth;
+var dot            = document.getElementById("dot");
+var dotul          = document.getElementById("dotul");
+var dotli          = document.getElementById("dotul").getElementsByTagName("li");
+var length         = document.getElementById("dotul").getElementsByTagName("li").length;
+var type           = true; //是否可以渲染
+var nextTimer      = null;
+var prevTimer      = null;
+var mainTimer      = null;
+
+imgul.style.width = liwidth*length+"rem"; //将ul的宽度设置为所有照片宽度之和
+
+//给每一个dotli添加一个index属性，方便改变小圆点的的颜色
+for (var i = 0;i<length;i++){
+    imgli[i].index = i;
+    dotli[i].index = i;
+}
+changeColor(imgli[0]);
+
+next.onclick = function (ev) {
+    if (type){
+        liwidth = 0;
+        clearInterval(nextTimer); //先把上一次留下来的定时器清除
+        nextTimer = setInterval(nextImg,animationSpeed);
+        type = false;
+        changeColor(imgli[1]);//改变圆点的颜色
+    }
+};
+function nextImg(){
+    imgul.style.left = "-"+liwidth+"rem";
+    liwidth += minSpeed;
+    if (liwidth >= imgli[0].offsetWidth){
+        clearInterval(nextTimer);
+        imgul.appendChild(imgli[0]); //先删除imgli[0],然后加到末尾。这样就实现了循环
+        imgul.style.left = 0;
+        type = true;
+    }
+}
+prev.onclick = function (ev) { //如果可以渲染
+    if (type){
+        imgul.insertBefore(imgli[length-1],imgli[0]);//因为当前图片位置一直都是imgli[0],所以按照循环的意思，上一张就是imli[length-1]
+        clearInterval(prevTimer);
+        liwidth = imgli[0].offsetWidth;
+        prevTimer = setInterval(prevImg,animationSpeed);
+        type = false;//因为设置定时器，定时在渲染，所以此时不能被渲染
+        changeColor(imgli[1]);//改变圆点颜色
+    }
+};
+
+
+function prevImg() {
+    imgul.style.left = "-"+liwidth+"rem";
+    liwidth -= minSpeed;
+    if (liwidth <= -1){
+        clearInterval(prevTimer);
+        imgul.style.left = 0;
+        type = true; //定时器已经完成渲染了，所以此时可以渲染
+    }
+}
+
+mainTimer = setInterval(next.onclick,5000);
+
+
+function changeColor(target) {
+    for (var j=0; j<length; j++){
+        dotli[j].className = "";
+    }
+    dotli[target.index].className = "active";
+}
+
+//为每一小圆点添加点击事件
+dot.onclick = function(ev){
+    var ev = ev || window.event;
+    var target = ev.target || ev.srcElement;
+    if(target.nodeName.toLowerCase() == "li"){
+        if(type){
+            showImg(target.index);
+            changeColor(target);
+            type = true;
+        }
+    }
+};
+
+function showImg(inde){
+    var this_li = imgli[0].index;
+
+    if (inde>this_li){
+        var x = inde-this_li;
+        for(var y = 0; y<x; y++){
+            imgul.appendChild(imgli[0]);
+        }
+    }
+
+    if(inde<this_li){
+        var x_x = this_li-inde;
+        for(var g = 0; g<x_x; g++){
+            imgul.insertBefore(imgli[length-1],imgli[0]);
+        }
+    }
+}
+
+content.onmouseover = function (ev){
+    clearInterval(mainTimer);
+
+};
+
+content.onmouseout = function (ev){
+    mainTimer = setInterval(next.onclick,stopTime);
+};
+</script>
+{#<script type="text/javascript" src="javascript/csq购买1.js"></script>#}
+<script>
+    window.onload=function(){
+    var color=document.getElementById("color");
+    var watch=document.getElementById("watch");
+
+    color.onclick=ocolor;
+    watch.onclick=owatch;
+
+    function ocolor(){
+        color.style.boxShadow="0 1px 1px 1px #960000";
+        // watch.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function owatch(){
+        watch.style.boxShadow="0 1px 1px 1px #960000";
+        // color.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+}
+</script>
+{#<script type="text/javascript" src="javascript/csq数量.js"></script>#}
+<script>
+
+function numAdd(){
+    var quantity = document.getElementById("quantity").value;
+    var num_add = parseInt(quantity)+1;
+    var price=document.getElementById("price").value;
+    if(quantity==""){
+        num_add = 1;
+    }
+    if(num_add>2){
+        document.getElementById("quantity").value=num_add-1;
+        alert("此商品限购2件");
+    }else{
+        document.getElementById("quantity").value=num_add;
+        var Num=price*num_add;
+        document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+    }
+}
+/*商品数量-1*/
+function numDec(){
+    var quantity = document.getElementById("quantity").value;
+    var price=document.getElementById("price").value;
+    var num_dec = parseInt(quantity)-1;
+    // if(num_dec<1){
+    //     document.getElementById("quantity").value=num_add+1;
+    //     alert("请至少选择一件商品！");
+    // }
+    if(num_dec>0){
+        document.getElementById("quantity").value=num_dec;
+        var Num=price*num_dec;
+         document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+    }
+}
+</script>
+{#<script type="text/javascript" src="javascript/csq隐藏导航栏.js"></script>#}
+<script>
+    var div2_5=document.getElementById('div2_5');
+var div412=document.getElementById('div412');
+var div411=document.getElementById('div411');
+var div413=document.getElementById('div413');
+var div414=document.getElementById('div414');
+var ggcs=document.getElementById('ggcs');
+var spxq=document.getElementById('spxq');
+var bzysh=document.getElementById('bzysh');
+var yhpj=document.getElementById('yhpj');
+window.onscroll=function(){
+    var a=document.documentElement.scrollTop;
+    console.log(a);
+    if(a>=600){
+        div2_5.style.height="3rem";
+    }else{
+        div2_5.style.height="0rem";
+    }
+}
+
+ggcs.onclick=function(){
+    // console.log('a');
+    div412.style.width="100%";
+    div411.style.width="0";
+    div413.style.width="0";
+    div414.style.width="0";
+}
+spxq.onclick=function(){
+    // console.log('b');
+    div411.style.width="100%";
+    div412.style.width="0";
+    div413.style.width="0";
+    div414.style.width="0";
+}
+bzysh.onclick=function(){
+    // console.log('c');
+    div413.style.width="100%";
+    div412.style.width="0";
+    div411.style.width="0";
+    div414.style.width="0";
+}
+yhpj.onclick=function(){
+    // console.log('d');
+    div414.style.width="100%";
+    div412.style.width="0";
+    div413.style.width="0";
+    div411.style.width="0";
+}
+
+</script>
+<!-- <script type="text/javascript" src="javascript/购物车.js"></script> -->

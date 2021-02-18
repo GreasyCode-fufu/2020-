@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sony</title>         
+    <link href="../static/css/购买张好妮.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main" id="main"><!--主体-->
+        <div class="container"><!--轮播-->
+            <div class="wrap" style="left: -600px;">
+                <img src="../static/img/耳机主面.png" alt="">
+                <img src="../static/img/耳机正面.png" alt="">
+                <img src="../static/img/耳机正侧面.png" alt="">
+                <img src="../static/img/耳机侧面.png" alt="">
+                <img src="../static/img/耳机主面.png" alt="">
+                <img src="../static/img/耳机正面.png" alt="">
+                <img src="../static/img/耳机正侧面.png" alt="">
+            </div>
+            <a href="javascript:;" class="arrow arrow_left"><</a>
+            <a href="javascript:;" class="arrow arrow_right">></a>
+        </div>
+        <div class="demo"><!--主体右边商品详情-->
+            <div>
+                <p><strong>MDR-Z1R 高解析度立体声耳机</strong></p>
+                <p>&nbsp;&nbsp;70mm大孔径HD驱动单元（声波变宽和平坦，体验到更自然的声音） / 镁质球顶振膜（实现120kHz高频率范围的声音再现。） / 斐波那契隔栅（驱动单元开孔均衡，硬度高，高频平稳） / 人体工程学皮革耳垫（触感柔和，佩戴舒适。） / 皮革头箍（耐用柔软，佩戴舒适） / 听感：声音清澈，音质辽远，自然静谧，声场开阔精准，高频延展，自然，空气感十足。 / 适合音乐类型，大编制，古典，流行，民谣，摇滚。</p>
+                <h3 id="value">价格&nbsp;&nbsp;RMB&nbsp;12999.00</h3>
+            </div>
+            <div class="information">
+                <div>规格&nbsp;&nbsp;
+                    <button id="btn3" type="button" onclick="myFunction3()">MDR-Z1R</button>
+                </div>    
+                <div>颜色&nbsp;&nbsp;
+                    <button>黑色</button>
+                </div>
+                <div class="cameraNum">数量&nbsp;&nbsp;
+                    <a id="sub" href="javascript:void(0);">-</a>
+                    <input type="text" value="1" id="cameraNum">
+                    <a id="add" href="javascript:void(0);">+</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="wish">
+                    <div class="buy" id="buy">
+                        <p>加入购物车</p>
+                    </div>
+                    <div class="addwish">
+                        <img id="myimage" onclick="changeImage()" src="../static/img/xin.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bigFace"></div>
+{#    <script type="text/javascript" src="./javascript/购买张好妮.js"> </script>#}
+<script>
+        //    轮播
+       var wrap = document.querySelector(".wrap");
+        var next = document.querySelector(".arrow_right");
+        var prev = document.querySelector(".arrow_left");
+        next.onclick = function () {
+            next_pic();
+        }
+        prev.onclick = function () {
+            prev_pic();
+        }
+
+        function next_pic () {
+            var newLeft = parseInt(wrap.style.left)-600;
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft = parseInt(wrap.style.left)+600;
+            wrap.style.left = newLeft + "px";
+        }
+        function next_pic () {
+            var newLeft;
+            if(wrap.style.left === "-3600px"){
+                newLeft = -1200;
+            }else{
+                newLeft = parseInt(wrap.style.left)-600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        function prev_pic () {
+            var newLeft;
+            if(wrap.style.left === "0px"){
+                newLeft = -2400;
+            }else{
+                newLeft = parseInt(wrap.style.left)+600;
+            }
+            wrap.style.left = newLeft + "px";
+        }
+        //心愿的心
+        function changeImage(){
+            element=document.getElementById('myimage')
+            if(element.src.match("红心"))
+            {
+                element.src="./img/xin.jpg";
+            }
+            else{
+                element.src="./img/红心.jpg";
+            }
+        }
+
+
+</script>
+</body>
+</html>

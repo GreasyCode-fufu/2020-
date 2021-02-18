@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>详情</title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+}
+#div0{
+    position:absolute;
+    height:350px;
+    width:100%;
+}
+#div0 img{
+    height:350px;
+    width:100%;
+}
+.daohang{
+    position:absolute;
+    top:350px;
+    height:3rem;
+    width:100%;
+    /* background-color: red; */
+}
+.daohang ul{
+    display: block;
+    height:3rem;
+    width:100%;
+    background-color: #c4c2c2;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:stretch;
+    justify-content: space-around;
+}
+.daohang ul li{
+    float:left;
+    display:block;
+    height:3rem;
+    line-height: 3rem;
+}
+.daohang ul li a{
+    text-decoration: none;
+    color:#111111;
+}
+.bian{
+    position:absolute;
+    top:398px;
+    width: 100%;
+    height:32rem;
+    background-color: #a1a1a1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif,Arial,'Microsoft Yahei';
+}
+.card{
+    flex-shrink: 0;
+    flex-flow: 0;
+    position:relative;
+    width: 300px;
+    height:450px;
+    overflow:hidden;
+    margin: 20px;
+    background-color: #bbb8b8;
+    /* background-color:var(--border-color); */
+    border-radius:20px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 30px #2c2c2c;
+    color:var(--font_color)
+}
+
+.photo{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    border-radius: 0%;
+    overflow: hidden;
+    transition:0.5s;
+}
+.photo::before{
+    position:absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+}
+.card:hover.photo::before{
+    display:none;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .photo{
+    width: 120px;
+    height: 120px;
+    top:30px;
+    border-radius:50%;
+}
+h1{
+    position:absolute;
+    top:380px;
+    transition: 0.5s;
+}
+.card:hover h1{
+    position:absolute;
+    top:170px;
+}
+h2{
+    margin-top: 220px;
+    width:80%;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--h2_border_color);
+}
+p{
+    width: 90%;
+    text-indent: 2em;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <div id="div0">
+            <img src="../static/image/page1_img1.jpg" alt="Pulpit rock">
+        </div>
+    </header>
+     <div class="daohang" id="daohang">
+          <ul>
+            <li><a class="active" href="#bian">人物主页</a></li>
+            <li><a href={{ url_for("zhanghaoni") }}>返回商品</a></li>
+          </ul>
+    </div>
+<div class="bian" id="bian">
+    <div class="card">
+        <div  class="photo">
+            <img src="../static/image/11.jpg">
+        </div>
+        <h1>潮见俊辅</h1>
+        <h2>MDR-Z1R音响设计</h2>
+        <p>第六代耳型职人潮见俊辅,负责产品技术与调音，配合 Sony Music Solutions 与日本 Sony Studio 专业录音室着手进行新世代商用监听耳机的开发计划</p>
+    </div>
+    <div class="card">
+        <div  class="photo">
+            <img src="../static/image/33.jpg">
+        </div>
+        <h1>尾崎雄三</h1>
+        <h2>MDR-Z1R项目负责人</h2>
+        <p>MDR-Z1R的项目总负责人，统筹此款耳机项目的研发进程和重大项目决策。为这款新代耳机的研发功不可没。</p>
+    </div>
+    <div class="card">
+        <div  class="photo">
+            <img src="../static/image/22.jpg">
+        </div>
+        <h1>矢代升吾</h1>
+        <h2>MDR-Z1R设计</h2>
+        <p>MDR-Z1R的总设计，规划耳机的精美外观的同时确保顾客戴着耳机时的舒适度。同时增加了平衡线的使用，提高了舒适感</p>
+    </div>
+</div>
+</footer>
+    </body>
+</html>

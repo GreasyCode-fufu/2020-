@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/css/付款/付款.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="div1">
+        <div id="div11">
+            <a href={{ url_for("shangPinQianDuan") }}>首页</a>
+            <a href="{{ url_for("gouMai") }}">退出</a>
+        </div>
+        <div id="div12">
+            <a href={{ url_for("yonghuxinxi") }}>购物车</a>
+        </div>
+    </div>
+    <div id="div2">
+        <div id="div21">
+            <div>
+                <p>1</p>
+
+            </div>
+            <div></div>
+            <div>
+                <p>2</p>
+            </div>
+            <div></div>
+            <div>
+                <p>3</p>
+            </div>
+            <div></div>
+            <div>
+                <p>4</p>
+            </div>
+            <div></div>
+            <div>
+                <p>5</p>
+            </div>
+        </div>
+        <div id="div22">
+            <div>
+                <p>查看购物车</p>
+            </div>
+            <div>
+                <p>拍下商品</p>
+            </div>
+            <div>
+                <p>付款</p>
+            </div>
+            <div>
+                <p>确认收货</p>
+            </div>
+            <div>
+                <p>评价</p>
+            </div>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="div31">
+            <p>收货地址</p>
+        </div>
+        <form action="{{ url_for('fukuan') }}" method="post">
+            {{ form.csrf_token }}
+            <div id="div32">
+                <div id="div321">
+                    <div id="div3211">
+                        <p>当前配送至</p>
+                        <p>中国大陆</p>
+                    </div>
+                    <div id="div3212">
+                        <a href="#">切换></a>
+                    </div>
+                </div>
+                <div id="div322">
+                    <div>
+                        <p>*</p>
+                        <p>地址信息</p>
+                    </div>
+                    <div id="other1" class="other1">
+                        <div id="div3221">
+                            <p id="p2">请选择省/市/区/街道</p>
+                            <img src="../static/img/付款/1.png">
+                        </div>
+                        <div id="div3222">
+                            <div id="div32221">
+                                <div id="d1">省</div>
+                                <div id="d2">市</div>
+                                <div id="d3">区</div>
+                                <div id="d4">街道</div>
+                            </div>
+                            <div id="div32222">
+                                <div name="d">
+                                    <p name="p1">北京</p>
+                                    <p name="p1">天津</p>
+                                    <p name="p1">河北省</p>
+                                    <p name="p1">山西省</p>
+                                    <p name="p1">辽宁省</p>
+                                    <p name="p1">上海</p>
+                                    <p name="p1">江苏省</p>
+                                    <p name="p1">浙江省</p>
+                                    <p name="p1">河南省</p>
+                                </div>
+                                <div name="d">
+                                    <p name="p2">郑州市</p>
+                                    <p name="p2">开封市</p>
+                                    <p name="p2">洛阳市</p>
+                                    <p name="p2">平顶山</p>
+                                    <p name="p2">安阳市</p>
+                                    <p name="p2">鹤壁市</p>
+                                    <p name="p2">新乡市</p>
+                                    <p name="p2">周口市</p>
+                                </div>
+                                <div name="d">
+                                    <p name="p3">红旗区</p>
+                                    <p name="p3">渭滨区</p>
+                                    <p name="p3">凤泉区</p>
+                                    <p name="p3">牧野区</p>
+                                    <p name="p3">新乡县</p>
+                                    <p name="p3">原阳县</p>
+                                    <p name="p3">卫辉市</p>
+                                </div>
+                                <div name="d">
+                                    <p name="p4">暂不选择</p>
+                                    <p name="p4">东干道街道</p>
+                                    <p name="p4">其他街道</p>
+                                </div>
+                                <div name="d">
+                                    <p name="p5">川汇区</p>
+                                    <p name="p5">扶沟县</p>
+                                    <p name="p5">商水县</p>
+                                    <p name="p5">沈丘县</p>
+                                    <p name="p5">项城市</p>
+                                    <p name="p5">淮阳县</p>
+                                    <p name="p5">太康县</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="div323">
+                    <div>
+                        <p>*</p>
+                        <p>详细地址</p>
+                    </div>
+
+                    <div>
+                        {{ form.body1 }}
+{#                        <textarea placeholder="请输入详细的地址信息，如道路、门牌号、小区、楼栋号、单元等信息"></textarea>#}
+                    </div>
+                </div>
+                <div id="div324">
+                    <div>
+                        <p>&nbsp;&nbsp;</p>
+                        <p>邮政编码</p>
+                    </div>
+                    {{ form.body2 }}
+                    <div>
+{#                        <input type="text" placeholder="请填写邮编">#}
+{#                        {{ form.goodsid }}#}
+                    </div>
+                </div>
+                <div id="div325">
+                    <div>
+                        <p>*</p>
+                        <p>收货人姓名</p>
+                    </div>
+
+                    <div>
+{#                        <input type="text" placeholder="长度不超过25个字符">  #}
+                         {{ form.body3 }}
+                    </div>
+                </div>
+                <div id="div326">
+                    <div>
+                        <p>*</p>
+                        <p>手机号码</p>
+                    </div>
+                    <div>
+                        <div id="other2">
+                            <p>中国大陆 +86</p>
+                        </div>
+                        <div id="other3">
+{#                            <input type="text" placeholder="电话号码、手机号码必须填一项">#}
+                        </div>
+                    </div>
+                </div>
+                <div id="div327">
+                    <input type="checkbox">
+                    <p>设置为默认收货地址</p>
+                </div>
+            </div>
+{#       这里youform#}
+    </div>
+    <div id="div4">
+        <div id="div41">
+            <p>确认订单信息</p>
+        </div>
+        <div id="div42">
+            <div id="div421">
+                <div>
+                    <p>店铺宝贝</p>
+                </div>
+                <div>
+                    <p>商品属性</p>
+                </div>
+                <div>
+                    <p>单价 </p>
+                </div>
+                <div>
+                    <p>数量</p>
+                </div>
+                <div>
+                    <p>优惠方式</p>
+                </div>
+                <div>
+                    <p>小计</p>
+                </div>
+            </div>
+        </div>
+        <div id="div43">
+            <div id="div431">
+                <p>店铺：UNBUG官方旗舰店</p>
+            </div>
+        </div>
+        <div id="div44">
+{#            <form action="">#}
+                <div id="div441">
+                    <div id="div4411">
+                        <img src="../static/img/付款/1.jpg">
+                        <p title="无线蓝牙耳机WH-1000XM3头戴式挂脖式主动降噪耳麦">无线蓝牙耳机WH-1000XM3头戴式...</p>
+                    </div>
+                    <div id="div4412">
+                        <p>套餐类型：官方标配</p>
+                        <p>颜色分类：金色</p>
+                    </div>
+                    <div id="div4413">
+                        <p>1429.00</p>
+                    </div>
+                    <div id="div4414">
+                        <p>1</p>
+                    </div>
+                    <div id="div4415">
+                        <p>无优惠</p>
+                    </div>
+                    <div id="div4416">
+                        <p>1429.00</p>
+                    </div>
+                </div>
+{#            </form>#}
+
+        </div>
+        <div id="div45">
+            <div id="div451">
+{#                <input type="button" value="提交订单">#}
+                {{ form.submit }}
+            </div>
+        </div>
+    </div>
+ </form>
+</body>
+</html>
+<script type="text/javascript" src="./static/js/付款/付款.js"></script>
+<script>
+    var p1=document.getElementsByName("p1");
+var d=document.getElementsByName("d");
+var d1=document.getElementById('d1');
+var d2=document.getElementById('d2');
+var d3=document.getElementById('d3');
+var d4=document.getElementById('d4');
+var p2=document.getElementById('p2');
+var p02=document.getElementsByName("p2");
+var p4=document.getElementsByName("p4");
+var p3=document.getElementsByName("p3");
+var div3222=document.getElementById('div3222');
+var div3221=document.getElementById('div3221');
+var other1=document.getElementById('other1');
+for(let i=0;i<p1.length;i++){
+    // console.log(p1[i]);
+    p1[i].onclick=function(){
+        // console.log(p1[i].innerText);
+        if(p1[i].innerText==="河南省"){
+            // console.log('正确')
+            for(let j=0;j<d.length;j++){
+                // console.log('正确');
+                d[j].style.transform=`translateY(-8rem)`;
+                d1.style.backgroundColor="#dddddd";
+                d2.style.backgroundColor="#ffffff";
+                d3.style.backgroundColor="#dddddd";
+                d4.style.backgroundColor="#dddddd";
+                p2.innerText=p1[i].innerText+"/";
+                a();
+            }
+        }
+    }
+}
+function a(){
+    // console.log('链接成功');
+    for(let i=0;i<p02.length;i++){
+        // console.log(p1[i]);
+        p02[i].onclick=function(){
+            // console.log('true');
+            if(p02[i].innerText==="新乡市"||p02[i].innerText==="周口市"){
+                // console.log('true');
+                d1.style.backgroundColor="#dddddd";
+                d2.style.backgroundColor="#dddddd";
+                d3.style.backgroundColor="#ffffff";
+                d4.style.backgroundColor="#dddddd";
+                if(p02[i].innerText==="新乡市"){
+                    for(let j=0;j<d.length;j++){
+                        d[j].style.transform=`translateY(-16rem)`;
+                        p2.innerText=p02[i].innerText+"/";
+                        b();
+                    }
+                }else{
+                    for(let j=0;j<d.length;j++){
+                        d[j].style.transform=`translateY(-32rem)`;
+                        p2.innerText=p02[i].innerText+"/";
+                    }
+                }
+            }
+        }
+    }
+}
+function b(){
+    for(let i=0;i<p3.length;i++){
+        // console.log(p3[i].innerText);
+        p3[i].onclick=function(){
+            // console.log(p3[i].innerText);
+            if(p3[i].innerText==="牧野区"){
+                // console.log('true');
+                for(let j=0;j<d.length;j++){
+                    d[j].style.transform=`translateY(-24rem)`;
+                    p2.innerText=p3[i].innerText+"/";
+                }
+                d1.style.backgroundColor="#dddddd";
+                d2.style.backgroundColor="#dddddd";
+                d3.style.backgroundColor="#dddddd";
+                d4.style.backgroundColor="#ffffff";
+                c();
+            }
+        }
+    }
+}
+function c(){
+    for(let i=0;i<p4.length;i++){
+        p4[i].onclick=function(){
+            // console.log('true');
+            p2.innerText=p4[i].innerText;
+            d1.style.backgroundColor="#ffffff";
+            d2.style.backgroundColor="#dddddd";
+            d3.style.backgroundColor="#dddddd";
+            d4.style.backgroundColor="#dddddd";
+            for(let j=0;j<d.length;j++){
+                d[j].style.transform=`translateY(0)`;
+            }
+            div3222.style.display="none";
+        }
+    }
+}
+other1.onmouseover=function(){
+    // console.log(other1);
+    div3222.style.display="flex";
+}
+div32222.onmouseout=function(){
+    div3222.style.display="none";
+    console.log('离开');
+}
+</script>

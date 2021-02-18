@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block stutitle%}查看商品{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+    <table id="simple-table" class="table  table-bordered table-hover">
+        <thead>
+        <tr>
+            <th class="center">
+                <label class="pos-rel">
+                    <input type="checkbox" class="ace" />
+                    <span class="lbl"></span>
+                </label>
+            </th>
+            <th>商品号</th>
+            <th>商品名</th>
+            <th>商品状态</th>
+            <th>库存</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for goods in goodsinfos %}
+            <tr>
+                <td class="center">
+                    <label class="pos-rel">
+                        <input type="checkbox" class="ace" />
+                        <span class="lbl"></span>
+                    </label>
+                </td>
+                <td>
+                    {{ goods[0] }}
+                </td>
+                <td>
+                    {{ goods[1] }}
+                </td>
+                <td>
+                    {{ goods[2] }}
+                </td>
+                <td>
+                    {{ goods[3] }}
+                </td>
+            </tr>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

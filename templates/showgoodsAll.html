@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block stutitle%}系统主页{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+    <table id="simple-table" class="table  table-bordered table-hover">
+        <thead>
+        <tr>
+            <th class="center">
+                <label class="pos-rel">
+                    <input type="checkbox" class="ace" />
+                    <span class="lbl"></span>
+                </label>
+            </th>
+            <th>商品号</th>
+            <th>商品名</th>
+            <th>商品状态</th>
+            <th>库存数</th>
+{#            <th>入库时间</th>#}
+            <th>更新时间</th>
+            <th colspan="2" style="text-align: center;">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for goods in goodsinfos %}
+            <tr>
+                <td class="center">
+                    <label class="pos-rel">
+                        <input type="checkbox" class="ace" />
+                        <span class="lbl"></span>
+                    </label>
+                </td>
+                <td>
+                    {{ goods[0] }}
+                </td>
+                <td>
+                    {{ goods[1] }}
+                </td>
+                <td>
+                    {{ goods[2] }}
+                </td>
+                <td>
+                    {{ goods[3] }}
+                </td>
+                <td>
+                    {{ goods[4] }}
+                </td>
+                <td>
+                    <a href={{ url_for("edit")}} style="color:#87B87F;">修改</a>
+                </td>
+                <td>
+                    <a href={{ url_for("screendelete")}} style="color:red;">删除</a>
+                </td>
+{#                <td>#}
+{#                    {{ goods[5] }}#}
+{#                </td>#}
+            </tr>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/css/购买邓畅.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body_main">
+        <div class="body_left">
+            <div class="body_left_top" id="left_img"></div>
+            <div class="body_left_bottom">
+                <div class="sh">
+                    <p>免费送货</p>
+                </div>
+                <div class="th">
+                    <p>退货服务</p>
+                </div>
+            </div>
+        </div>
+        <div class="yc">
+            <div class="body_right">
+                <p>新款</p>
+                <h1>购买iPhone 12 Pro</h1>
+                <p>每位顾客限购两部iPhone&nbsp;12&nbsp;Pro和两部iPhone&nbsp;12&nbsp;Pro&nbsp;Max。</p>
+                <p>参加Apple折抵换购，可抵高达RMB2500*</p>
+                <a href="#">了解Apple&nbsp;Trade&nbsp;In换购计划的流程</a>
+                <div class="xzjx">
+                    <h6>选择机型</h6>
+                    <a>哪款机型适合你?</a>
+                    <div class="i_12_p" id="ip">
+                        <div class="i_12_p_left">
+                            <p>iPhone&nbsp;12 &nbsp;Pro</p>
+                            <p>6.1英寸显示屏</p>
+                        </div>
+                        <div class="i_12_p_right">
+                            <p>①RMB&nbsp;354/月或</p>
+                            <p>RMB &nbsp;8499起</p>
+                        </div>
+                    </div>
+                    <div class="i_12_p_m" id="ipm">
+                        <div class="i_12_p_m_left">
+                            <p>iPhone&nbsp;12 &nbsp;Pro&nbsp;Max</p>
+                            <p>6.7英寸显示屏</p>
+                        </div>
+                        <div class="i_12_p_m_right">
+                            <p>①RMB&nbsp;387/月或</p>
+                            <p>RMB &nbsp;9299起</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="xzwg">
+                    <h6>选择外观</h6>
+                    <div class="wg">
+                        <div class="sms" id="sms">石墨色</div>
+                        <div class="ys" id="ys">银色</div>
+                        <div class="js" id="js">金色</div>
+                        <div class="hls" id="hls">海蓝色</div>
+                    </div>
+                </div>
+                <div class="ccrl">
+                    <h6>选择存储容量</h6>
+                    <a>多大的存储容量适合你?</a>
+                    <div class="cc">
+                        <div class="ote" id="ote">128GB</div>
+                        <div class="tfs" id="tfs">256GB</div>
+                        <div class="foe" id="foe">512GB</div>
+                        <div class="none"></div>
+                    </div>
+                </div>
+                <div class="buy" id="buy">
+                    <p>购&nbsp;&nbsp;&nbsp;&nbsp;买</p>
+                </div>
+                <img src="../static/img/xin.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="last_text">
+            <p>包装内容</p>
+        </div>
+        <div class="last_img">
+            <img src="../static/img/baozhuangleft.jpg">
+            <img src="../static/img/baozhuangright.jpg">
+        </div>
+    </div>
+    <div class="pay_background" id="pay">
+        <div class="pay">   
+            <div class="shut_down" id="shut_down"></div>
+            <div class="information">
+                <div class="address">
+                    <div class="address_img"></div>
+                    <div class="address_text">
+                        <p>李华</p>
+                        <p>&nbsp;183****1234</p>
+                        <p>河南省新乡市牧野区东干道街道河南师范大学</p>
+                        <a href="#">收货不便时，可选择暂存服务</a>
+                    </div>
+                </div>
+                <div class="commodity">
+                    <div class="logo">
+                        <div class="logo0"></div>
+                        <div class="logo1"></div>
+                    </div>
+                    <div class="comm">
+                        <div class="comm_img"></div>
+                        <div class="comm_text">
+
+                        </div>
+                    </div>
+                    <div class="gmsl"></div>
+                </div>
+                <div class="tijiao">
+                    <div class="buy_money">
+                        <p>共1件，合计：￥119.90</p>
+                    </div>
+                    <div class="buy_com">提交订单</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{#<script type="text/javascript" src="javascript/购买邓畅.js"></script>#}
+{#<script type="text/javascript" src="javascript/购买邓畅2.js"></script>#}
+<script>
+    window.onload=function(){
+    var ip=document.getElementById("ip");
+    var ipm=document.getElementById("ipm");
+    var sms=document.getElementById("sms");
+    var ys=document.getElementById("ys");
+    var js=document.getElementById("js");
+    var hls=document.getElementById("hls");
+    var ote=document.getElementById("ote");
+    var tfs=document.getElementById("tfs");
+    var foe=document.getElementById("foe");
+    var leftimg=document.getElementById("left_img");
+
+
+    ip.onclick=oip;
+    ipm.onclick=oipm;
+    sms.onclick=osms;
+    ys.onclick=oys;
+    js.onclick=ojs;
+    hls.onclick=ohls;
+    ote.onclick=oote;
+    tfs.onclick=otfs;
+    foe.onclick=ofoe;
+
+
+    function oip(){
+        ip.style.boxShadow="0 0 2px 2px #aaeeee";
+        ipm.style.boxShadow="0 0 2px 2px #ffffff";
+        leftimg.style.backgroundSize="90% 90%";
+    }
+    function oipm(){
+        ipm.style.boxShadow="0 0 2px 2px #aaeeee";
+        ip.style.boxShadow="0 0 2px 2px #ffffff";
+        leftimg.style.backgroundSize="100% 100%";
+    }
+
+    function osms(){
+        sms.style.boxShadow="0 0 2px 2px #aaeeee";
+        ys.style.boxShadow="0 0 2px 2px #ffffff";
+        js.style.boxShadow="0 0 2px 2px #ffffff";
+        hls.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function oys(){
+        ys.style.boxShadow="0 0 2px 2px #aaeeee";
+        sms.style.boxShadow="0 0 2px 2px #ffffff";
+        js.style.boxShadow="0 0 2px 2px #ffffff";
+        hls.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function ojs(){
+        js.style.boxShadow="0 0 2px 2px #aaeeee";
+        ys.style.boxShadow="0 0 2px 2px #ffffff";
+        sms.style.boxShadow="0 0 2px 2px #ffffff";
+        hls.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function ohls(){
+        hls.style.boxShadow="0 0 2px 2px #aaeeee";
+        ys.style.boxShadow="0 0 2px 2px #ffffff";
+        js.style.boxShadow="0 0 2px 2px #ffffff";
+        sms.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+
+    function oote(){
+        ote.style.boxShadow="0 0 2px 2px #aaeeee";
+        tfs.style.boxShadow="0 0 2px 2px #ffffff";
+        foe.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function otfs(){
+        tfs.style.boxShadow="0 0 2px 2px #aaeeee";
+        ote.style.boxShadow="0 0 2px 2px #ffffff";
+        foe.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+    function ofoe(){
+        foe.style.boxShadow="0 0 2px 2px #aaeeee";
+        ote.style.boxShadow="0 0 2px 2px #ffffff";
+        tfs.style.boxShadow="0 0 2px 2px #ffffff";
+    }
+}
+</script>
+
+<script>
+    var shut_down=document.getElementById("shut_down");
+var pay=document.getElementById("pay");
+var buy=document.getElementById("buy");
+
+shut_down.onclick=function shut(){
+    pay.style.display="none";
+}
+
+buy.onclick=function open() {
+    pay.style.display = "block";
+}
+</script>

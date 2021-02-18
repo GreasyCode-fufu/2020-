@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+{% endblock %}
+
+{% block stutitle %}添加商品{% endblock %}
+{% block stumain %}
+
+<div class="col-xs-12">
+
+{#<div class="form-group row">#}
+
+ <form action="{{ url_for('addgoods') }}" method="post" style="position:absolute;left:50%;top:50%;transform:translate(-50%,30%)">
+            {{ form.csrf_token }}
+ <div class="form-group">
+            {{ form.goodsid.label}}<br>
+             {{ form.goodsid }}<br>
+            {% if form.goodsid.errors %}
+                {% for message in form.goodsid.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodsname.label }}<br>
+            {{ form.goodsname}}<br>
+            {% if form.goodsname.errors %}
+                {% for message in form.goodsname.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.goodstatus.label }}<br>
+            {{ form.goodstatus}}<br>
+            {% if form.goodstatus.errors %}
+                {% for message in form.goodstatus.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}
+
+            {{ form.store.label }}<br>
+            {{ form.store}}<br>
+            {% if form.store.errors %}
+                {% for message in form.store.errors %}
+                <small class="error">{{ message }}</small><br>
+                {% endfor %}
+            {% endif %}<br>
+        {{ form.submit(class='btn btn-primary') }}
+ </div>
+ </form>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block stutitle%}系统主页{% endblock %}
+{% block stumain %}
+<div class="col-xs-12">
+    <table id="simple-table" class="table  table-bordered table-hover">
+        <thead>
+        <tr>
+            <th class="center">
+                <label class="pos-rel">
+                    <input type="checkbox" class="ace" />
+                    <span class="lbl"></span>
+                </label>
+            </th>
+            <th>商品号</th>
+            <th>型号</th>
+            <th>颜色</th>
+            <th>价格(元)</th>
+            <th>备注</th>
+            <th colspan="2" style="text-align: center;">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for goods in goodsinfos %}
+            <tr>
+                <td class="center">
+                    <label class="pos-rel">
+                        <input type="checkbox" class="ace" />
+                        <span class="lbl"></span>
+                    </label>
+                </td>
+                <td>
+                    {{ goods[0] }}
+                </td>
+                <td>
+                    {{ goods[1] }}
+                </td>
+                <td>
+                    {{ goods[2] }}
+                </td>
+                <td>
+                    {{ goods[3] }}
+                </td>
+                <td>
+                    {{ goods[4] }}
+                </td>
+                <td>
+                    <a href=url_for("updateprice") style="color:#87B87F;">修改</a>
+                </td>
+                <td>
+                    <a href=url_for("editgoods") style="color:red;">删除</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
