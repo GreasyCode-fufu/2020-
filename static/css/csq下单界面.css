@@ -1,0 +1,201 @@
+.div5{
+    display: none;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+ 
+}
+.pay{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#ffffff;
+    height:600px;
+    width:700px;
+    z-index:999;
+    border-radius: 0.8rem;
+}
+.pay .shut_down {
+    position: absolute;
+    top:0.5rem;
+    right:0.5rem;
+    height:1.7rem;
+    width:1.7rem;
+    border: brown 3rem;
+    background:url("../img/wrong.png") no-repeat center;
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.information{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top:2rem;
+    height:400px;
+    align-items: center;
+}
+/* .information .address{
+    position:relative;
+    display: flex;
+    flex-flow: row nowrap;
+    height:8rem;
+    width: 600px;
+    background-color:#eeeeee;
+    border-radius: 0.5rem;
+} */
+fieldset{
+    border-radius: 0.5rem;
+    width: 550px;
+    font-size: 1.2rem;
+    text-align:center ;
+    line-height: 2.2rem;
+    border-color: #cccccc;
+    padding: 0.6em 0 1rem 0; 
+}
+.address p{
+    text-align: right;
+    float: left;
+    font-size: 1rem;
+    margin-left:1rem;
+}
+/* .address p:nth-child(1){
+    margin-left: 6rem;
+} */
+.address span{
+    color: #ff0000;
+    font-size: 1rem;
+    top: 5rem;
+    /* height: 1rem; */
+}
+input{
+    line-height: 1.5rem;
+    width: 400px;
+    /* margin-left: 0.25rem; */
+    font-size: 0.9rem;
+    color: #5a5959;
+    border:1px;
+    /* height: 1.5rem; */
+    border-bottom: #d8d8d8;
+   
+}
+
+.commodity{
+    background-color:#eeeeee;
+    position: absolute;
+    top:16rem;
+    padding: 1rem 0 1.2rem 0;
+    height:10rem;
+    width:550px;
+    height: 210px;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.commodity .logo{
+    margin:0 1rem 0 0.5rem;
+    height:1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.commodity .logo0{
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../img/U.png") no-repeat center;
+}
+.commodity .logo1{
+    margin-left:0.5rem;
+    height:1.5rem;
+    width:10rem;
+    font-size: 1.25rem;
+}
+.commodity .comm{
+    margin:1rem 1rem 0 1rem;
+    height:8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+/* .comm .comm_img{
+    margin:0.5rem 0.8rem 0 1.25rem;
+    height:8rem;
+    width:8rem;
+} */
+.comm .comm_img img{
+    height:8rem;
+    width:8rem;
+    margin:0.5rem 1rem 0 1.25rem;
+}
+
+.comm .comm_text{
+    height:9rem;
+    width:20rem;
+    flex:1 1 auto;
+    /* margin-left: 1rem; */
+    margin-top: 0.3rem;
+    line-height: 2rem;
+}
+/* .comm_text p:nth-child(4){
+    margin-left: 2rem;
+} */
+.comm .comm_text select{
+    background-color: #c9c9c9;
+    font-size: 1rem;
+}
+.comm_text span{
+    color: #c40101;
+    cursor: pointer;
+}
+.tijiao{
+    position: absolute;   
+    right:4.8rem;
+    bottom:1.2rem;
+    height:3.5rem;
+    width:35.2rem;
+}
+.buy_money{
+    position: absolute;
+    left:1rem;
+    /* height:2.8rem; */
+    /* width:20rem; */
+    line-height:2.7rem;
+    text-align: left;
+    font-family:Helvetica,Arial,sans-serif;  
+    /* font-size:17px; */
+}
+.buy_money p{
+    font-size: 1.2rem;
+    left: 1rem;
+    /* line-height: 2rem; */
+}
+
+#totalPrice{
+    font-size: 1.5rem;
+    color: #CA203D;
+}
+.buy_com{
+    position: absolute;
+    top: 0.2rem;
+    right:0;
+    height:2.6rem;
+    width:8.5rem;
+    background-image: linear-gradient(to right,#ca203d,#830202);
+    border-radius: 1.5rem;
+    /* font-family:Helvetica,Arial,sans-serif;  */
+    font-size:17px;
+    text-align: center;
+    line-height:2.55rem;
+    color:#ffffff;
+}
+
+#quantity{
+    width: 2rem;
+    text-align: center;
+}
+.but input{
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    margin-left: 1.5rem;
+}

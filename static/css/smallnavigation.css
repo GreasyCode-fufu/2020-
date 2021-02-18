@@ -1,0 +1,23 @@
+.child_menu{
+    height:0rem;
+    width:100%;
+    background-color:#405166;
+    transition: all 0.3s;
+    overflow: hidden;
+}   
+#child_menu2{
+    height:0rem;
+}
+.child_menu a{
+    margin-left:3rem;
+    display: block;
+    height:2.5rem;
+    text-decoration: none;
+    color:#dddddd;
+    font-family: '黑体';
+    font-size: 14px;
+    line-height:2.5rem;
+}
+.child_menu a:hover{
+    color:#4b91dc;
+}

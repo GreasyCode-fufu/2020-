@@ -1,0 +1,561 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    position: fixed;
+    height:3rem;
+    width:100%;
+    background-color: gray;
+    z-index: 3;
+}
+.body_main{
+    position: absolute;
+    width:100%;
+    top:3rem;
+    height:33rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.body_left{
+    position: absolute;
+    margin-left:15rem;
+    width:25rem;
+    height:100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+    display: flex;
+    flex-flow:column nowrap;
+}
+.body_left_top{
+    height:30rem;
+    background:url("../img/apple.jpg") center no-repeat;
+    background-size: 100% 100%;
+}
+.body_left_bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    height:3rem;
+}
+.body_left_bottom .sh{
+    border-right: 1px solid #999999;
+    height:100%;
+    width:50%; 
+    background:url("../img/sh.png") no-repeat top;
+}
+.body_left_bottom .th{
+    height:100%;
+    width:50%; 
+    background:url("../img/th.png") no-repeat top;
+}
+.body_left_bottom .sh p,
+.body_left_bottom .th p{
+    margin-top:1.75rem;
+    font-size:0.5rem;
+    font-family: "黑体";
+    color:#111111;
+    text-align:center;
+}
+.yc{
+    padding:3.75rem 0 0 2rem;
+    position: absolute;
+    margin-right:15rem;
+    left:40rem;
+    right:0;
+    height:100%;
+    width:370px;
+    overflow: hidden;
+
+}
+.body_right{
+    height:100%;
+    width:386px;
+    overflow: auto;
+}
+.body_right :first-child{
+    color:#fa4d36;
+    font-size: 0.75rem;
+    font-family:"黑体";
+}
+.body_right :nth-child(2){
+    color:#111111;
+    font-size:1.5rem;
+    font-family:Helvetica,Arial,sans-serif;
+}
+.body_right :nth-child(3){
+    margin:0 0 1rem 0;
+    font-size:0.5rem;
+    color:#999999;
+    font-family:Helvetica,Arial,sans-serif;
+}
+.body_right :nth-child(4),
+.body_right :nth-child(5){
+    font-size:14px;
+    font-family:Helvetica,Arial,sans-serif;
+}
+.body_right :nth-child(4){
+    color:#555555;
+}
+.body_right :nth-child(5){
+    color:#4594fc;
+    text-decoration: none;
+}
+.body_right .xzjx{
+    margin:4rem 0 0 0;
+    height:13.5rem;
+    border-bottom: 1px solid #aaaaaa;
+}
+.body_right .xzjx :first-child{
+    color:#111111;
+    font-size:0.75rem;
+    line-height:1rem;
+    font-family:Helvetica,Arial,sans-serif;
+}
+.body_right .xzjx :nth-child(2){
+    font-size:0.5rem;
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#4594fc;
+    line-height:2rem;
+    text-decoration: none;
+}
+.body_right .xzjx .i_12_p{
+    margin:0 2px 0 2px;
+    display: flex;
+    flex-flow: row nowrap;
+    border:1px solid #aaaaaa;
+    border-radius: 0.25rem;
+    height:4rem;
+}
+.body_right .xzjx .i_12_p .i_12_p_left,
+.body_right .xzjx .i_12_p .i_12_p_right{
+    height:100%;
+    width:50%;
+    flex:1 1 auto;
+}
+.body_right .xzjx .i_12_p .i_12_p_right{
+    text-align:right;
+}
+.body_right .xzjx .i_12_p .i_12_p_left :first-child{
+    margin:1.125rem 0 0 1rem;
+    line-height: 1rem;
+    font-size:1rem;
+    font-weight: 600;
+}
+.body_right .xzjx .i_12_p .i_12_p_right :first-child{
+    margin:1rem 1rem 0 0;
+    line-height: 1rem;
+    font-size:0.75rem;
+}
+.body_right .xzjx .i_12_p .i_12_p_right :last-child{
+    margin-right:1rem;
+    line-height: 1rem;  
+    font-size:1rem;
+    font-weight: 200;
+    color:#111111;
+}
+.body_right .xzjx .i_12_p .i_12_p_left :last-child{
+    margin:0.25rem 0 0 1rem;
+    line-height:0.5rem;
+    font-size:8px;
+    color:#111111;
+}
+.body_right .xzjx .i_12_p_m{
+    margin:1rem 2px 0 2px;
+    border:1px solid #aaaaaa;
+    border-radius: 0.25rem;
+    height:4rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_left,
+.body_right .xzjx .i_12_p .i_12_p_m_right{
+    height:100%;
+    width:50%;
+    flex:1 1 auto;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_right{
+    text-align:right;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_left :first-child{
+    margin:1.125rem 0 0 1rem;
+    line-height: 1rem;
+    font-size:1rem;
+    font-weight: 600;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_right :first-child{
+    margin:1rem 1rem 0 0;
+    line-height: 1rem;
+    font-size:0.75rem;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_right :last-child{
+    margin-right:1rem;
+    line-height: 1rem;  
+    font-size:1rem;
+    font-weight: 200;
+    color:#111111;
+}
+.body_right .xzjx .i_12_p_m .i_12_p_m_left :last-child{
+    margin:0.25rem 0 0 1rem;
+    line-height:0.5rem;
+    font-size:8px;
+    color:#111111;
+}
+.body_right .xzjx .i_12_p:hover,
+.body_right .xzjx .i_12_p_m:hover{
+    border-color:#111111;
+    cursor: pointer;
+}
+.body_right .xzwg{
+    padding:1rem 0 0 0;
+    height:13.5rem;
+    border-bottom: 1px solid #999999;
+}
+.body_right .xzwg :first-child{
+    color:#111111;
+    font-size:0.75rem;
+    line-height:1rem;
+    font-family:Helvetica,Arial,sans-serif;  
+}
+.body_right .xzwg .wg{
+    margin-top:0.75rem;
+    height:11rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.body_right .xzwg .wg :first-child,
+.body_right .xzwg .wg :nth-child(2),
+.body_right .xzwg .wg :nth-child(3),
+.body_right .xzwg .wg :nth-child(4){
+    border:1px solid #aaaaaa;
+    height:4rem;
+    width:8rem;
+    flex:1 1 auto;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.body_right .xzwg .wg :first-child{
+    margin:0.75rem 0.5rem 0 2px;
+    font-size: 0.5rem;
+    color:#111111;
+    line-height: 4rem;
+    text-align:center;
+}
+.body_right .xzwg .wg :nth-child(2){
+    margin:0.75rem 2px 0 0;
+    font-size: 0.5rem;
+    color:#111111;
+    line-height: 4rem;
+    text-align:center;
+}
+.body_right .xzwg .wg :nth-child(3){
+    margin:0 0.5rem 0 2px;
+    font-size: 0.5rem;
+    color:#111111;
+    line-height: 4rem;
+    text-align:center;
+}
+.body_right .xzwg .wg :nth-child(4){
+    margin-right: 2px;
+    font-size:0.5rem;
+    color:#111111;
+    line-height: 4rem;
+    text-align:center;
+}
+.body_right .xzwg .wg :first-child:hover,
+.body_right .xzwg .wg :nth-child(2):hover,
+.body_right .xzwg .wg :nth-child(3):hover,
+.body_right .xzwg .wg :nth-child(4):hover{
+    border-color:#555555;
+}
+.body_right .ccrl{
+    padding:1rem 0 0 0;
+    height:15rem;
+    border-bottom: 1px solid #999999;
+}
+.body_right .ccrl :first-child{
+    color:#111111;
+    font-size:0.75rem;
+    line-height:1rem;
+    font-family:Helvetica,Arial,sans-serif;  
+}
+.body_right .ccrl :nth-child(2){
+    font-size:0.5rem;
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#4594fc;
+    line-height:2rem;
+    text-decoration: none;
+}
+.body_right .ccrl .cc{
+    margin-top:0.75rem;
+    height:11rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.body_right .ccrl .cc :first-child,
+.body_right .ccrl .cc :nth-child(2),
+.body_right .ccrl .cc :nth-child(3),
+.body_right .ccrl .cc :nth-child(4){
+    border:1px solid #aaaaaa;
+    height:4rem;
+    width:8rem;
+    flex:1 1 auto;
+    border-radius: 0.25rem;
+    line-height: 4rem;
+    text-align:center;
+    color:#111111;
+    font-size:1rem;
+    cursor: pointer;
+}
+.body_right .ccrl .cc :first-child{
+    margin:0.75rem 0.5rem 0 2px;
+}
+.body_right .ccrl .cc :nth-child(2){
+    margin:0.75rem 2px 0 0;
+}
+.body_right .ccrl .cc :nth-child(3){
+    margin:0 0.5rem 0 2px;
+}
+.body_right .ccrl .cc :first-child:hover,
+.body_right .ccrl .cc :nth-child(2):hover,
+.body_right .ccrl .cc :nth-child(3):hover,
+.body_right .ccrl .cc :nth-child(4):hover{
+    border-color:#555555;
+}
+.body_right .ccrl .cc :last-child{
+    border:none;
+}
+.body_right .buy{
+    margin:1rem 0 0 0;
+    border:1px solid #0051ff;
+    background-image:linear-gradient(to bottom,#9eb8ff,#0051ff);
+    height:2rem;
+    width:80%;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    flex:1 1 auto;
+    float:left;
+}
+.body_right img{
+    margin:1.25rem 0 0 1.25rem;
+    height:24px;
+    width:24px;
+    cursor: pointer;
+}
+.body_right .buy:hover{
+    background-image:linear-gradient(to bottom,#acc2ff,#105cff);
+}
+.body_right .buy p{
+    color:#ffffff;
+    font-size: 0.75rem;
+    font-family:Helvetica,Arial,sans-serif; 
+    line-height:2rem;
+    text-align:center;
+}
+.last{
+    position: absolute;
+    top:43rem;
+    width:100%;
+    height:30rem;
+}
+.last .last_text{
+    margin:2rem 0 0 0;
+    color:#111111;
+    font-size:1.5rem;
+    font-family:Helvetica,Arial,sans-serif;
+    text-align:center;
+    font-weight: 800;
+}
+.last .last_img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin:3rem 0 0 0;
+    height:18rem;
+    width:46rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color:#ffffff;
+}
+.last .last_img :first-child{
+    margin-left:5rem;
+    height:18rem;
+    width:10rem;
+}
+.last .last_img :last-child{
+    margin-right: 5rem;
+    height:18rem;
+    width:5rem;
+}
+.pay_background{
+    display: none;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+}
+.pay{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#ffffff;
+    height:450px;
+    width:600px;
+    z-index:999;
+}
+.shut_down{
+    position: absolute;
+    top:0.75rem;
+    left:0.75rem;
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../img/wrong.png") no-repeat center;
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.information{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top:3rem;
+    height:400px;
+    align-items: center;
+}
+.address{
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    height:6rem;
+    width:550px;
+    background-color:#eeeeee;
+    border-radius: 0.5rem;
+}
+.address .address_img{
+    position: absolute;
+    top:50%;
+    left:1rem;
+    transform: translateY(-50%);
+    background:url("../img/address.png");
+    background-size:100% 100%;
+    transform: translateY(-50%);
+    height:2rem;
+    width:2rem;
+}
+.address .address_text{
+    padding-top:1rem;
+    margin-left:3.5rem;
+    height:4rem;
+    width:400px;
+    flex:1 1 auto;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.address .address_text :first-child{
+    float:left;
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#111111;
+    font-size:1rem;
+}
+.address .address_text :nth-child(2){
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#999999;
+    font-size:0.75rem;   
+    line-height: 1.375rem;
+}
+.address .address_text :nth-child(3){
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#111111;
+    font-size:0.75rem;    
+    line-height: 1.5rem;
+}
+.address .address_text :last-child{
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#fa4d36;
+    font-size:0.75rem;    
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.commodity{
+    background-color:#eeeeee;
+    position: absolute;
+    top:10rem;
+    height:14rem;
+    width:550px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.commodity .logo{
+    margin:0.5rem 1rem 0 1rem;
+    height:1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.commodity .logo0{
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../img/U.png") no-repeat center;
+}
+.commodity .logo1{
+    margin-left:0.5rem;
+    height:1.5rem;
+    width:10rem;
+    background-color:#ff7238;
+}
+.commodity .comm{
+    margin:0.5rem 1rem 0 1rem;
+    height:8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+.comm .comm_img{
+    height:8rem;
+    width:8rem;
+    background-color:#ff5814;
+}
+.comm .comm_text{
+    height:8rem;
+    width:20rem;
+    flex:1 1 auto;
+    background-color:#acc2ff;
+}
+.commodity .gmsl{
+    margin:0.5rem 1rem 0.5rem 1rem;
+    height:2rem;
+    background-color: #ff7238;
+    flex:1 1 auto;
+}
+.tijiao{
+    position: absolute;   
+    right:25px;
+    bottom:0.75rem;
+    height:2.8rem;
+    width:30rem;
+}
+.buy_money{
+    position: absolute;
+    right:8.5rem;
+    height:2.8rem;
+    width:20rem;
+    line-height:2.8rem;
+    text-align: right;
+    font-family:Helvetica,Arial,sans-serif;  
+    font-size:14px;
+}
+.buy_com{
+    position: absolute;
+    top:0;
+    right:0;
+    height:2.8rem;
+    width:8rem;
+    background-image: linear-gradient(to right,#ff7238,#ff5814);
+    border-radius: 1.4rem;
+    font-family:Helvetica,Arial,sans-serif; 
+    font-size:14px;
+    text-align: center;
+    line-height:2.8rem;
+    color:#ffffff;
+}

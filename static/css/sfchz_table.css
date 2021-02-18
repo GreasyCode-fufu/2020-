@@ -1,0 +1,24 @@
+.sfchz .sfchz_table{
+    display: flex;
+    flex-flow: row nowrap;
+    margin:1rem 1rem 0.75rem 12rem; 
+    flex:1 1 auto;
+    overflow: auto;
+}
+.sfchz .sfchz_table table{
+    flex:1 1 auto;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-spacing: 0;
+    empty-cells:hide;
+}
+.sfchz .sfchz_table table tr:nth-child(even) { 
+    background-color: #f6e8e8;
+} 
+.sfchz .sfchz_table table td{
+    font-size:14px;
+    line-height:1.5rem;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    font-family: '黑体';    
+}

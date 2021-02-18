@@ -1,0 +1,112 @@
+body{
+	background: url("../img/earth.jpg");
+	background-repeat: no-repeat;
+	background-size: 110% auto;
+}
+
+@keyframes enlarge{
+	0%{transform: scale(0.1);}
+	65%{transform: scale(1.8);}
+	100%{}
+}
+
+#login-box{
+	animation: enlarge ease 1s;
+	width: 30%;
+	height: auto;
+	/*最后需边框它去掉
+	/*border:1px solid #000;*/
+	margin:0 auto;
+	margin-top: 10%;
+	text-align: center;
+	background: #ffffff40;
+	padding: 20px 50px;
+	border-radius: 30px
+}
+
+#login-box h1{
+	color: #fff;
+}
+
+#login-box .form .item{
+	margin-top: 20px;
+}
+
+#login-box .form .item input{
+	width: 220px;
+	font-size: 25px;
+	border: 0;
+	border-bottom: 2px solid #fff;
+	padding: 10px 10px;
+	background: #ffffff00;
+	color: #fff;
+}
+
+#login-box .form .item i{
+	font-size: 25px;
+	color:#fff;
+}
+
+#login-box button{
+	position: inherit;
+	margin-top: 30px;
+	width: 180px;
+	height: 50px;
+	transform: translate(0);
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	/*box-sizing: border-box;*/
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	z-index: 1;
+	border: 0;
+	border-radius: 255px;
+	/*transition:1s;*/
+}
+
+a{
+	color:#fff;
+	text-decoration: none;
+}
+
+#login-box button:hover{
+	animation: animate 8s linear infinite;
+	transition: 0.5s;
+	transform: scale(1.2);
+}
+
+#login-box .item:hover{
+	transition: 0.7s;
+	transform: scale(1.2);
+}
+
+@keyframes animate{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
+}
+
+#login-box button:before{
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 40px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#login-box button:hover:before{
+	filter: blur(20px);
+	opacity: 1;
+	animation: animate 8s linear infinite;
+}

@@ -1,0 +1,144 @@
+.main_top :first-child{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.75rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.main_top :nth-child(2),
+.main_top :last-child{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 200;
+    line-height: 1rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.main .main_middle ul{
+    display: block;
+    height:35px;
+}
+.main .main_middle ul li{
+    margin-left:2rem;
+    height:35px;
+    float:left;
+    list-style: none;
+    line-height:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    transition: all 0.75s;
+    cursor: pointer;
+}
+.main .main_middle ul :first-child{
+    color:#ca203d;
+}
+.main .main_middle ul li:hover{
+    color:#ca203d;
+    box-shadow: inset 0px 1px 0px #ca203d;
+}
+.main .main_last >div .main_last_img{
+    height:270px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.main .main_last :first-child .main_last_img{
+    background:url(../img/21.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(2) .main_last_img{
+    background:url(../img/22.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(3) .main_last_img{
+    background:url(../img/23.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(4) .main_last_img{
+    background:url(../img/24.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(5) .main_last_img{
+    background:url(../img/25.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(6) .main_last_img{
+    background:url(../img/26.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(7) .main_last_img{
+    background:url(../img/30.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :nth-child(8) .main_last_img{
+    background:url(../img/34.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last :last-child .main_last_img{
+    background:url(../img/38.png) center no-repeat;
+    background-size:100% 100%;
+}
+.main .main_last >div .main_last_text{
+    flex:1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+.main .main_last >div .main_last_text .main_last_top,
+.main .main_last >div .main_last_text .main_last_last{
+    padding:0 0.75rem 0 0.75rem;
+    background-color: #eeeeee;
+    flex:1 1 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .main_last >div .main_last_text .main_last_top p,
+.main .main_last >div .main_last_text .main_last_last p{
+    font-size:8px;
+    color:#333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.main .main_last >div .main_last_text .main_last_last p{
+    color:red;
+}
+.main .main_last >div .main_last_text .main_last_top>div,
+.main .main_last >div .main_last_text .main_last_last>div{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    width:5rem;
+    height:14px;
+}
+.main .main_last >div .main_last_text .main_last_top>div>div{
+    margin-left:6px;
+    height:12px;
+    width:12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.main .main_last >div .main_last_text .main_last_top>div :first-child{
+    background-color:rgb(255, 167, 36);
+}
+.main .main_last >div .main_last_text .main_last_top>div :nth-child(2){
+    background-color:rgb(61, 81, 255);
+}
+.main .main_last >div .main_last_text .main_last_top>div :nth-child(3){
+    background-color:aqua;
+}
+.main .main_last >div .main_last_text .main_last_top>div :last-child{
+    background-color:#ff91a0;
+}
+.main .main_last >div .main_last_text .main_last_last>div>div{
+    margin-left:3px;
+    height:10px;
+    width:10px;
+    background:url(../img/xing1.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.main .main_last >div .main_last_text .main_last_last>div :first-child{
+    background:url(../img/xing.png) center no-repeat;
+    background-size: 100% 100%;
+}

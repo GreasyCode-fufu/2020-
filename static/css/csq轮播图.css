@@ -1,0 +1,77 @@
+
+.left-top #banner{
+    height:25rem;
+    width:25rem;
+    display: flex;
+    flex-direction: column ;
+    justify-self:space-between;
+}
+
+#content{
+    width:25rem;
+    height:25rem;
+    overflow: hidden;
+    position: relative;
+}
+#content #ul{
+    height:25rem;
+    position: absolute;
+    left:0;
+}
+
+#content #ul li{
+    list-style: none;
+    width:26rem;
+    height:26rem;
+    float:left;
+}
+#content #ul  li img{
+    width:24rem;
+    height:24rem;
+    /* cursor: pointer; */
+}
+#btn{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content:space-around;
+    position:absolute;
+    width:24rem;
+    margin-top:12rem;
+    font-size: 2rem;
+    color: #8f8f8f;
+    
+}
+#btn #left{
+    margin-right:23rem;
+    cursor: pointer;
+   
+}
+#btn #left:hover{
+   color: #CA203D;
+}
+#btn #right{
+    cursor: pointer;
+}
+#btn #right:hover{
+   color: #CA203D;
+}
+#dotul{
+    width:25rem;
+    height:1.2rem;
+    position:relative;
+    left:3.8rem;
+    top:1.5rem;
+}
+#dot #dotul li{
+    list-style: none;
+    float:left;
+    width:2rem;
+    height:0.3rem;
+    border-radius: 0.625rem;
+    background-color: #b8b4b4;
+    margin-left:1.2rem;
+    cursor: pointer;
+}
+.active{
+    background-color:#CA203D !important ;
+}

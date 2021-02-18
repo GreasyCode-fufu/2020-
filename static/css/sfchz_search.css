@@ -1,0 +1,49 @@
+.sfchz .sfchz_search{
+    margin:0 1rem 0 12rem;
+    height:6rem;
+    display: flex;
+    flex-flow:column nowrap;
+    border:none;
+    background-color:#ffffff;
+}
+.sfchz .sfchz_search .sfchz_search_top{
+    height: 3rem;
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sfchz .sfchz_search .sfchz_search_bottom{
+    height: 3rem;
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sfchz .sfchz_search .sfchz_search_top p,
+.sfchz .sfchz_search .sfchz_search_bottom p{
+    margin: 1rem 0 0 1rem;
+    font-size:14px;
+    color:#333333;
+    font-family: '黑体';    
+    line-height:1rem;
+    font-weight: 500;
+}
+.sfchz .sfchz_search .sfchz_search_top :nth-child(3),
+.sfchz .sfchz_search .sfchz_search_top :nth-child(5),
+.sfchz .sfchz_search .sfchz_search_top :nth-child(7),
+.sfchz .sfchz_search .sfchz_search_bottom :nth-child(3){
+    margin:1rem 0 0 2rem;
+}
+.sfchz .sfchz_search .sfchz_search_bottom :nth-child(2){
+    width:24rem;
+}
+.sfchz .sfchz_search input{
+    margin-top:0.75rem;
+    font-family: '黑体';
+    font-size:0.75rem;
+    display: block;
+    height:1.5rem;
+    width:10rem;
+    border:1px solid #aaaaaa;
+    color:#111111;
+    background-color: #eeeeee;
+}

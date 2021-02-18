@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.bigFace{
+    background:url(../img/banner.jpg)no-repeat;
+    height:32rem;
+    width: 100%;
+}
+.buy{
+    margin: 1rem 0 0 0;
+    border: 1px solid #5fd1d1;
+    background-image: linear-gradient(to bottom,#9eb8ff,#19a3da);
+    color:#fff;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    flex: 1 1 auto;
+    float: left;
+    text-align: center;
+
+}
+button{
+    background-color:rgba(239, 245, 242, 0.2);
+    border:none;
+    height:2.5rem;
+    width:5.2rem;
+}
+
+.container {
+    position: absolute;
+    width: 47%;
+    height: 25rem;
+    margin:30px auto 0 30px;
+    box-shadow: 0 0 5px green;
+    overflow: hidden;
+}
+.container .wrap {
+    position: absolute;
+    width: 4200px;
+    height: 400px;
+    z-index: 1;
+}
+.container .wrap img {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+.container .arrow {
+    color:#111;
+    display: none;
+    position: absolute;
+    top: 35%;
+    padding:0px 14px;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 2;
+    
+}
+.container .arrow_left {
+    left: 10px;
+}
+.container .arrow_right {
+    right: 10px;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.demo{
+    width: 47%;
+    height: 100%;
+    margin:50px 0 auto auto;
+    overflow: hidden;
+}
+.demo p:nth-child(2){
+    font-family:宋体;
+} 
+h2{
+    text-align: center;
+    margin:0 0 1.5rem 0;
+}
+h3{
+    color:rgb(70, 67, 231);
+    margin:0.5rem 0 0 0;
+}
+
+.information{
+    
+    margin:0.5rem 0 0 0;
+}
+.information div{
+    margin:0 0 1rem 0;
+}
+.information div button{
+    margin:0 1rem 0 0;
+
+}
+input{
+    width: 3.5rem;
+    height: 1.5rem;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+#myimage{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+    
+strong{
+    font-size:1.8rem;
+}
+.wish{
+    display:flex;
+    height:2.5rem;
+    width: 15rem;
+}
+.wish div:nth-child(2){
+    margin:0 0 0 1rem;
+}
+#value1,
+#value2{
+    display:none;
+}

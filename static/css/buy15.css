@@ -1,0 +1,40 @@
+.divo15 {
+    position: absolute;
+    top: 564.5rem;
+    height: 17.75rem;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.divo15 .divo151 {
+    height: 3rem;
+    width: 60rem;
+    border-bottom: 1px solid #aaaaaa;
+}
+.divo15 .divo151 p {
+    line-height: 3rem;
+    font-size: 1.25rem;
+    color: #333333;
+}
+.divo15 .divo152{
+    height:14.75rem;
+    width: 50rem;
+    /* background-color: tomato; */
+}
+.divo15 .divo152 ul{
+    margin-top:3rem;
+    display: block;
+    height:8.75rem;
+    width:50rem;
+    /* background-color: teal; */
+}
+.divo15 .divo152 ul li{
+    line-height:1.75rem;
+    line-height:1.75rem;
+    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+    color:#444444;
+}

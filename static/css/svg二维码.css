@@ -1,0 +1,37 @@
+#svg3{
+    height:0rem;
+    transition: height 0.3s;
+    margin-bottom: 0.25rem;
+}
+#r12,
+#r13,
+#r14{
+    transition: all 1.5s;
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;
+}
+#r18,
+#r20{ 
+    transition: all 1.5s;
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+}
+
+#r19{
+    transition: all 1.5s;
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+}
+.div10 .div103:hover #svg3 #r12,
+.div10 .div103:hover #svg3 #r13,
+.div10 .div103:hover #svg3 #r14{
+    stroke-dashoffset: 0;
+}
+.div10 .div103:hover #svg3 #r19{
+    stroke-dasharray: 20 5;
+    stroke-dashoffset: 0;
+}
+.div10 .div103:hover #svg3 #r18,
+.div10 .div103:hover #svg3 #r20{
+    stroke-dasharray: 20 5;
+}

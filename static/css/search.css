@@ -1,0 +1,69 @@
+.search .search_top{
+    padding-left:1rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    height:2rem;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #aaaaaa;
+}
+.search .search_top p{ 
+    font-size:0.75rem;
+    color:#444444;
+    font-family: '黑体';    
+    line-height:2rem;
+}
+
+.search .search_main{
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    height:2rem;
+    display: flex;
+    flex-flow:row nowrap;
+}
+.search .search_main p{ 
+    margin-left: 1rem;
+    font-size:14px;
+    color:#333333;
+    font-family: '黑体';    
+    line-height:3rem;
+    font-weight: 500;
+}
+.search .search_main>:nth-child(2){
+    margin-top:10px;
+    font-family: '黑体';
+    font-size:0.75rem;
+    display: block;
+    height:1.75rem;
+    width:10rem;
+    border:1px solid #dddddd;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 1px #dddddd inset;
+}
+.search .search_main>:nth-child(4),
+.search .search_main>:nth-child(6){
+    margin:11px 0 0 0;
+    font-family: '黑体';
+    font-size:0.75rem;
+    display: block;
+    height:1.75rem;
+    width:7rem;
+    border:1px solid #dddddd;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 1px #dddddd inset;
+    color:#333333;
+}
+.search .search_main>:nth-child(6){
+    width:3rem;
+}
+.search  .search_main>:last-child{
+    margin:11px 0 0 1rem;
+    font-family: '黑体';
+    font-size:0.75rem;
+    display: block;
+    height:1.75rem;
+    width:5rem;
+    border-radius: 0.25rem;
+    color:#ffffff;
+    background-color: #1ed2ff;
+    border:1px solid #dddddd;
+}

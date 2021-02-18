@@ -1,0 +1,25 @@
+.table table{
+    flex:1 1 auto;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-spacing: 0;
+    empty-cells:hide;
+}
+
+.table table tr:nth-child(odd) { 
+    background-color: #f6e8e8;
+} 
+.table table tr:nth-child(1){
+    background-color:#dddddd;
+}
+.table table td:nth-child(2){
+    cursor: pointer;
+}
+.table table td{
+    font-size:14px;
+    line-height:2rem;
+    padding-left:0.75rem;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    font-family: '黑体';    
+}

@@ -1,0 +1,35 @@
+.div9{
+    position:absolute;
+    top:246rem;
+    height:36rem;
+    background-color: #000000;
+    width:100%;
+}
+.div9 .div91{
+    position:absolute; 
+    margin:1rem 0 0 10rem;
+    height:12rem;
+    width:38rem;
+}
+.div9 .div91 :first-child,
+.div9 .div92 p{
+    font-size:1.25rem;
+    line-height:2rem;
+    color:#ffffff;
+    font-weight: 600;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.div9 .div91 :last-child{
+    font-size:7rem;
+    color:#ffffff;
+    font-weight: 600;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.div9 .div92{
+    position:absolute; 
+    margin:0 10rem 0 0;
+    top:15rem;
+    right:0;
+    height:15rem;
+    width:34rem;
+}

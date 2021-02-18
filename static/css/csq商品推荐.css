@@ -1,0 +1,152 @@
+
+.bac {
+  position:relative;
+  width: 100%;
+  height:20rem;
+  /* top:1740rem; */
+}
+.home-goods-list {
+    background: #f5f5f5;
+    /* margin-top: 0;
+    padding-top: 0; */
+  }
+  .home-goods-list .box-hd .title{
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+  }
+  .box-bd{
+      width: 100%;
+      height:400px;
+      /* border: 1px solid red; */
+      position: relative;
+      width: 100%;
+  }
+ 
+  .home-goods-list .home-star-goods ul {
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: 1.3rem;
+    float: left;
+    /*网格布局*/
+    display: grid;
+    grid-template-columns: repeat(5,234px);
+    grid-template-rows: repeat(1,300px);
+    grid-column-gap: 14px;
+  }
+  /* .xm-carousel-col-5-list li {
+    float: left;
+    width: 234px;
+  } */
+  h3{
+    font-size: 1.2rem;
+    margin-top: -0.2rem;
+  }
+  .home-goods-list .home-star-goods ul li {
+    border-radius: 0.25rem;
+    height: 290px;
+    padding-top: 39px;
+    text-align: center;
+    list-style-type: none;
+    background: #fff;
+    transition: all 0.6s;
+    position: relative;
+    margin-bottom: 14px;
+    overflow: hidden;
+    margin-left: 14px;
+    cursor: pointer; /*手*/
+    /* transition: all 0.2s linear; */
+  }
+  
+  .home-goods-list .home-star-goods ul li:hover {
+    z-index: 2;
+   
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translate3d(0, -2px, 0);
+  }
+  
+  .home-goods-list .home-star-goods ul li img:nth-last-child(2) {
+    display: inline-block;
+    /* display: inline; */
+    height: 16px;
+    /* margin-top: -16px; */
+    vertical-align: middle;
+  }
+  
+  .home-goods-list .home-star-goods ul li:hover .btn {
+      bottom: 0;
+    }
+  
+  .home-goods-list .home-star-goods ul .btn {
+    width: 100%;
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    -webkit-transition: bottom 0.6s;
+    transition: bottom 0.6s;
+      background:rgba(220,32,61, 0.9);
+    
+      color: #fff;
+  }
+  .btn {
+      /* display: inline-block;
+      *zoom: 1;
+      *display: inline;
+      width: 158px;
+      height: 38px;
+      padding: 0;
+      margin: 0; */
+      /* border: 1px solid #ca3030; */
+       /* font-size: 14px; */
+      line-height: 40px; 
+      text-align: center;
+      color: #cf3a3a;
+      cursor: pointer;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+  }
+  
+ 
+  /*最后一块*/
+  
+  .purchasi-process {
+    background: #f5f5f5;
+    text-align: center;
+    /* padding-bottom: 105px; */
+  }
+  /* .purchasi-process h2 {
+    font-size: 1.75rem;
+    line-height: 1;
+    position: relative;
+    top: 25px;
+    margin: 8px;
+    padding: 0; */
+    /* color: #424242; */
+  
+  
+  .purchasi-process p {
+    font-size: 14px;
+    position: relative;
+      top: 30px;
+  }
+  
+  
+  /* .purchasi-process .step {
+    background: url(//c1.mifile.cn/f/i/16/qiye2016/step.jpg) 50% 0 no-repeat;
+    width: 758px;
+    height: 19px;
+    margin: 56px auto 20px;
+  } */
+  
+  .purchasi-process a {
+    display: inline-block;
+    /* display: inline; */
+    margin: 4rem 0 3rem 0;
+    font-size: 20px;
+    font-weight: blod;
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  

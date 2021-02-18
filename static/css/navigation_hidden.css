@@ -1,0 +1,29 @@
+.navigation_hidden .navigation_hidden_div{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:0 3rem 0 3rem;
+    height:7rem;
+    width:7rem;
+}
+.navigation_hidden .navigation_hidden_div .navigation_hidden_img{
+    height:5rem;
+    width:5rem;
+}
+.navigation_hidden .navigation_hidden_div .navigation_hidden_text{
+    width:7rem;
+    height:1rem;
+}
+.navigation_hidden .navigation_hidden_div .navigation_hidden_img img{
+    height:5rem;
+    width:5rem;
+}
+.navigation_hidden .navigation_hidden_div .navigation_hidden_text p{
+    line-height: 1rem;
+    text-align: center;
+    color:#333333;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:0.75rem;
+}

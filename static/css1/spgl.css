@@ -1,0 +1,104 @@
+.sjsp .sjsp_top{
+    margin:0 0 0 11rem;
+    padding-left:1rem;
+    height:2rem;
+    border-top-right-radius: 0.25rem;
+    background-color: rgb(40, 151, 255);
+}
+
+.sjsp .sjsp_top p{
+    color:#ffffff;
+    font-family:'黑体';
+    font-size:0.75rem;
+    line-height:2rem;
+}
+
+.sjsp .sjsp_main{
+    margin-left:11rem;
+    padding:1rem;
+    flex:1 1 auto;
+    display:flex;
+    flex-flow: column nowrap;
+    background-color:#ffffff;
+    border-bottom-right-radius: 0.25rem;
+}
+.sjsp .sjsp_main>p{
+    color:#111111;
+    font-size:18px;
+    font-family: '黑体';
+}
+.sjsp .sjsp_main .sjsp_main_change{
+    margin:0.75rem 1rem 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family:'黑体';
+    font-size:0.875rem;
+    height:1rem; 
+}
+.sjsp .sjsp_main .sjsp_main_change :first-child{
+    font-size:0.75rem;
+    font-family: '黑体';
+    color:#ff7920;
+}
+.sjsp .sjsp_main .sjsp_main_change input{
+    margin-left:0.75rem;
+}
+.sjsp .sjsp_main .sjsp_bt{
+    margin:0.75rem 1rem 0 1rem;
+    display:flex;
+    flex-flow: row nowrap;
+    font-family: '黑体';
+    font-size:0.75rem;
+    line-height: 1.75rem;
+    height:1.75rem;
+}
+.sjsp .sjsp_main .sjsp_bt input{
+    margin-left:0.75rem;
+    border:1px solid #999999;
+    height:100%;
+    border-radius: 0.125rem;
+    flex:1 1 auto;
+}
+.sjsp .sjsp_main .sjsp_bt :first-child{
+    font-size:0.75rem;
+    font-family: '黑体';
+    color:#ff7920;
+}
+.sjsp .sjsp_main .sjsp_spmd,
+.sjsp .sjsp_main .sjsp_spsx{
+    margin:0.75rem 1rem 0 1rem;
+    display:flex;
+    flex-flow: row wrap;
+    font-family: '黑体';
+    font-size:0.75rem;
+    line-height: 1.75rem;
+    height:1.75rem;
+}
+.sjsp .sjsp_main .sjsp_spmd :nth-child(2),
+.sjsp .sjsp_main .sjsp_spsx :nth-child(2){
+    margin-left:0.5rem;
+    color:#999999;
+}
+.sjsp .sjsp_main .sjsp_spmd_wbk{
+    display:flex;
+    flex-flow: row nowrap;
+    height:5rem;
+    margin:0rem 1rem 0 1rem;
+}
+.sjsp .sjsp_main .sjsp_spmd_wbk textarea{
+    margin-left:0.5rem;
+    flex:1 1 auto;
+    border:1px solid #999999;
+    height:100%;
+    border-radius: 0.125rem;
+}
+.sjsp .sjsp_main .sjsp_spsx_div{
+    display:flex;
+    flex-flow: row wrap;
+    flex:1 1 auto;
+    margin:0rem 1rem 0 5rem;
+    height:10rem;
+    border:1px solid #999999;
+    border-radius: 0.125rem;
+    background-color:#eeeeee;
+}

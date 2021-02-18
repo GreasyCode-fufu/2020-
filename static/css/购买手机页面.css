@@ -1,0 +1,546 @@
+html,body{
+    height:180rem;
+    margin:0;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    
+}
+*{
+    margin:0;
+    padding:0;   
+}
+.header{
+    background-color:#d9d9d9;
+    display: flex;
+    height:3rem;    
+    position:fixed;
+    width:100%;
+    z-index:1;    
+}
+.header p{
+    line-height: 3rem;
+    margin:0 2rem 0 2rem;
+    font-size:1.25rem;
+}
+.header .dropdown {
+    position: relative;
+    margin:0 1rem 0 1rem;
+    line-height: 3rem; 
+    cursor: pointer;  
+}
+
+.dropdown-content {
+    display: none;    
+    position: absolute;
+    background-color: #d9d9d9;
+    
+    height:15rem;    
+    width:50rem;
+    z-index:1;   
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    display:flex; 
+    /*transition:all 5s;*/
+}
+.dropdown:hover{
+    background-color: #000000;
+    color:#ffffff;
+    border-radius: 1rem;   
+}
+.dropdown:hover .dropdown-content img{
+    display: block;
+    cursor: pointer;   
+    width:10rem;
+    height:10rem;
+    margin:2rem 0rem 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    position: absolute;
+    /*width:100rem;*/
+    top:3rem;
+    /*height:60rem;*/
+    /*display: flex;
+    flex-flow: row nowrap;*/
+    
+
+}
+.main_aside{
+    position: absolute;
+    margin-left:15rem;
+    width:25rem;
+    height:100%;
+    top:0;
+    left:0;
+    /*overflow: hidden
+    display: flex;
+    flex-flow:column nowrap;*/
+    
+   
+    
+}
+.main_aside_top #banner{
+    height:40rem;
+    width:25rem;
+    display: flex;
+    flex-direction: column ;
+    justify-self:space-between;
+}
+#content{
+    width:25rem;
+    height:30rem;
+    overflow: hidden;
+    position: relative;
+}
+#content #ul{
+    height:30rem;
+    position: absolute;
+    left:0;
+    
+}
+
+#content #ul li{
+    list-style: none;
+    width:25rem;
+    height:30rem;
+    float:left;
+}
+#content #ul  li img{
+    width:25rem;
+    height:30rem;
+    cursor: pointer;
+}
+#btn{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content:space-around;
+    position:absolute;
+    width:25rem;
+    margin-top:15rem;
+}
+#btn #left{
+    margin-right:22rem;
+    cursor: pointer;
+}
+#btn #right{
+    cursor: pointer;
+}
+#dot #dotul{
+    width:25rem;
+    height:2rem;
+    position:relative;
+    left:6rem;
+    top:1rem;
+}
+#dot #dotul li{
+    list-style: none;
+    float:left;
+    width:1rem;
+    height:1rem;
+    border-radius: 0.625rem;
+    background-color: #b3adad;
+    margin-left:1rem;
+    cursor: pointer;
+}
+.active{
+    background-color:rgb(24, 24, 26) !important ;
+}
+
+.main_aside_bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    height:3rem;
+    margin:2rem;
+
+}
+.main_aside_bottom .sh{
+    border-right: 1px solid #000000;
+    height:100%;
+    cursor: pointer;
+    width:50%; 
+    background:url("../img/sh.png") no-repeat top;
+}
+.main_aside_bottom .th{
+    cursor: pointer;
+    height:100%;
+    width:50%; 
+    background:url("../img/th.png") no-repeat top;
+}
+.main_aside_bottom .sh p,
+.main_aside_bottom .th p{
+    margin-top:1.75rem;
+    font-size:0.5rem;
+    font-family: Helvetica,Arial,sans-serif; 
+    color:#111111;
+    text-align:center;
+}
+
+
+
+
+.main_aticle{
+    padding:0rem 0 0 5rem;
+    position: absolute;
+    margin-right:15rem;
+    left:40rem;
+    right:0;
+    height:100%;
+    width:24rem;
+    font-family:"微软雅黑"
+    /*overflow: hidden;*/
+   
+
+}
+.g_n{
+    border:1px solid #000000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    height:3.5rem;
+    justify-content: space-around;
+    width:20rem;
+    font-size: 1rem;
+
+}
+.g_x{
+    border:1px solid #000000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    height:3.5rem;
+    margin:1rem 0rem 0rem 0rem;
+    justify-content: space-around;
+    width:20rem;
+    font-size: 1rem;
+}
+.main_aticle .xzwg .wg{
+    margin-top:0.75rem;
+    height:11rem;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0rem 1rem 0rem 0rem;
+}
+.main_aticle .xzwg .wg :first-child,
+.main_aticle .xzwg .wg :nth-child(2),
+.main_aticle .xzwg .wg :nth-child(3){
+
+    border:1px solid #000000;
+    height:4rem;
+    width:8rem;
+    flex:1 1 auto;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin:0rem 1rem 0rem 0rem;
+}
+.xzwg .wg :nth-child(1),
+.xzwg .wg :nth-child(2),
+.xzwg .wg :nth-child(3){
+
+    text-align: center;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+.main_aticle .ccrl .rl{
+    margin-top:0.75rem;
+    height:11rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main_aticle .ccrl .rl :first-child,
+.main_aticle .ccrl .rl :nth-child(2),
+.main_aticle .ccrl .rl :nth-child(3){
+
+    border:1px solid #000000;
+    height:4rem;
+    width:8rem;
+    flex:1 1 auto;
+    border-radius: 0.25rem;
+    cursor: pointer;/*鼠标指针变成指针*/
+    margin:0rem 1rem 0rem 0rem;
+}
+.ccrl .rl :nth-child(1),
+.ccrl .rl :nth-child(2),
+.ccrl .rl :nth-child(3){
+    text-align: center;
+    font-size: 1rem;
+    line-height: 4rem;
+}
+.main_aticle .buy{
+    margin:1rem 0 0 0;
+    border:1px solid #000000;
+    background-color: #d9d9d9;
+    height:2rem;
+    width:95%;
+    border-radius: 0.25rem;
+    cursor: pointer;/*鼠标指针变成手指*/
+
+}
+.main_aticle .buy p{
+    color:#000000;
+    font-size: 1rem;
+    font-family:Helvetica,Arial,sans-serif; 
+    line-height:2rem;
+    text-align:center;
+}
+h6{
+    line-height: 2rem;
+
+}
+.main_aticle :first-child,
+.main_aticle :nth-child(2),
+.main_aticle :nth-child(3),
+.main_aticle :nth-child(4),
+.main_aticle :nth-child(5){
+
+    line-height: 1.5rem;
+}
+
+
+.main_aticle :nth-child(5){
+    font-size: 0.5remz;
+}
+
+
+
+.footer{
+    position: absolute;
+    top:53rem;
+    /*height:120rem;*/
+    margin:2rem 0 0 0;
+    width:50%;
+}
+/*.footer img :nth-child(1),
+.footer img :nth-child(6),
+.footer img :nth-child(3){
+    /*height:40rem;
+    width:30rem;
+    
+}
+/*.footer img :nth-child(2),
+
+.footer img :nth-child(4),
+.footer img :nth-child(5),
+.footer img :nth-child(7),
+.footer img :nth-child(8),
+.footer img :nth-child(9){
+    /*height:50rem;
+    width:30rem;
+    
+    
+}*/
+/*添加响应式*/
+@media screen and (min-width:600px) and (max-width:900px){
+    .header,.footer{
+        width:600px;
+       
+    }
+    .main{
+        width:600px;
+        
+    }
+}
+@media screen and(max-width:600px){
+    .header,.footer{
+        width:500px;
+       
+
+    }
+    .main{
+        width:300px;
+    }
+}
+/*添加响应式*/
+
+.pay_background{
+    display: none;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+}
+.pay{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#ffffff;
+    height:450px;
+    width:600px;
+    z-index:999;
+}
+.shut_down{
+    position: absolute;
+    top:0.75rem;
+    left:0.75rem;
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../img/wrong.png") no-repeat center;
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.information{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top:3rem;
+    height:400px;
+    align-items: center;
+}
+.address{
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    height:6rem;
+    width:550px;
+    background-color:#eeeeee;
+    border-radius: 0.5rem;
+}
+.address .address_img{
+    position: absolute;
+    top:50%;
+    left:1rem;
+    transform: translateY(-50%);
+    background:url("../img/address.png");
+    background-size:100% 100%;
+    transform: translateY(-50%);
+    height:2rem;
+    width:2rem;
+}
+.address .address_text{
+    padding-top:1rem;
+    margin-left:3.5rem;
+    height:4rem;
+    width:400px;
+    flex:1 1 auto;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.address .address_text :first-child{
+    float:left;
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#111111;
+    font-size:1rem;
+}
+.address .address_text :nth-child(2){
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#999999;
+    font-size:0.75rem;   
+    line-height: 1.375rem;
+}
+.address .address_text :nth-child(3){
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#111111;
+    font-size:0.75rem;    
+    line-height: 1.5rem;
+}
+.address .address_text :last-child{
+    font-family:Helvetica,Arial,sans-serif;  
+    color:#000000;
+    font-size:0.75rem;    
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.commodity{
+    background-color:#eeeeee;
+    position: absolute;
+    top:10rem;
+    height:14rem;
+    width:550px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.commodity .logo{
+    margin:0.5rem 1rem 0 1rem;
+    height:1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.commodity .logo0{
+    height:1.5rem;
+    width:1.5rem;
+    background:url("../img/U.png") no-repeat center;
+}
+.commodity .logo1{
+    margin-left:0.5rem;
+    height:1.5rem;
+    width:10rem;
+    background-color:#d9d9d9;
+}
+.commodity .comm{
+    margin:0.5rem 1rem 0 1rem;
+    height:8rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+.comm .comm_img{
+    height:8rem;
+    width:8rem;
+    background-color:#d9d9d9;
+}
+.comm .comm_text{
+    height:8rem;
+    width:20rem;
+    flex:1 1 auto;
+    background-color:#d9d9d9;
+}
+.commodity .gmsl{
+    margin:0.5rem 1rem 0.5rem 1rem;
+    height:2rem;
+    background-color: #d9d9d9;
+    flex:1 1 auto;
+}
+.tijiao{
+    position: absolute;   
+    right:25px;
+    bottom:0.75rem;
+    height:2.8rem;
+    width:30rem;
+}
+.buy_money{
+    position: absolute;
+    right:8.5rem;
+    height:2.8rem;
+    width:20rem;
+    line-height:2.8rem;
+    text-align: right;
+    font-family:Helvetica,Arial,sans-serif;  
+    font-size:14px;
+}
+.buy_com{
+    position: absolute;
+    top:0;
+    right:0;
+    height:2.8rem;
+    width:8rem;
+    background-image: linear-gradient(to right,#d9d9d9,#d9d9d9);
+    border-radius: 1.4rem;
+    font-family:Helvetica,Arial,sans-serif; 
+    font-size:14px;
+    text-align: center;
+    line-height:2.8rem;
+    color:#ffffff;
+}

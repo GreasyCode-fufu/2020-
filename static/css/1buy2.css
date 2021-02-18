@@ -1,0 +1,87 @@
+.div2{
+    position: absolute;
+    top:2rem;
+    width:100%;
+    height:5rem;
+    z-index:2;
+    background-color: #ffffff;
+}
+.div2 .div21{
+    float: left;
+    height:2rem;
+    margin: 1.5rem 0 0 1.5rem;
+}
+.div2 .div21 img{
+    height:2rem;
+    width:10rem;
+}
+.div2 .div22{
+    float: left;
+    margin: 1.5rem 0 0 2rem;
+    height:2rem;
+}
+.div2 .div22 img{
+    float:left;
+    height:2rem;
+    width:2rem;
+}
+.div2 .div22 p{
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    margin:1.5re 0 0 0.25rem;
+    float: left;
+    line-height:2rem;
+}
+.div2 .div23{
+    float: left;
+    height:1.5rem;
+    margin:1.75rem 0 0 0;
+}
+.div2 .div23 .div231{
+    margin-left: 1.5rem;
+    background-color: rgb(255, 68, 84);
+    height:1.5rem;
+    border-radius: 0.75rem;
+    font-size:14px;
+    line-height:1.5rem;
+    color:#eeeeee;
+    float:left;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.div2 .div23 .div232{
+    margin-left:1.5rem;
+    background-color: rgb(85, 137, 252);
+    height:1.5rem;
+    border-radius: 0.75rem;
+    font-size:14px;
+    line-height:1.5rem;
+    color:#eeeeee;
+    float:left;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.div2 .div24{
+    margin:1.75rem 0 0 1.5rem;
+    float: left;
+    height:1.5rem;
+}
+.div2 .div24 p{
+    float:left;
+    margin-left:1.5rem;
+    line-height: 1.5rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.div2 .div25{
+    margin:1.5rem 1.5rem 0 0;
+    float:right;
+    height:30px;
+}
+.div2 .div25 input{
+    display: block;
+    height:28px;
+    width:13rem;
+    border-radius: 14px;
+    border:1px solid #dddddd;
+    background-color: #eeeeee;
+    background: url(../../img/购买/4.png) center no-repeat;
+    background-size:20px 20px;
+    background-position-x: 97%;
+}

@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color:#333333;
+}
+.div1{
+    z-index: 4;
+    position: fixed;
+    height:2rem;
+    background-color: #333333;
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.div11{
+    margin-left:1.5rem;
+    line-height:2rem;
+    color:#dddddd;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.div12{
+    margin-right:1.5rem;
+}
+.div12 ul li{
+    margin-left:1rem;
+    float: left;
+    list-style: none;
+    line-height: 2rem;
+    font-size:0.75rem;
+}
+.div12 ul li:hover{
+    background-color: #ffffff;
+}
+.div12 ul li:hover a{
+    color:rgb(148, 0, 0);
+}
+.div12 ul li a{
+    margin-right:0.25rem;
+    text-decoration: none;
+    color:#dddddd;
+}
+.div12 ul li a img{
+    margin-left: 0.25rem;
+    height:0.75em;
+    width:0.75rem;
+}
+.div1 .div12 ul li:hover .div121{
+    display:block;
+}
+.div1 .div12 ul li .div121{
+    height:5rem;
+    background-color: #ffffff;
+    display: none;
+}
+.div1 .div12 ul li .div121 a{
+    display: block;
+    color:#666666;
+    line-height: 2.5rem;
+    font-size:0.75rem;
+}
+.div1 .div12 ul li .div121 a:hover{
+    color:rgb(148, 0, 0);
+}

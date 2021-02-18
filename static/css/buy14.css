@@ -1,0 +1,43 @@
+.divo14 {
+    position: absolute;
+    top: 552rem;
+    height: 12.5rem;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.divo14 .divo141 {
+    height: 3rem;
+    width: 60rem;
+    border-bottom: 1px solid #aaaaaa;
+}
+.divo14 .divo141 p {
+    line-height: 3rem;
+    font-size: 1.25rem;
+    color: #333333;
+}
+.divo14 .divo142{
+    padding:3rem 0 3rem 0;
+    height:9.5rem;
+    width: 50rem;
+}
+.divo14 .divo142 ul{
+    display: block;
+    height:1.75rem;
+    width:50rem;
+    /* background-color: teal; */
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.divo14 .divo142 ul li{
+    float:left;
+    line-height:1.75rem;
+    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+    color:#444444;
+}

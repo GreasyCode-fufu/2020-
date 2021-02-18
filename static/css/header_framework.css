@@ -1,0 +1,27 @@
+.header .header_left{
+    flex:1 1 auto;
+    min-width: 900px;
+}
+.header .header_right{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: stretch;
+    width:314px;
+}
+.header .header_right .header_right_text{
+    flex:1 1 auto;
+}
+.header .header_right .header_right_buy{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    height:64px;
+}
+.header .header_right .header_right_buy .header_right_buy_button{
+    width:250px;
+    background-color:#ffbe00;
+}
+.header .header_right .header_right_buy .header_right_buy_car{
+    background-color:#ca203d;
+    flex:1 1 auto;
+}

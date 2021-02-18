@@ -1,0 +1,30 @@
+.div6{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:90rem;
+    height:12rem;
+    width:100%;
+    font-size:1.25rem;
+    font-weight: 600;
+    line-height:2rem;
+    z-index:2;
+    background-color: #ffffff;
+    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.div6 .div61{
+    margin-top:0rem;
+    opacity: 0;
+    transition: all 2s;
+}
+.div6 .div62{
+    margin-bottom:1rem;
+    width:2rem;
+    height:2rem;
+}
+.div6 .div62 img{
+    height:2rem;
+    width: 2rem;
+}

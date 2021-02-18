@@ -1,0 +1,50 @@
+.main .main_top{
+    height:100px;
+    width:1000px;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.main .main_middle{
+    height:35px;
+    width:1000px;
+    border-bottom: 1px solid #aaaaaa;
+}
+.main .main_last{
+    height:340px;
+    width:1000px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items:center;
+    justify-content:left;
+    overflow:hidden;
+}
+.main .main_last>div{
+    margin:0 2rem 0 2rem;
+    height:320px;
+    width:270px;
+    min-width: 270px;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: stretch;
+    transform: translateX(0px);
+    transition: all 1s ease;
+}
+.main .main_footer{
+    height:6px;
+    width:40px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.main .main_footer .main_footer_in{
+    height:6px;
+    width:6px;
+    border-radius: 3px;
+    background-color:#aaaaaa;
+    transition: all 0.5s;
+}
+.main .main_footer :first-child{
+    background-color: #ca203d;
+}

@@ -1,0 +1,57 @@
+.div2_5{
+    z-index: 3;
+    position:fixed;
+    /* top:10px; */
+    height:0rem;
+    border-bottom:2px solid #dddddd;
+    width:100%;
+    transition: height 0.5s;
+    overflow:hidden;
+    background-color: #eeeeee;
+    opacity: 0.9;
+}
+.div2_5 .div41{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:3.5rem;
+    width:30rem;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.div2_5 .div41>div{
+    height:3rem;
+    transition: all 0.5s;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+.div2_5 .div41>div>a{
+    /* line-height: 45px; */
+    font-size: 17px;
+    /* font-weight: 500; */
+    line-height:2.85rem;
+    color:#000000;
+    text-decoration: none;
+}
+.div2_5 .div41>div>.div412{
+    height:2px;
+    width:100%;
+    background-color:#ca203d;
+    transition: all 0.5s;
+}
+.div2_5 .div41>div>.div411,
+.div2_5 .div41>div>.div413,
+.div2_5 .div41>div>.div414{
+    height:2px;
+    width:0;
+    background-color:#ca203d ;
+    transition: all 0.5s;
+}
+.div2_5 .div41 div a:hover{
+    color:#ca203d;
+}

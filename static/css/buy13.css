@@ -1,0 +1,214 @@
+.divo13 {
+  position: absolute;
+  top: 368rem;
+  height: 184rem;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  transition: all 1s;
+}
+.divo13 .divo131 {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 60rem;
+  border-bottom: 1px solid #aaaaaa;
+}
+.divo13 .divo131 p {
+  line-height: 3rem;
+  font-size: 1.25rem;
+  color: #333333;
+}
+.divo13 .divo132 {
+  margin-top: 1.5rem;
+  height: 1rem;
+  width: 60rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.divo13 .divo132 .divo1321 {
+  height: 75rem;
+  width: 75rem;
+  transform: translateX(-13rem) translateY(-25rem) rotate(30deg);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo132 .divo1321 .divo13211,
+.divo13 .divo132 .divo1321 .divo13212,
+.divo13 .divo132 .divo1321 .divo13213,
+.divo13 .divo132 .divo1321 .divo13214 {
+  width: 18.75rem;
+  cursor: pointer;
+}
+.divo13 .divo132 .divo1321 .divo13211 {
+  background-color: #ffbea4;
+  transition: all 0.5s;
+}
+.divo13 .divo132 .divo1321 .divo13212 {
+  background-color: #777777;
+  transition: all 0.5s;
+}
+.divo13 .divo132 .divo1321 .divo13213 {
+  background-color: #eeeeee;
+  transition: all 0.5s;
+}
+.divo13 .divo132 .divo1321 .divo13214 {
+  background-color: #adc3ff;
+  transition: all 0.5s;
+}
+.divo13 .divo132 .divo1321 .divo13211:hover,
+.divo13 .divo132 .divo1321 .divo13212:hover,
+.divo13 .divo132 .divo1321 .divo13213:hover,
+.divo13 .divo132 .divo1321 .divo13214:hover {
+  width: 23rem;
+}
+.divo13 .divo133 {
+  margin: 1.5rem 0 3rem 0;
+  height: 25rem;
+  width: 50rem;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: stretch;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo133 .divo1331{
+  width:35rem;
+}
+.divo13 .divo133 .divo1331 img{
+  height:25rem;
+  width: 35rem;
+}
+.divo13 .divo133 .divo1332{
+  flex:1 1 auto;
+  background-color:#eeeeee;
+}
+.divo13 .divo134{
+  border-top:1px solid #aaaaaa;
+  height:14.75rem;
+  width:58rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo135{
+  border-top:1px solid #aaaaaa;
+  height:14.75rem;
+  width:58rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo136{
+  border-top:1px solid #aaaaaa;
+  height:11.25rem;
+  width:58rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo137{
+  border-top:1px solid #aaaaaa;
+  height:7.75rem;
+  width:58rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo138{
+  border-top:1px solid #aaaaaa;
+  height:20rem;
+  width:57.25rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo139{
+  border-top:1px solid #aaaaaa;
+  height:57rem;
+  width:57.25rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo1310{
+  border-top:1px solid #aaaaaa;
+  height:21rem;
+  width:57.25rem;
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: stretch;
+}
+.divo13 .divo134 .divo1341,
+.divo13 .divo135 .divo1351,
+.divo13 .divo136 .divo1361,
+.divo13 .divo137 .divo1371,
+.divo13 .divo138 .divo1381,
+.divo13 .divo139 .divo1391,
+.divo13 .divo1310 .divo13101{
+  padding-top:3rem;
+  width:15rem;
+}
+.divo13 .divo134 .divo1342,
+.divo13 .divo135 .divo1352,
+.divo13 .divo136 .divo1362,
+.divo13 .divo137 .divo1372,
+.divo13 .divo138 .divo1382,
+.divo13 .divo139 .divo1392,
+.divo13 .divo1310 .divo13102{
+  padding-top:3rem;
+  flex:1 1 auto;
+}
+.divo13 .divo134 .divo1341 p,
+.divo13 .divo135 .divo1351 p,
+.divo13 .divo136 .divo1361 p,
+.divo13 .divo137 .divo1371 p,
+.divo13 .divo138 .divo1381 p,
+.divo13 .divo139 .divo1391 p,
+.divo13 .divo1310 .divo13101 p{
+  font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  line-height:1.75rem;
+}
+.divo13 .divo134 .divo1342 p,
+.divo13 .divo135 .divo1352 p,
+.divo13 .divo136 .divo1362 p,
+.divo13 .divo137 .divo1372 p,
+.divo13 .divo138 .divo1382 p,
+.divo13 .divo139 .divo1392 p,
+.divo13 .divo1310 .divo13102 p{
+  font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size:12px;
+  color:#444444;
+  line-height:1.75rem;
+}
+.divo13 .divo139 .divo1392 .divo13921{
+  width:35rem;
+  height:24rem;
+  background: url('../img/27b.png') center no-repeat;
+  background-size:100% 100%;
+}
+.divo13 .divo139 .divo1392 .divo13922{
+  width:20rem;
+  height:20rem;
+  background: url('../img/28b.png') center no-repeat;
+  background-size:100% 100%;
+}
+.divo13 .divo136 .divo1362 :first-child,
+.divo13 .divo138 .divo1382 :first-child,
+.divo13 .divo138 .divo1382 :nth-child(6),
+.divo13 .divo139 .divo1392 :first-child,
+.divo13 .divo139 .divo1392 :nth-child(3),
+.divo13 .divo139 .divo1392 :nth-child(4),
+.divo13 .divo139 .divo1392 :last-child,
+.divo13 .divo1310 .divo13102 :first-child,
+.divo13 .divo1310 .divo13102 :nth-child(6){
+  font-weight: 600;
+}
+.divo13 .divo138 .divo1382 :nth-child(6),
+.divo13 .divo1310 .divo13102 :nth-child(6){
+  margin-top:1rem;
+}

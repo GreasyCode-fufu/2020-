@@ -1,0 +1,13 @@
+.sunfuxiang{
+	animation: enlarge ease 1s;
+	width: 30%;
+	height: auto;
+	/*最后需边框它去掉
+	/*border:1px solid #000;*/
+	margin:0 auto;
+	margin-top: 10%;
+	text-align: center;
+	background: #ffffff40;
+	padding: 20px 50px;
+	border-radius: 30px
+}

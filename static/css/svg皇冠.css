@@ -1,0 +1,73 @@
+#svg4{
+    height:0rem;
+    transition: height 0.3s;
+    margin-bottom: 0.25rem;
+}
+#r1{
+    transition: all 2.5s;
+    stroke-dasharray:42;
+    stroke-dashoffset:42;
+}
+#r2{
+    transition: all 2.5s;
+    stroke-dasharray:42;
+    stroke-dashoffset:42;
+}
+#r3{
+    transition: all 2.5s;
+    stroke-dasharray:40;
+    stroke-dashoffset:40;
+}
+#r4{
+    transition: all 2.5s;
+    stroke-dasharray:44;
+    stroke-dashoffset:44;
+}
+#r5{
+    transition: all 2.5s;
+    stroke-dasharray:16;
+    stroke-dashoffset:16;
+}
+#r6{
+    transition: all 2.5s;
+    stroke-dasharray:16;
+    stroke-dashoffset:16;
+}
+#r7{
+    transition: all 2.5s;
+    stroke-dasharray:21;
+    stroke-dashoffset:21;
+}
+#r8{
+    transition: all 2.5s;
+    stroke-dasharray:21;
+    stroke-dashoffset:21;
+}
+#r9{
+    transition: all 2.5s;
+    stroke-dasharray:79;
+    stroke-dashoffset:79;
+}
+#r10{
+    transition: all 2.5s;
+    stroke-dasharray:79;
+    stroke-dashoffset:79;
+}
+#r11{
+    transition: all 2.5s;
+    stroke-dasharray:79;
+    stroke-dashoffset:79;
+}
+.div10 .div104:hover #svg4 #r1,
+.div10 .div104:hover #svg4 #r2,
+.div10 .div104:hover #svg4 #r3,
+.div10 .div104:hover #svg4 #r4,
+.div10 .div104:hover #svg4 #r5,
+.div10 .div104:hover #svg4 #r6,
+.div10 .div104:hover #svg4 #r7,
+.div10 .div104:hover #svg4 #r8,
+.div10 .div104:hover #svg4 #r9,
+.div10 .div104:hover #svg4 #r10,
+.div10 .div104:hover #svg4 #r11{
+    stroke-dashoffset:0;
+}

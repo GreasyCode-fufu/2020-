@@ -1,0 +1,23 @@
+.footer .footer_top{
+    width:1000px;
+    border-bottom: 1px solid #999999;
+    transform: scale(0.8);
+}
+.footer .footer_bottom{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 800px;
+}
+.footer .footer_bottom>div{
+    width:150px;
+}
+.footer .footer_last{
+    display: flex;
+    flex-flow:column nowrap;
+    height:80px;
+    width:1000px;
+    transform: scale(0.8);
+}

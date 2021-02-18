@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+.bigFace{
+    background:url(../img/大面.jpg)no-repeat;
+    height:36rem;
+    width: 100%;
+}
+.buy{
+    margin: 1rem 0 0 0;
+    border: 1px solid #0051ff;
+    background-image: linear-gradient(to bottom,#9eb8ff,#0051ff);
+    color:#fff;
+    height: 2rem;
+    width: 40%;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    flex: 1 1 auto;
+    float: left;
+    text-align: center;
+
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+button{
+    background-color:rgba(224,224,89,0.2);
+    border:none;
+    height:3.5rem;
+    width:20%;
+}
+
+.container {
+    position: absolute;
+    width: 47%;
+    height: 25rem;
+    margin:2rem auto 0 2rem;
+    box-shadow: 0 0 0.5rem green;
+    overflow: hidden;
+}
+.container .wrap {
+    position: absolute;
+    width: 262.5rem;
+    height: 25rem;
+    z-index: 1;
+}
+.container .wrap img {
+    float: left;
+    width: 37.5rem;
+    height: 25rem;
+}
+.container .arrow {
+    color:#111;
+    display: none;
+    position: absolute;
+    top: 35%;
+    padding:0px 1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    z-index: 2;
+    
+}
+.container .arrow_left {
+    left: 1rem;
+}
+.container .arrow_right {
+    right: 1rem;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.demo{
+    width: 47%;
+    height: 100%;
+    margin:3rem 0 auto auto;
+    overflow: hidden;
+}
+.demo p:nth-child(3){
+    font-family:楷体 ;
+} 
+header{
+    background:#ddd;
+    height:1rem;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    margin:0 0 1.5rem 0;
+}
+h3{
+    color:rgb(230, 11, 48);
+    margin:0.5rem 0 0 0;
+}
+h6{
+    color:red;
+    margin:0 0 0.5rem 0;
+}
+
+.information{
+    margin:0.5rem 0 0 0;
+}
+.information div{
+    flex-direction: row;
+    margin:0 0 1rem 0;
+}
+.information div button{
+   
+    margin:0 1rem 0 0;
+
+}
+input{
+    width: 3.5rem;
+    height: 1.5rem;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+#myimage{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+    
+strong{
+    font-size:1.1rem;
+}
+.wish{
+    display:flex;
+    height:2.5rem;
+    width: 15rem;
+}
+.wish div:nth-child(2){
+    margin:0 0 0 1rem;
+}
+#value1,
+#value2{
+    display:none;
+}
+

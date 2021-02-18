@@ -1,0 +1,413 @@
+.div3{
+    position: absolute;
+    top:7rem;
+    height:41rem;
+    width:100%;
+    min-width: 1200px;
+    z-index:2;
+    border-top:1px solid #eeeeee;
+    background-color: #ffffff;
+}
+.div3 .div31{
+    position:absolute;
+    height:2rem;
+    width:100%;
+    margin-left: 0rem;
+}
+.div3 .div31 p{
+    margin-left:0.5rem;
+    font-size: 0.75rem;
+    line-height:2rem;
+    color:#666666;
+}
+.div3 .div31 p a{
+    margin:0 1rem 0 1rem;
+    color:#666666;
+    text-decoration: none;
+}
+.div3 .div32{
+    position: absolute;
+    height:34rem;
+    width:100%;
+    top:2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.div3 .div32 .div321{
+    margin-left:5rem;
+    width:32rem;
+    display: flex;
+    flex-flow:column nowrap;
+}
+.div3 .div32 .div321 img{
+    height: 32rem;
+    width:32rem;
+}
+.div3 .div32 .div321 .div3211{
+    flex: 1 1 auto;
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.div3 .div32 .div321 .div3211 .div32111{
+    height:1.5rem;
+    width:1.5rem;
+    border-radius: 1.25rem;
+    border:2px solid #aaaaaa;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.div3 .div32 .div321 .div3211 .div32111 img{
+    height:1rem;
+    width:1rem;
+}
+.div3 .div32 .div321 .div3211 .div32112 img{
+    float: left;
+    height:4.75rem;
+    width:4.75rem;
+    margin-left:1px;
+    border:1px solid #ffffff;
+}
+.div3 .div32 .div321 .div3211 .div32112 img:hover{
+    border:1px solid red;
+}
+.div3 .div32 .div321 .div3211 .div32113{
+    height:1.5rem;
+    width:1.5rem;
+    border-radius: 1.25rem;
+    border:2px solid #aaaaaa;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.div3 .div32 .div321 .div3211 .div32113 img{
+    height:1rem;
+    width:1rem;
+}
+.div3 .div32 .div322{
+    margin:0 5rem 0 2rem;
+    flex:1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+.div3 .div32 .div322 p:first-child{
+    margin-top:0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.div3 .div32 .div322 p:nth-child(2){
+    margin-top:0.5rem;
+    line-height: 1.5rem;
+    color:#999999;
+    font-size:14px;
+    font-family: 微软雅黑, Arial;
+}
+.div3 .div32 .div322 .div3221{
+    margin-top:0.5rem;
+    height:5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+.div3 .div32 .div322 .div3221 .div32211,
+.div3 .div32 .div322 .div3221 .div32212{
+    background-color: #eeeeee;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3221 .div32211 :first-child,
+.div3 .div32 .div322 .div3221 .div32212 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(2){
+    color:rgb(148, 0, 0);
+    font-size: 1.25rem;
+}
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(3),
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(4),
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(5),
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(6){
+    color:rgb(148, 0, 0);
+    font-size: 1rem;
+}
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(3),
+.div3 .div32 .div322 .div3221 .div32211 :nth-child(5){
+    margin-left:0.75rem;
+}
+.div3 .div32 .div322 .div3221 .div32212 :last-child{
+    font-size: 14px;
+    color:#333333;
+    margin:0;
+}
+.div3 .div32 .div322 .div3222{
+    margin-top:1rem;
+    height:3rem;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.div3 .div32 .div322 .div3222>p{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+    line-height:1.5rem;
+}
+.div3 .div32 .div322 .div3222 .div32221{
+    height:3rem;
+    flex:1 1 auto;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.div3 .div32 .div322 .div3222 .div32221 .div322211,
+.div3 .div32 .div322 .div3222 .div32221 .div322212{
+    flex:1 1 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3222 .div32221 .div322211 p,
+.div3 .div32 .div322 .div3222 .div32221 .div322212 p{
+    margin:0;
+    font-size:12px;
+    line-height:1.5rem;
+    color:#333333;
+}
+.div3 .div32 .div322 .div3222 .div32221 .div322211 img{
+    margin-left:0.25rem;
+    height:12px;
+    width:12px;
+}
+.div3 .div32 .div322 .div3222 .div32221 .div322212 img{
+    margin-right:0.25rem;
+    height:12px;
+    width:12px;
+}
+.div3 .div32 .div322 .div3223{
+    height:2.5rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    border-bottom:1px solid #dddddd;
+}
+.div3 .div32 .div322 .div3223 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+.div3 .div32 .div322 .div3223 :last-child{
+    font-size:12px;
+    margin:0;
+    color:#333333;
+}
+.div3 .div32 .div322 .div3224{
+    margin-top:0.25rem;
+    height:2rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3224 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+.div3 .div32 .div322 .div3224 .div32241,
+.div3 .div32 .div322 .div3224 .div32242,
+.div3 .div32 .div322 .div3224 .div32243{
+    margin-right:0.5rem;
+    height:1.75rem;
+    width:4.5rem;
+    border:1px solid #666666;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.div3 .div32 .div322 .div3224 .div32241 p,
+.div3 .div32 .div322 .div3224 .div32242 p,
+.div3 .div32 .div322 .div3224 .div32243 p{
+    line-height: 1.75rem;
+    text-align: center;
+    font-size: 12px;
+}
+.div3 .div32 .div322 .div3225{
+    margin-top:0.25rem;
+    height:2rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3225 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+.div3 .div32 .div322 .div3225 .div32551,
+.div3 .div32 .div322 .div3225 .div32552,
+.div3 .div32 .div322 .div3225 .div32553{
+    margin-right:0.5rem;
+    height:1.75rem;
+    width:9rem;
+    border:1px solid #666666;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.div3 .div32 .div322 .div3225 .div32551 p,
+.div3 .div32 .div322 .div3225 .div32552 p,
+.div3 .div32 .div322 .div3225 .div32553 p{
+    line-height: 1.75rem;
+    text-align: center;
+    font-size: 12px;
+}
+.div3 .div32 .div322 .div3226{
+    margin-top:0.25rem;
+    height:2rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3226 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+
+ .div3 .div32 .div322 .div3226 .div32261,
+.div3 .div32 .div322 .div3226 .div32262,
+.div3 .div32 .div322 .div3226 .div32263{
+    margin-right:0.5rem;
+    height:1.75rem;
+    width:9rem;
+    background-color:#f5f5f5;
+} 
+.div3 .div32 .div322 .div3226 .div32261 p,
+.div3 .div32 .div322 .div3226 .div32262 p,
+.div3 .div32 .div322 .div3226 .div32263 p{
+    line-height: 1.75rem;
+    text-align: center;
+    font-size: 12px;
+} 
+.div3 .div32 .div322 .div3227{
+    margin-top:0.25rem;
+    height:3rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.div3 .div32 .div322 .div3227 :first-child{
+    margin:0 1rem 0 1rem;
+    font-size:14px;
+}
+
+.div3 .div32 .div322 .div3227 .buy{
+    margin-right:0.5rem;
+    height:3rem;
+    width:10rem;
+    background-color:#ca151d;
+    margin: 2rem 1rem 0 3.4rem;
+    cursor: pointer;
+} 
+.div3 .div32 .div322 .div3227 .buy2{
+    margin-right:0.5rem;
+    height:3rem;
+    width:12rem;
+    background-color:#ca151d;
+    margin: 2rem 1rem 0 2rem; 
+    cursor: pointer;
+}
+.div3 .div32 .div322 .div3227 .buy p,
+.div3 .div32 .div322 .div3227 .buy2 p{
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.cs{
+    border-top: rgb(179, 179, 179) 1px solid;
+    border-bottom:  rgb(179, 179, 179) 1px solid;
+    position: absolute;
+    top:48rem;
+    width:100%;
+    height:30rem;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; */
+    /* line-height: 3rem; */
+}
+.cs .canshu{
+    width:60rem;
+    height:3rem;
+    /* background-color:burlywood; */
+    font-weight: bold;
+    font-size: 1.75rem ;
+    text-align: center;
+}
+.cs .cs0{
+    height:27rem;
+    /* background-color: chartreuse; */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+}
+.cs .cs0 .cs1,
+.cs .cs0 .cs2{
+    flex:1 1  auto;
+}
+.cs .cs0 .cs1{
+    /* background-color: cornflowerblue; */
+    text-align: left;
+    color:#141414;
+    font-size: 1.25rem;
+    line-height: 3rem; 
+    margin-right:25rem;
+}
+.cs .cs0 .cs2{
+    /* background-color: violet; */
+    text-align: left;
+    color:#141414;
+    font-size: 1.25rem;
+    line-height: 3rem; 
+}
+.xq{
+    position: absolute;
+    top:80rem;
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.xq .xiangqing{
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+    margin: 2rem 0 2rem 0;
+    font-size: 1.75rem ;
+    text-align: center;
+}
+.xq1{
+    background-color: black;
+}
+.az{
+    position: absolute;
+    top:1260rem;
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.az .anzhuang{
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+    margin: 2rem 0 2rem 0;
+    font-size: 1.75rem ;
+    text-align: center;
+}
+.az1{
+    background-color: black;
+}

@@ -1,0 +1,84 @@
+.divo12{
+    position:absolute;
+    top:332rem;
+    height:36rem;
+    background-color: #000000;
+    width:100%;
+}
+.divo12 .divo121{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 60rem;
+    min-height:36rem;
+    background: url(../img/22b.png) center no-repeat;
+    background-size:50% 100%;
+}
+.divo12 .divo121 .divo1211{
+    position: absolute;  
+    height:10rem;
+    width:25rem;
+    display: flex;
+    flex-flow:row-reverse nowrap;
+    align-items: stretch;
+}
+.divo12 .divo121 .divo1212{
+    position: absolute;  
+    height:10rem;
+    width:21rem;
+    right:0;
+    top:10rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+}
+.divo12 .divo121 .divo1213{
+    position: absolute;  
+    height:10rem;
+    width:21rem;
+    left:0;
+    top:13rem;
+    display: flex;
+    flex-flow:row-reverse nowrap;
+    align-items: stretch;
+}
+.divo12 .divo121 .divo1214{
+    position: absolute;  
+    height:10rem;
+    width:25rem;
+    right:0;
+    top:25rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: stretch;
+}
+.divo12 .divo121 .divo1211 .divo12112,
+.divo12 .divo121 .divo1213 .divo12132,
+.divo12 .divo121 .divo1212 .divo12122,
+.divo12 .divo121 .divo1214 .divo12142{
+    width:10rem;
+}
+.divo12 .divo121 .divo1211 .divo12111,
+.divo12 .divo121 .divo1213 .divo12131,
+.divo12 .divo121 .divo1212 .divo12121,
+.divo12 .divo121 .divo1214 .divo12141{
+    flex:1 1 auto;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.divo12 .divo121 .divo1211 .divo12111 p,
+.divo12 .divo121 .divo1213 .divo12131 p,
+.divo12 .divo121 .divo1212 .divo12121 p,
+.divo12 .divo121 .divo1214 .divo12141 p{
+    margin-top:3rem;
+    color:#ffffff;
+}
+.divo12 .divo121 .divo1211 .divo12112 svg #r29,
+.divo12 .divo121 .divo1212 .divo12122 svg #r30,
+.divo12 .divo121 .divo1213 .divo12132 svg #r31,
+.divo12 .divo121 .divo1214 .divo12142 svg #r32{
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+    transition: all 0.5s;
+}

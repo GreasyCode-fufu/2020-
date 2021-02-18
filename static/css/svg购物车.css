@@ -1,0 +1,28 @@
+#svg2{
+    height:0rem;
+    transition: height 0.3s;
+    margin-bottom: 0.25rem;
+}
+#r25{
+    transition: all 1.5s;
+    stroke-dasharray:1352;
+    stroke-dashoffset:1352;
+}
+#r26{
+    transition: all 1.5s;
+    stroke-dasharray:1705;
+    stroke-dashoffset:1705;
+}
+#r27,
+#r28{
+    transition: all 1.5s;
+    stroke-dasharray:344;
+    stroke-dashoffset:344;
+}
+.div10 .div102:hover #svg2 #r25,
+.div10 .div102:hover #svg2 #r26,
+.div10 .div102:hover #svg2 #r27,
+.div10 .div102:hover #svg2 #r28{
+    stroke-dashoffset:0;
+}
+

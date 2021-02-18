@@ -1,0 +1,52 @@
+.header_left{
+    background:url(../img/big_img.jpg) center no-repeat;
+    background-size:100% 100%;
+}
+.header_right .header_right_buy .header_right_buy_button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.header_right .header_right_buy .header_right_buy_button a{
+    color:#333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:4rem;
+    font-weight:800;
+    text-decoration: none;
+}
+.header_right .header_right_buy .header_right_buy_car{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.header_right .header_right_buy .header_right_buy_car{
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+    color:#ffffff;
+    cursor: pointer;
+}
+.header_right .header_right_text{
+    background:url('../img/w2_b1.jpg') center no-repeat;
+    background-size:100% 100%;
+    box-shadow: inset 0px 0px 8px #555;
+    display:flex;
+    flex-flow:column nowrap;
+}
+.header_right .header_right_text :first-child{
+    margin:8rem 0.5rem 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    line-height:1.75rem;
+    font-weight: 600;
+    color:#eeeeee;
+}
+.header_right .header_right_text :nth-child(2){
+    margin:6rem 0.5rem 0 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.875rem;
+    line-height:1.75rem;
+    color:#cccccc;
+}

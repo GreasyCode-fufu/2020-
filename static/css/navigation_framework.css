@@ -1,0 +1,12 @@
+.navigation .navigation_left{
+    background-color:#ca203d;
+    flex:1 1 auto;
+}
+.navigation .navigation_middle{
+    width:250px;
+    background-color:#ffbe00;
+}
+.navigation .navigation_right{
+    width:64px;
+    background-color:#25172e;
+}

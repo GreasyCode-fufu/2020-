@@ -1,0 +1,90 @@
+.divo11{
+    margin:0;
+    position:absolute;
+    top:282rem;
+    height:50rem;
+    background-color: #000000;
+    width:100%;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.divo11 .div111{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+    width:50rem;
+    height:10rem;
+}
+.divo11 .div111 h1{
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:#ffffff;
+    font-size:2rem;
+    line-height:3rem;
+}
+.divo11 .div111 p{
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:#ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.divo11 .div112{
+    height:40rem;
+    width:69rem;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.divo11 .div112 .div1121,
+.divo11 .div112 .div1122,
+.divo11 .div112 .div1123,
+.divo11 .div112 .div1124{
+    opacity:0;
+    width:15rem;
+    background-color: #dddddd;
+    height:25rem;
+    display: flex;
+    flex-flow:row nowrap;
+    transition: all 1s;
+}
+.divo11 .div112 .div1121,
+.divo11 .div112 .div1123{
+    transform: translateY(-7.5rem);
+}
+.divo11 .div112 .div1122,
+.divo11 .div112 .div1124{
+    transform: translateY(7.5rem);
+}
+.divo11 .div112 .div1121:hover,
+.divo11 .div112 .div1122:hover,
+.divo11 .div112 .div1123:hover,
+.divo11 .div112 .div1124:hover{
+    background-size:110% 110%;
+}
+.divo11 .div112 .div1121{
+    background:url(../img/18b.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.divo11 .div112 .div1122{
+    background:url(../img/19b.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.divo11 .div112 .div1123{
+    background:url(../img/20b.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.divo11 .div112 .div1124{
+    background:url(../img/21b.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.divo11 .div112 .div1121 p,
+.divo11 .div112 .div1122 p,
+.divo11 .div112 .div1123 p,
+.divo11 .div112 .div1124 p{
+    margin:2rem 0 0 2rem;
+    font-size: 1.5rem;
+    color:#ffffff;
+    line-height: 2rem;
+}
