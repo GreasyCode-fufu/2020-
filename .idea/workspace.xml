@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae686d9b-f2e4-4a93-95f1-7d3f88d84fbe" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1VCeQDsR7F9wzJ18so3gnohOvcc" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\limengdan\sunfuxiang\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\limengdan\sunfuxiang" />
+      <recent name="S:\limengdan\sunfuxiang\img" />
+      <recent name="S:\limengdan\sunfuxiang\static\js" />
+      <recent name="S:\limengdan\yangyapeng\templates" />
+      <recent name="S:\limengdan\yangyapeng\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.flaskrun">
+    <configuration name="addgoods.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yangyapeng/templates/addgoods.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="S:\flaskFrame\unbugProjectVirtual\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="untitled2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="S:\flaskFrame\unbugProjectVirtual\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flaskrun" type="Python.FlaskServer">
+      <option name="additionalOptions" value="--port=5001" />
+      <option name="flaskDebug" value="true" />
+      <module name="untitled2" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\python3.7\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.flaskrun" />
+      <item itemvalue="JavaScript Debug.addgoods.html" />
+      <item itemvalue="Python.app" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="JavaScript Debug.addgoods.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae686d9b-f2e4-4a93-95f1-7d3f88d84fbe" name="Default Changelist" comment="" />
+      <created>1576761485676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576761485676</updated>
+      <workItem from="1576761506425" duration="183000" />
+      <workItem from="1576761701543" duration="4682000" />
+      <workItem from="1576766949067" duration="1674000" />
+      <workItem from="1576818081331" duration="5458000" />
+      <workItem from="1577082901062" duration="4319000" />
+      <workItem from="1577104976833" duration="8000" />
+      <workItem from="1577105048616" duration="22000" />
+      <workItem from="1577105093074" duration="15000" />
+      <workItem from="1577105223267" duration="748000" />
+      <workItem from="1577105988617" duration="5230000" />
+      <workItem from="1577147010806" duration="3255000" />
+      <workItem from="1577169800685" duration="5375000" />
+      <workItem from="1577274457887" duration="318000" />
+      <workItem from="1577280476831" duration="494000" />
+      <workItem from="1577281055396" duration="2863000" />
+      <workItem from="1577358661396" duration="84000" />
+      <workItem from="1577361987783" duration="3523000" />
+      <workItem from="1581333663675" duration="10000" />
+      <workItem from="1581333749373" duration="22000" />
+      <workItem from="1581333918541" duration="29000" />
+      <workItem from="1601811242020" duration="144000" />
+      <workItem from="1606998891544" duration="6524000" />
+      <workItem from="1607009779569" duration="729000" />
+      <workItem from="1607049034226" duration="1071000" />
+      <workItem from="1607066856345" duration="599000" />
+      <workItem from="1607070530005" duration="118000" />
+      <workItem from="1607087529682" duration="613000" />
+      <workItem from="1607089373107" duration="306000" />
+      <workItem from="1607090235380" duration="55000" />
+      <workItem from="1607090737251" duration="2211000" />
+      <workItem from="1607093126332" duration="1547000" />
+      <workItem from="1607097497022" duration="612000" />
+      <workItem from="1607144481026" duration="4498000" />
+      <workItem from="1607156004371" duration="8389000" />
+      <workItem from="1607265307341" duration="358000" />
+      <workItem from="1607656894609" duration="671000" />
+      <workItem from="1607666889396" duration="11626000" />
+      <workItem from="1607762644184" duration="14524000" />
+      <workItem from="1607780911664" duration="1843000" />
+      <workItem from="1607785078664" duration="2786000" />
+      <workItem from="1607787886114" duration="1961000" />
+      <workItem from="1607828429228" duration="601000" />
+      <workItem from="1607837188240" duration="5370000" />
+      <workItem from="1608366495654" duration="1785000" />
+      <workItem from="1608384860895" duration="972000" />
+      <workItem from="1608386550141" duration="7314000" />
+      <workItem from="1608436834580" duration="1342000" />
+      <workItem from="1608441224585" duration="659000" />
+      <workItem from="1608473352764" duration="449000" />
+      <workItem from="1608473862200" duration="1071000" />
+      <workItem from="1608543681554" duration="435000" />
+      <workItem from="1608546831087" duration="1495000" />
+      <workItem from="1608604912363" duration="668000" />
+      <workItem from="1608618689748" duration="10364000" />
+      <workItem from="1608633663743" duration="3715000" />
+      <workItem from="1608691414826" duration="4827000" />
+      <workItem from="1608703666747" duration="15269000" />
+      <workItem from="1608741381255" duration="1160000" />
+      <workItem from="1608803924875" duration="2612000" />
+      <workItem from="1608859850257" duration="825000" />
+      <workItem from="1608885130577" duration="1856000" />
+      <workItem from="1608907196947" duration="14841000" />
+      <workItem from="1609058539067" duration="1982000" />
+      <workItem from="1609118115944" duration="2891000" />
+      <workItem from="1609121030159" duration="5781000" />
+      <workItem from="1609136277298" duration="11066000" />
+      <workItem from="1609161166893" duration="821000" />
+      <workItem from="1609208973276" duration="4328000" />
+      <workItem from="1609223396237" duration="5413000" />
+      <workItem from="1609230419559" duration="3855000" />
+      <workItem from="1609244651220" duration="881000" />
+      <workItem from="1609249058491" duration="2392000" />
+      <workItem from="1609255146958" duration="6828000" />
+      <workItem from="1609289360992" duration="8456000" />
+      <workItem from="1609308729734" duration="1949000" />
+      <workItem from="1609317785466" duration="4481000" />
+      <workItem from="1609374654079" duration="8739000" />
+      <workItem from="1609400845540" duration="6214000" />
+      <workItem from="1609502141666" duration="371000" />
+      <workItem from="1609550064346" duration="918000" />
+      <workItem from="1609571830998" duration="711000" />
+      <workItem from="1609666457533" duration="562000" />
+      <workItem from="1609667067681" duration="1360000" />
+      <workItem from="1609685286777" duration="254000" />
+      <workItem from="1609739690898" duration="444000" />
+      <workItem from="1609748829084" duration="116000" />
+      <workItem from="1609749113112" duration="32000" />
+      <workItem from="1609752330559" duration="2032000" />
+      <workItem from="1609766545530" duration="1035000" />
+      <workItem from="1609808073344" duration="7916000" />
+      <workItem from="1609826578146" duration="8335000" />
+      <workItem from="1609854924447" duration="1251000" />
+      <workItem from="1609892642287" duration="9007000" />
+      <workItem from="1609913587470" duration="5807000" />
+      <workItem from="1609920213588" duration="615000" />
+      <workItem from="1609921799592" duration="83000" />
+      <workItem from="1609931274728" duration="41000" />
+      <workItem from="1609931363600" duration="279000" />
+      <workItem from="1609940703088" duration="748000" />
+      <workItem from="1609979779791" duration="17478000" />
+      <workItem from="1610008734404" duration="873000" />
+      <workItem from="1610010622507" duration="389000" />
+      <workItem from="1610012482268" duration="332000" />
+      <workItem from="1610024818782" duration="1280000" />
+      <workItem from="1610031214928" duration="318000" />
+      <workItem from="1610259236462" duration="643000" />
+      <workItem from="1610898486444" duration="273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sunfuxiang$flaskrun.coverage" NAME="flaskrun Coverage Results" MODIFIED="1610898499156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yangyapeng$app.coverage" NAME="app Coverage Results" MODIFIED="1607846649262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1577364581377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/yangyapeng$untitled2.coverage" NAME="flaskrun Coverage Results" MODIFIED="1607767942086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sunfuxiang$app.coverage" NAME="app Coverage Results" MODIFIED="1608712483251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
