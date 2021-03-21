@@ -3,3 +3,5 @@
 开发平台：win10操作系统  
 开发工具：VScode, Pycharm  
 数据库：MYSQL  
+后端框架：flask  
+引用模板：e-charts  
