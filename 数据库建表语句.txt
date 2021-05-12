@@ -1,0 +1,39 @@
+CREATE TABLE `customer` (
+  `CustomerName` varchar(100) DEFAULT NULL,
+  `Postcode` varchar(100) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--------------------------------------------------
+
+CREATE TABLE `goods` (
+  `sno` int(50) NOT NULL,
+  `name` char(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `goodstatus` varchar(11) DEFAULT NULL,
+  `store` int(50) NOT NULL,
+  `UpdateTime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--------------------------------------------------
+
+CREATE TABLE `goodstype` (
+  `sno` int(100) NOT NULL,
+  `type` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `color` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `remarks` varchar(150) DEFAULT NULL,
+  KEY `sno` (`sno`),
+  CONSTRAINT `sno` FOREIGN KEY (`sno`) REFERENCES `goods` (`sno`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--------------------------------------------------
+
+CREATE TABLE `user1` (
+  `用户名` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `密码` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`用户名`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--------------------------------------------------
+
